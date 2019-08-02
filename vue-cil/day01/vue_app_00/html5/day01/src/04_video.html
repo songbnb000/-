@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h3>播放视频</h3>
+    <!--简写-->
+    <!--controls没有这个属性不能播放，这个是显示播放的控件-->
+    <!--play()播放pause()暂停，js方法-->
+    <!--不能用jquery，不支持这个-->
+    <!--可以在video中添加controls或者在函数中添加给id v3添加播放或者暂停的方法如下：-->
+    <video src="res/x.mp4" id="v3"></video>
+    <br/>
+    <button onclick="vplay()">播放</button>
+    <button onclick="vpause()">暂停</button>
+    <button onclick="vplay2()">快放</button>
+    <button onclick="vplay3()">慢放</button>
+    <button onclick="vplay4()">播放/暂停</button>
+    <!--不简写的写法-->
+    <!--<video src="">
+        <source src="res/x.mp4"></source>
+    </video>-->
+    <script>
+    function vplay(){
+        var v3=document.getElementById("v3");
+        v3.play()
+    }
+    function vpause(){
+        var v3=document.getElementById("v3");
+        v3.pause()
+    }
+    function vplay2(){
+        var v3=document.getElementById("v3")
+        v3.playbackRate=5
+        v3.play()
+    }
+    function vplay3(){
+        var v3=document.getElementById("v3")
+        v3.playbackRate=0.3
+        v3.play()
+    }
+    function vplay4(){
+        var v3=document.getElementById("v3");
+        /*v3.paused默认值为true可以不写==true*/
+        if(v3.paused==true){
+            v3.play()
+        }else{
+            v3.pause()
+        }
+    }
+    </script>
+</body>
+</html>

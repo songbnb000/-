@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!--引入文件-->
+    <script src="echarts.min.js">
+    </script>
+    <style>
+    #main1{border:1px solid red}
+    </style>
+</head>
+<body>
+    <!--创建容器-->
+    <div id="main" style="width:600px;height:700px">
+    </div>
+    <div id="main1" style="width:900px;height:700px"></div>
+    <script>
+     //销售的数据   
+     var list=[
+         {name:"冰箱",val:190},
+         {name:"洗衣机",val:290},
+         {name:"空调",val:190}
+        ]
+        var names=[]//x轴数据
+        var vals=[]//数据源数据
+        for(var item of list){
+            names.push(item.name)
+            vals.push(item.val)
+        }
+    //获取容器并且创建echarts对象
+    var main=document.getElementById("main")
+    //创建echarts对象
+    var mychart=echarts.init(main)
+    //创建option
+    var option={
+        title:{text:"家电销售统计图"},
+        xAxis:{data:names},
+        yAxis:{},
+        //假如想要折线类型的话，使用type:"line"就可以了
+        series:[{type:"bar",data:vals}]
+    }
+    mychart.setOption(option)
+    //折线图
+    //获取容器并且创建echarts对象
+    var main1=document.getElementById("main1")
+    //创建echarts对象
+    var mychart1=echarts.init(main1)
+    //创建option
+    var option2={
+        title:{text:"家电折线图"},
+        xAxis:{data:names},
+        yAxis:{},
+        //假如想要折线类型的话，使用type:"line"就可以了
+        series:[{type:"line ",data:vals}]
+    }
+    mychart1.setOption(option2)
+    </script>
+</body>
+</html>

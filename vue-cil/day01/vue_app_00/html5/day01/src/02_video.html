@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!--controls 播放视频属性 loop循环播放 muted静音播放 poster播放之前显示广告图片，仅在第一次播放之前 perload 是否自动加载数据，auto为自动加载，会加载元数据和一部分的视频metadata为元数据，就是仅加载视频的宽高-->
+    <!--preload预载-->
+<video src="res/x.mp4" controls loop muted poster="res/p3.png" preload="metadata" id="v3">  
+</video>
+<script>
+var v3=document.getElementById("v3");
+//当用户点击id为v3的元素时，触发这个事件
+//through从一端到另外一端
+//canplaythrough当视频加载结束可以播放
+//duration获取视频时长
+//ended视频播放结束
+v3.addEventListener("canplaythrough",function(){
+    console.log("视频加载成功可以播放");
+    console.log(v3.duration)
+});
+v3.addEventListener("ended",function(){
+    console.log("视频播放结束")
+})
+//timeupdate为视频查看视频的播放时间事件
+//currentTime这个属性可以用来记录播放的时间点
+v3.addEventListener("timeupdate",function(){
+    console.log(v3.currentTime)
+})
+</script>
+</body>
+</html>

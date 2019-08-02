@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    body{
+        text-align:center;
+    }
+    #c3{background-color:aqua;}
+    </style>
+</head>
+<body>
+    <h1>01_homework</h1>
+    <h3>销售统计图</h3>
+    <canvas id="c3" width="500" height="600">
+
+    </canvas>
+    <script>
+    //获取画布元素
+    var c3=document.getElementById("c3")
+    //准备画笔
+    var ctx=c3.getContext("2d")
+    //创建空数组
+    var gs=[]
+    //把渐变对象放到空数组里面
+    //(x1,y1,x2,y2)
+    gs[0]=ctx.createLinearGradient(0,0,0,600)
+    //追加两个渐变颜色
+    //(0-1,"颜色")
+    gs[0].addColorStop(0,"#f00")
+    gs[0].addColorStop(1,"#fff")    
+    //在把新的渐变对象给数组[2]
+    gs[1]=ctx.createLinearGradient(0,0,0,600)
+    //追加颜色给gs[1]
+    gs[1].addColorStop(0,"#f0f")
+    gs[1].addColorStop(1,"#00f")
+    //把对象的颜色给填充画笔的样式，放到循环里面  
+    //准备一个数组对象
+    var list=[
+        {name:"北京",s:2000},
+        {name:"上海",s:3000}
+        ]
+    for(var i=0;i<list.length;i++){
+        var w=50;
+        var h=list[i].s/10
+        var y=600-h
+        var x=i*100+50
+        ctx.fillStyle=gs[i]
+        ctx.fillRect(x,y,w,h)
+        var z=list[i].name
+        ctx.font="29px SimHe"
+        ctx.fillText(z,x-2,y-10)
+    }
+    
+    </script>
+</body>
+</html>

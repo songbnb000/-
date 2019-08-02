@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    body{}  
+    canvas{background-color:yellow}
+    </style>
+</head>
+<body>
+    <h1></h1>
+    <canvas id="c3" width="500" height="400"></canvas>
+    <script>
+        //获取画笔的元素
+    var c3=document.getElementById("c3");
+        //获取画笔
+    var ctx=c3.getContext("2d")
+    //创建路径
+    ctx.beginPath();
+    //设置画笔的x,Y坐标起始点
+    ctx.moveTo(250,200);
+    //线的绘制是从画笔初始点到lineTo的点之间绘制一条直线。
+    //lineTo的计算是从左上角的0,0开始计算的
+    //就是moveTo确定一个点，lineTo确定一个点，连接起来
+    ctx.lineTo(400,300);
+    ctx.lineTo(250,150);
+    ctx.lineTo(250,200)
+    //描边
+    ctx.stroke();
+    //圆形
+    //ax,ay为圆心坐标点，r为半径，start和end为开始到结束
+    //ctx.arc(ax,ay,r,start,end)
+    //start和end都不能直接写角度，要写弧度，弧度换算规则等于角度*Math.PI/180
+    ctx.beginPath();
+    ctx.arc(250,200,100,0,180*Math.PI/180)
+    //描边
+    ctx.stroke()
+    //左下角画一个圆
+    ctx.beginPath()
+    ctx.arc(50,50,50,270*Math.PI/180,450*Math.PI/180)
+    ctx.stroke()
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h3>样式img/video</h3>
+    <h3>默认 fill 拉伸</h3>
+    <!--填充-->
+    <div class="box">
+        <img src="res/mm.png" style="object-fit:fill">
+    </div>
+    <h3>默认 contain 包含</h3>
+    <!--父元素包含这个元素，所以会有空白-->
+    <div class="box">
+        <img src="res/mm.png" style="object-fit:contain">
+    </div>
+    <h3>默认 cover 覆盖</h3>
+    <div class="box">
+        <!--宽度和高度有一个与父元素一致-->
+        <img src="res/mm.png" style="object-fit:cover">
+    </div>
+    <style>
+    .box{
+        width:160px;
+        height:160px;
+        margin:10px 0 20px;
+        background-color:#b3ccee;
+        border:1px solid red; 
+        overflow:hidden;
+        /*规定用户是否可以调整div大小*/
+        /*both 可以调整宽度和高度*/
+        /*none不可以调整大小*/
+        resize:both;
+    }
+    .box img{
+        width:100%;
+        height:100%;
+        background-color:#cd0000;
+    }
+    </style>
+</body>
+</html>

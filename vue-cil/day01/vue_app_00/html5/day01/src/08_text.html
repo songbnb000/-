@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style> 
+    canvas{background-color:gray}
+    </style>
+</head>
+<body>
+    <canvas id="c3" width="500" height="400">
+
+    </canvas>
+    <script>
+        //找到画布元素
+    var c3=document.getElementById("c3")
+        //找到画笔
+    var ctx=c3.getContext("2d")
+    //绘制矩形图像
+    //(x,y,w,h)
+    //ctx.strokeRect(100,100,270,200)
+    //填充文字
+    //因为文字放在了基线，所以显示不出来，要把文字设置放在top线，这样才会显示
+    ctx.textBaseline="top"
+    var str="abcdefg"
+    ctx.fillText(str,0,0)
+    </script>
+</body>
+</html>

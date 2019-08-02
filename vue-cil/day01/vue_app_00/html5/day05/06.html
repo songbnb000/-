@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h3>06.html</h3>
+    <script>
+        //storage保存
+        //(key,value)储存是无序的,key固定只能放字符串
+    var n=sessionStorage.getItem("name");
+    var age=sessionStorage.getItem("age");
+    console.log(n+":"+age);
+    console.log(sessionStorage.length)
+    console.log(sessionStorage.key(0));//name
+    console.log(sessionStorage.key(1));//age
+    //local=本地 这个数据可以永久保存，session对话中保存的话，网页关闭之后，数据就没有了，直接打开06.html看不到
+    //永久保存在本地好像不能使用变量保存
+    console.log(localStorage.getItem("name1"))
+    console.log(localStorage.getItem("age1"))
+    //sessionStorage.clear()清楚数据
+    </script>
+</body>
+</html>

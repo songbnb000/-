@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="请输入数值" id="num1">
+    <br/>
+    <button id="btn">计算</button>
+    结果
+    <div id="msg"></div>
+    <script>
+    //获取按钮并且绑定事件
+    var btn=document.getElementById("btn");
+    btn.onclick=function(){
+    //获取用户输入数据
+    var num1=document.getElementById("num1")
+    var n=num1.value
+    //创建一个worker线程完成累加计算
+    var w=new Worker("04.js")
+    //将用户输入数据发送worker
+    w.postMessage(n)
+    //接收worker计算结果并且显示
+    w.onmessage=function(e){
+        var rs=e.data;
+        var msg=document.getElementById("msg");
+        msg.innerHTML=rs
+    }
+}
+    </script>
+</body>
+</html>

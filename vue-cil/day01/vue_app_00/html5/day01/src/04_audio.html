@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!--audio支持大多数音频的属性-->
+    <!--audio默认不可见，添加controls属性可以看到-->
+    <audio src="res/bg.mp3" controls id="a3">
+    </audio>
+    是否播放背景音乐
+    <input type="checkbox" id="c3">
+    <script>
+    var a3=document.getElementById("a3");
+    var c3=document.getElementById("c3");
+    c3.onchange=function(){
+        //checked==true为选中状态
+        //this指c3，也就是整个input标签
+        if(this.checked==true){
+            console.log(this)
+            a3.play()
+        }else{
+            a3.pause();
+        }
+    }
+
+    </script>
+</body>
+</html>

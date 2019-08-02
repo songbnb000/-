@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    #c3{
+        background-color:#fff
+    }
+    </style>
+</head>
+<body>
+    <svg id="c3" width="500" height="400">
+
+    </svg>
+    <script>
+    //两部曲
+    //1.获取画布元素
+    var c3=document.getElementById("c3")
+    //写一个循环，创建30个圆
+    for(var i=0;i<=30;i++){
+    //2.创建圆形图标
+    var ctx=document.createElementNS("http://www.w3.org/2000/svg","circle")
+    //ctx.getAttribute("r",100)
+    //半径
+    var r=Math.random()*20+5
+    ctx.setAttribute("r",r)
+    var cx=Math.random()*500
+    ctx.setAttribute("cx",cx)
+    var cy=Math.random()*400
+    ctx.setAttribute("cy",cy)
+    //颜色太吓人。设置个透明颜色和填充颜色
+    var r=Math.random()*255
+    var g=Math.random()*255
+    var b=Math.random()*255
+    var color=`rgb(${r},${g},${b})`
+    ctx.setAttribute("fill",color)
+    //透明度
+    ctx.setAttribute("fill-opacity",Math.random())
+    c3.appendChild(ctx) 
+    //为元素绑定点击事件
+    ctx.onclick=function(){
+        //防止当前元素再次被点击
+        //当前元素只能点击一次
+        this.onclick=null
+        //定时器
+        //在定时器这个回调函数中，this指全局，想要指向.前对象，使用箭头函数拆掉那堵墙
+        var t=setInterval(()=>{
+        //获得半径，元素半径增加
+        var r=this.getAttribute("r")
+        //元素透明度减少
+        r*=1.05
+        this.setAttribute("r",r)
+        var p=this.getAttribute("fill-opacity");
+        p*=0.9
+        this.setAttribute("fill-opacity",p)
+        //删除
+        if(p<0.05){
+            clearInterval(t)
+            c3.removeChile(this)
+        }
+    },150)
+    }   
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    canvas{background-color:yellow}
+    </style>
+</head>
+<body>
+    <canvas id="c3" width="500" height="400">
+
+    </canvas>
+    <script>
+    //获取画布
+    var c3=document.getElementById("c3")
+    //获得画笔
+    var ctx=c3.getContext("2d")
+    //描绘路径
+    ctx.beginPath();
+    //画圆
+    //(x,y,r,start,end)
+    ctx.arc(250,200,100,30*Math.PI/180,330*Math.PI/180)
+    //画一条直线
+    //从330度开始画
+    ctx.lineTo(250,200);
+    //闭合路径(把图形闭合)
+    ctx.closePath();
+    //开始描边
+    ctx.stroke()
+    //蓝色眼球
+    //开始路径
+    ctx.beginPath()
+    //开始画圆
+    //(x,y,r,start,end)
+    ctx.arc(270,160,20,0*Math.PI/180,360*Math.PI/180)
+    //填充颜色(描绘颜色stroke，描绘就调用描绘的方法 stroke())
+    ctx.fillStyle="blue"
+    //开始描边
+    ctx.fill()
+    //白色眼神
+    //开始路径
+    ctx.beginPath()
+    //开始圆形
+    //(x,y,r,start,end)
+    ctx.arc(278,157,5,0*Math.PI/180,360*Math.PI/180)
+    //填充颜色
+    ctx.fillStyle="#fff"
+    //调用填充方法
+    ctx.fill()
+    
+    </script>
+</body>
+</html>

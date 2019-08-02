@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    canvas{background-color:hotpink}
+    </style>
+</head>
+<body>
+    <canvas id="c3" width="500" height="400"></canvas>
+    <script>
+    //获得画布标签
+        var c3=document.getElementById("c3");
+    //获得画笔
+        var stx=c3.getContext("2d");
+     //功能实现，写一个圆环的动态
+    //想法：使用定时器，然后增加角度
+        //开始路径
+        stx.beginPath()
+        stx.strokeStyle="#fff"
+        //开始画圆
+        //arc(ax,ay,r,start,end)
+        //设置start初值为10，没定时一次，增加10
+        stx.lineWidth=25
+
+        //绘制圆环
+        stx.arc(250,200,100,0*Math.PI/180,360*Math.PI/180)
+        //开始描边
+        stx.stroke();   
+        //增加画框的粗
+        //创建变量
+        //创建开始角度
+        var start=-90;
+        //创建结束角度
+        var end=-90;
+        var num=0;
+        //创建一个定时器
+        var t=setInterval(function(){
+            //清除画布
+            //(x,y,w,h)
+            stx.clearRect(0,0,500,400)
+            //修改结束角度
+            end+=3.6
+            //开始新路径
+            stx.beginPath()
+            //绘制圆环
+            stx.arc(250,200,100,start*Math.PI/180,end*Math.PI/180)
+            stx.strokeStyle="blue"
+            stx.stroke()
+            stx.font="30px SimHei"
+            num++;
+            stx.fillText(num+"%",215,190)
+            //停止定时器
+            if(num>=100){
+                clearInterval(t);
+            }
+        },100)
+        //清出画布
+        //stx.clearCanvas()
+    </script>
+</body>
+</html>

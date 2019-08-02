@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    #c4{
+        cx:400px;
+        cy:200px;
+        r:50;
+        fill:aquamarine;
+        stroke:bisque;
+        /*错误的写法*/
+        /*border:1px solid red*/
+        /*svg只能使用自己的属性，比如描边stroke*/
+    }
+    </style>
+</head>
+<body>
+    <!--矢量图-->
+    <!--可以描绘地图-->
+    <!--需要创建画图，事件可以绑定在标签上-->
+    <!--代码写在元素里面-->
+    <!--画布-->
+    <!--可以在style中添加样式，不过要用svg的属性和属性值虽然属性显示不认识，但实际上可以显示出来-->
+    <svg id="c3" width="500" height="400">
+    <!--圆形元素-->
+    <circle cx="250" cy="200" r="50" fill="blue"  stroke="red" fill-opacity="0.5"></circle>
+    <circle id="c4" stroke="red" fill-opacity="0.5"></circle>
+    </svg>
+    <!--动态创建元素-->
+    <script>
+    var c3=document.getElementById("c3")
+    //创建圆形图标
+    var c=document.createElementNS("http://www.w3.org/2000/svg","circle")
+    //进行属性赋值
+    c.setAttribute("r",100)
+    c.setAttribute("cx",350)
+    c.setAttribute("cy",300)
+    //添加到c3下，做一个子元素
+    c3.appendChild(c)    
+    </script>
+</body>
+</html>

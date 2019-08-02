@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!--列表默认看不到,id值一样就可以看到-->
+    <datalist id="list3">
+        <option value="九花山">九花山</option>
+        <option value="便宜坊">便宜坊</option>
+        <option value="大董">大董</option>
+    </datalist>
+    北京好吃的烤鸭:
+    <input type="text" list="list3">
+    <hr/>
+    <!--左右晃动进度条-->
+    <progress>
+    </progress>
+    <progress value="0.6" id="pro">
+    </progress>
+    <h3>刻度尺</h3>
+    每个月工资
+    <!--optiumum最佳值value当前值 low上限 high上限主要看当前值有没有达到上限或者下限值，还有最佳值-->
+    <!--output没有任何的功能，比如价格可以放在这个标签的里面-->
+    <meter min="9000" max="30000" optimum="29999" value="26000" low="6000" high="29000"></meter>
+    商品数量:<input type="number" value="1">
+    <br/>
+    商品价格:3.50
+    <br/>
+    小计:<output>￥3.5</output>
+    <script>
+    var pro=document.getElementById("pro");
+    function progress(){
+    var t=pro.value;
+    t+=0.1;
+    pro.value=t;
+    };
+    setInterval(progress,1000)
+    </script>
+</body>
+</html>

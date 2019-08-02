@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style> 
+    
+    </style>
+</head>
+<body>
+    <!--实现功能，画两架飞机，旋转速度为一架飞机快，一架飞机慢-->
+    <canvas id="c3" width="500" height="400"></canvas>
+    <script>
+    //获取画布元素
+    var c3=document.getElementById("c3")
+    //获取画笔
+    var ctx=c3.getContext("2d")
+    //创建图片对象，这个对象其实也是一个构造函数
+    var p3=new Image()
+    //下载图片
+    p3.src="res/p3.png"
+    //因为画笔的状态被恢复了，所以写个旋转弧度的变量，然后这个变量在定时器里面增加运行的弧度，这样就可以继续旋转了
+    var deg1=0
+    //保存小飞机2的旋转角度
+    var deg2=0
+    //绑定对象事件
+    p3.onload=function(){
+    //绑定定时器
+    var t=setInterval(function(){
+    //保存画笔状态
+    ctx.save()
+    //设置好旋转的轴点
+    ctx.translate(100,100)
+    //设置好旋转的弧度
+    deg1+=10
+    ctx.rotate(deg1*Math.PI/180)
+    //开始描绘图像
+    ctx.drawImage(p3,0-100,0-50)
+    //恢复画笔状态
+    ctx.restore()
+    //创建变量保存旋转角度
+    //保存状态
+    ctx.save()
+    //移动轴心
+    ctx.translate(300,300)
+    //累加旋转角度
+    deg2+=20
+    //旋转弧度
+    ctx.rotate(deg2*Math.PI/180)
+    //创建第二架小飞机
+    ctx.drawImage(p3,0-100,0-50)
+    //恢复状态
+    ctx.restore()
+    },200)
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button>按钮一</button>
+    <!--创建一个线程执行03.js，这样浏览器就有另外一个线程来加载js，另外的主线程渲染就可以了，不需要再等待执行完js文件再执行下面的button按钮-->
+    <!--worker不允许从js文本中加载dom或者bom操作，所以需要在js文件中使用postMessage来发送信息-->
+    <script>
+        new Worker("000003.js")
+        //Worker需要在网络下才可以运行比如，用open with live Serve打开
+    </script>
+    <button>按钮二</button>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!--假如两个img都是p3的话，绑定事件第一个p3生效-->
+    <img src="res/t.png" alt="" id="t">
+    <br/>
+    <img src="res/p3.png" alt=""id="p3">
+    <script>
+    //拖动对象的事件
+    var p3=document.getElementById("p3")
+    //拖动开始
+    p3.ondragstart=function(){
+        console.log("飞机开始飞往回收站")
+    }
+    //拖动中
+    p3.ondrag=function(){
+        console.log("飞机飞行中")
+    }
+    //拖动结束
+    p3.ondragend=function(){
+        console.log("飞行结束")
+    }
+    //拖动目标事件
+    //找到回收站的元素
+    var t=document.getElementById("t");
+    //拖动进入
+    t.ondragenter=function(){
+        console.log("飞机已经进入回收站")
+    };
+    //拖动悬停，有一个默认事件，结束后立即触发拖动离开事件，不会触发释放事件，如果要触发释放事件，可以阻止这个事件的默认行为
+    t.ondragover=function(){
+        console.log("飞机已经悬停在回收站")
+    };
+    //拖动离开
+    t.ondragleave=function(){
+        console.log("飞机已经离开回收站")
+    };
+    //拖动释放
+    t.ondrop=function(){
+        console.log(444)
+    };
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="c3" width="500" height="400">
+
+    </canvas>
+    <script>
+    var c3=document.getElementById("c3");
+    var ctx=c3.getContext("2d");
+    //创建image对象也是一个构造函数
+    var p3=new Image()
+    p3.src="res/p3.png"
+    //旋转的轴点(原点)
+    ctx.translate(250,200)
+    //绑定图片事件
+    p3.onload=function(){
+        var t=setInterval(function(){
+            //rotate(弧度)
+         ctx.rotate(10*Math.PI/180);
+         //绘画图片 draw：绘画
+         //x,y减去飞机的一半就可以以飞机中心点旋转了
+         //画笔要是旋转的弧度为10度，那么第二的画笔再增加10度的话，那么就是20度了。所以需要一个保存状态和恢复状态的功能
+         //画笔旋转10度，然后恢复成0，然后第二个图片增加到10度，就只是10度，不会叠加，增加完成之后在恢复状态到0度。
+         //原理：保存状态(0)画笔画了10度，然后恢复状态到0度
+         //第二次开始画的时候又是从0度开始
+         ctx.drawImage(p3,0-100,0-50)  
+        },200)
+    }    
+    </script>
+</body>
+</html>

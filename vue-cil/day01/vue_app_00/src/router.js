@@ -1,0 +1,75 @@
+//router.js 引入路由
+import Vue from 'vue'
+import Router from 'vue-router'
+//自定义组件
+import HelloContainer from "./components/HelloWorld.vue"
+//1:引入Exam01.vue 组件 39
+import Exam01 from "./components/exam/Exam01.vue"
+import Exam02 from
+"./components/exam/Exam02.vue"
+import Exam03 from "./components/exam/Exam03.vue"
+import Homework04 from "./components/exam/Homework04.vue"
+import Exam05 from "./components/exam/Exam05.vue"
+import ExamContainer06 from "./components/exam/ExamContainer06.vue"
+import ExamContainer07 from "./components/exam/ExamContainer07.vue"
+import ExamTabbar08 from "./components/exam/ExamTabbar08.vue"
+import S10 from "./components/exam/S10.vue"
+import Home from "./components/weixin/Home.vue"
+import MessageList from "./components/weixin/common/MessageList.vue"
+import Login from "./components/xz/Login.vue"
+import Home1 from "./components/xz/Home1.vue"
+import Product from "./components/xz/Product.vue"
+import Cart from "./components/xz/Cart.vue"
+/*import Carousel from "./components/xz/carousel.vue"*/
+import carousel2 from "./music/carousel2.vue"
+import musicborder from "./music/musicborder.vue"
+import round from "./music/round.vue"
+import round2 from "./music/round2.vue"
+import carousel3 from "./music/carousel3.vue"
+import hotsonglist from "./music/hotsonglist.vue"
+import musichead from "./music/musichead.vue"
+import carousel from "./music/carousel.vue"
+import index from "./music/index.vue"
+import hotsong from "./music/hotsong.vue"
+import songlist from "./music/songlist.vue"
+import loadmore from "./music/loadmore.vue"
+import ceshisonglist from "./music/ceshisonglist.vue"
+import musicmv from "./music/musicmv.vue"
+Vue.use(Router)
+export default new Router({
+  routes: [
+    {path:'/Cart',
+    component:Cart},
+    {path:'/Product',component:Product},
+    {path:'/Home1',component:Home1},
+    {path:'/Login',component:Login},
+    {path:'/MessageList',component:MessageList},
+    {path:'/Home',component:Home},
+    {path:'/S10',component:S10},
+    {path:'/ExamTabbar08',component:ExamTabbar08},
+    {path:'/ExamContainer07',component:ExamContainer07},
+    {path:'/ExamContainer06',component:ExamContainer06},
+    {path:'/Exam05',component:Exam05},
+    {path:'/Homework04',component:Homework04},
+    {path:'/Exam03',component:Exam03},
+    {path:'/Exam02',component:Exam02},
+    {path:'/',component:HelloContainer},
+    {path:'/Exam01',component:Exam01},
+    /*{path:'/Carousel',component:Carousel},*/
+    {path:'/carousel2',component:carousel2},
+    {path:'/musicborder',component:musicborder},
+    {path:'/round',component:round},
+    {path:'/round2',component:round2},
+    {path:'/carousel3',component:carousel3},
+    {path:'/hotsonglist',component:hotsonglist},
+    {path:'/musichead',component:musichead},
+    {path:'/carousel',component:carousel},
+    {path:'/index',component:index},
+    {path:'/hotsong',component:hotsong},
+    {path:'/songlist',component:songlist},
+    {path:'/loadmore',component:loadmore},
+    {path:'/ceshisonglist',component:ceshisonglist},
+    {path:'/musicmv',component:musicmv}
+    
+  ]
+})

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+    body{}
+    canvas{}
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="c3" width="500" height="400"></canvas>
+    <script>
+        //获取元素标签
+        var c3=document.getElementById("c3");
+        //获取2D画笔,上下文对象
+        var ctx=c3.getContext("2d")
+        //开始描绘或者填充矩形  
+        //实心和空心矩形图
+        //(x,y,w,h)
+        ctx.strokeRect(50,110,50,290)
+        ctx.strokeRect(150,190,50,210)
+        ctx.fillRect(250,90,50,310)
+        ctx.fillRect(350,290,50,110)
+        //fillRect填充矩形
+        //字体大小和颜色必须放在字体前面才会生效
+        //填充颜色用fill()这个方法，描绘的用stroke()这个方法
+        ctx.font="20px SimHei"
+        ctx.fillStyle="red"
+        //填充文字
+        //ctx.fillText(str,x,y)
+        ctx.fillText("北京",55,100)
+        ctx.fillText("上海",155,180)
+        ctx.fillText("东北",255,80)
+        ctx.fillText("北极",355,280)
+    </script>
+</body>
+</html>

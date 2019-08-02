@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    div{border:1px solid red}
+    </style>
+    <!--引入.echartsmin.js文件-->
+    <script src="echarts.min.js">
+    </script>
+</head>
+<body>
+    <!--创建容器-->
+    <div id="main" style="width:500px;height:400px;">
+    <!--百度自动创建canvas 放在div中间-->
+    </div>
+    <script>
+    //浏览器加载完成那个文件会自动创建echats这个对象
+    //获取显示图像容器
+    var main=document.getElementById("main")
+    //创建mychart对象
+    var mychart=echarts.init(main)
+    //创建配置项目
+    var option={
+        //顶部标题
+        title:{text:"echarts 入门示例"},
+         //xAxis数据Axis:轴
+        xAxis:{data:["衬衫","袜子","雪纺衫","裤子"]},
+        //y轴不写数据
+        yAxis:{},
+        //series:系列 这个是数据源
+        series:[{type:"bar",data:[100,20,30,40]}]
+        //一个数组，里面存着一个对象，对象里面存着一个数组
+        //type：指会图像类型
+        }
+    //将配置添加到mychart
+    mychart.setOption(option)
+    </script>
+</body>
+</html>

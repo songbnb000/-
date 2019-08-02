@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>飞机释放</title>
+</head>
+<body>
+    <img src="res/t.png" alt="" id="t">
+    <br/>
+    <div class="container">
+    <img src="res/p3.png" alt="" id="p3">
+    <img src="res/p4.png" alt="" id="p4">
+    <img src="res/p5.png" alt="" id="p5">
+    </div>
+    <script>
+    //获取所有的元素
+    var t=document.getElementById("t")
+    //获取全部的img元素
+    var list=document.querySelectorAll(".container img")
+    //创建全局变量保存pid
+    var pid=-1
+    //为原对象绑定拖动事件
+    for(var item of list){
+        //拖动开始
+        item.ondragstart=function(){
+            pid=this.id//把id给pid
+        }
+        //拖动中
+        item.ondrag=function(){}
+    }   //拖动结束
+        item.ondragend=function(){}
+    //将当前小飞机id保存pid中
+    //获取回收站绑定释放事件
+    //阻止over的默认行为事件，如果不阻止over结束后立马触发离开事件，不再触发释放事件
+    t.ondragover=function(e){
+        e.preventDefault();
+    }   
+    t.ondrop=function(){
+        var p=document.getElementById(pid);
+        //pid是变量，不添加""
+        p.remove();//获得imgid，并且触发移除id的元素
+    }
+    //依据pid获取小飞机并且删除
+    </script>    
+</body>
+</html>

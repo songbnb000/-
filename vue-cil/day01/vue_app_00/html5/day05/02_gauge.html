@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>仪表盘</title>
+    <script src="echarts.min.js">
+    </script>
+</head>
+<body>
+<div id="main" style="width:500px;height:400px"></div>
+<script>
+    var main=document.getElementById("main")
+    var myecharts=echarts.init(main)
+    var option={
+        series:[{
+        name:"业务指标",
+        type:"gauge",
+        //{value}的值是下面value的值
+        detail:{formatter:"{value}%"},
+        data:[{value:30,name:"完成率"}]
+    }]
+    }
+    myecharts.setOption(option)
+    setInterval(function () {
+    option.series[0].data[0].value = (Math.random() * 100).toFixed(2) - 0;
+    myecharts.setOption(option,true);
+},1000);
+
+</script>
+</body>
+</html>

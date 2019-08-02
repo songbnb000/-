@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="c3" width="500" height="400"></canvas>
+    <script>
+   var c3=document.getElementById("c3")
+    var ctx=c3.getContext("2d")
+    //创建图片对象
+   var p3=new Image()
+    //下载图片
+    p3.src="res/p3.png"
+    //绑定下载事件
+    p3.onload=function(){
+    //绘制图片
+    //(图片,x,y)
+    //ctx.drawImage(p3,0,0);
+    //(图片,x,y,w,h)原图片尺寸,200*100
+    //ctx.drawImage(p3,250,200,300,150)
+//完成功能：向下移动
+    var movetox=0
+    var a=1
+    var movetoy=0
+    var b=1
+    var t=setInterval(function(){
+    //清楚画布
+    ctx.clearRect(0,0,500,400)
+    movetox+=10*a;
+    movetoy+=10*b;
+    ctx.drawImage(p3,movetox,movetoy);
+    if(movetox>=300||movetoy>=350){
+        a=-1;b=-1
+    }else if(movetox<=0||movetoy<=0){
+        a=1;b=1
+    }
+    },200)
+}
+    </script>
+</body>
+</html>

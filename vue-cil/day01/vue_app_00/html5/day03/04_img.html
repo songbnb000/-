@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style></style>
+</head>
+<body>
+    <canvas id="c3" width="500" height="300"></canvas>
+    <script>
+    var c3=document.getElementById("c3")
+    var ctx=c3.getContext("2d")
+    //功能：绘制随鼠标移动而移动的小飞机
+    //创建图片对象下载图片
+    //Image是浏览器的一个对象，是图片的构造函数
+     p3=new Image()
+     p3.src="res/p3.png"
+     //为图片绑定下载成功事件
+     p3.onload=function(){
+         //为画布绑定鼠标事件
+         c3.onmousemove=function(e){
+             //每移动一次就清除画布
+             //(x,y,w,h)
+             ctx.clearRect(0,0,500,400)
+             //获取鼠标位置x,y
+           var mx=e.offsetX;
+            var my=e.offsetY;
+            //为了鼠标在飞机中心，所以x和y减去飞机一般的体积
+            //描画图片 draw:描画
+            ctx.drawImage(p3,mx-100,my-50)
+         }
+     }
+    </script>
+</body>
+</html>
