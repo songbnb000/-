@@ -35,6 +35,16 @@ import songlist from "./music/songlist.vue"
 import loadmore from "./music/loadmore.vue"
 import ceshisonglist from "./music/ceshisonglist.vue"
 import musicmv from "./music/musicmv.vue"
+import musicsinger from "./music/musicsinger.vue"
+import singer from "./music/singer.vue"
+import singerboy from "./music/singerboy.vue"
+import singergril from "./music/singergril.vue"
+import Chinaband from "./music/Chinaband.vue"
+import musicoriginal from "./music/musicoriginal.vue"
+import oumeigril from "./music/oumeigril.vue"
+import oumeiboy from "./music/oumeiboy.vue"
+import oumeiitem from "./music/oumeiitem.vue"
+import suoyin from "./music/suoyin.vue"
 Vue.use(Router)
 export default new Router({
   routes: [
@@ -69,7 +79,20 @@ export default new Router({
     {path:'/songlist',component:songlist},
     {path:'/loadmore',component:loadmore},
     {path:'/ceshisonglist',component:ceshisonglist},
-    {path:'/musicmv',component:musicmv}
+    {path:'/musicmv',component:musicmv},
+    {path:'/musicsinger',component:musicsinger},
+    {path:'/singer',component:singer},
+    {path:'/singerboy',component:singerboy},
+    {path:'/singergril',component:singergril},
+    {path:'/Chinaband',component:Chinaband},
+    {path:'/musicoriginal',component:musicoriginal},
+    {path:'/oumeiboy',component:oumeiboy},
+    {path:'/oumeigril',component:oumeigril},
+    {path:'/oumeiitem',component:oumeiitem},
+    {path:'/suoyin',component:suoyin}
     
+
+    
+  
   ]
 })

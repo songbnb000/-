@@ -19,6 +19,7 @@ import round from "./round.vue"
 import carousel3 from "./carousel3.vue"
 import carousel2 from "./carousel2.vue"
 import musicborder from "./musicborder.vue"
+import jQuery from "./jquery/js/jquery-1.11.3.js"
 export default {
     data(){
         return{}

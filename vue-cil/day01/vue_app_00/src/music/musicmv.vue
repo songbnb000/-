@@ -30,12 +30,12 @@
         </div>
         <div class="songlist2div">
             <div class="songlist2div1">
-                <a href="javascript:;" class="songlist2div1a">首页</a>
-                <a href="javascript:;" class="songlist2div1a">歌单</a>
-                <a href="javascript:;" class="songlist2div1a">歌手</a>
+                <a href="http://127.0.0.1:8080/#/index" class="songlist2div1a">首页</a>
+                <a href="http://127.0.0.1:8080/#/songlist" class="songlist2div1a">歌单</a>
+                <a href="http://127.0.0.1:8080/#/singer" class="songlist2div1a">歌手</a>
                 <a href="javascript:;" class="songlist2div1a">分类</a>
                 <a href="javascript:;" class="songlist2div1a">榜单</a>
-                <a href="javascript:;" class="songlist2div1a">MV</a>
+                <a href="http://127.0.0.1:8080/#/musicmv" class="songlist2div1a">MV</a>
                 <a href="javascript:;" class="songlist2div1a">演出</a>
                 <a href="javascript:;" class="songlist2div1a">U榜</a>
             </div>
@@ -362,7 +362,7 @@
         <!--日语-->
         <div class="musicmv7">
             <div class="musicmv1div">
-                <span class="musicmv1divspan">韩语</span>
+                <span class="musicmv1divspan">日语</span>
             </div>
             <div class="musicmv2div">
                 <div class="musicmv2divdiv">
@@ -414,6 +414,64 @@
                     <div class="musicmv7divdivimg8"></div>
                     <a href="javascript:;" class="musicmv2divdivimg1a">...</a>
                     <a href="javascript:;" class="musicmv2divdivimg2a">...</a>
+                </div>
+            </div>
+        </div>
+        <!--现场-->
+        <div class="musicmv8">
+            <div class="musicmv1div">
+                <span class="musicmv1divspan">现场演唱</span>
+            </div>
+            <div class="musicmv2div">
+                <div class="musicmv2divdiv">
+                    <div class="musicmv8divdivimg9"></div>
+                    <a href="javascript:;" class="musicmv2divdivimg1a">清明上河图</a>
+                    <a href="javascript:;" class="musicmv2divdivimg2a">李玉刚</a>
+                </div>
+                <div class="musicmv2divdiv">
+                    <div class="musicmv8divdivimg10"></div>
+                    <a href="javascript:;" class="musicmv2divdivimg1a">美丽的草原我的家</a>
+                    <a href="javascript:;" class="musicmv2divdivimg2a">降央卓玛</a>
+                </div>
+                <div class="musicmv2divdiv">
+                    <div class="musicmv8divdivimg1"></div>
+                    <a href="javascript:;" class="musicmv2divdivimg1a">情人</a>
+                    <a href="javascript:;" class="musicmv2divdivimg2a">刀郎</a>
+                </div>
+                <div class="musicmv2divdiv">
+                    <div class="musicmv8divdivimg2"></div>
+                    <a href="javascript:;" class="musicmv2divdivimg1a">心雨</a>
+                    <a href="javascript:;" class="musicmv2divdivimg2a">毛宁/杨钰莹</a>
+                </div>
+                <div class="musicmv2divdiv">
+                    <div class="musicmv8divdivimg3"></div>
+                    <a href="javascript:;" class="musicmv2divdivimg1a">童年</a>
+                    <a href="javascript:;" class="musicmv2divdivimg2a">罗大佑</a>
+                </div>
+                <div class="musicmv2divdiv">
+                    <div class="musicmv8divdivimg4"></div>
+                    <a href="javascript:;" class="musicmv2divdivimg1a">轻轻地告诉你</a>
+                    <a href="javascript:;" class="musicmv2divdivimg2a">杨钰莹</a>
+                </div>
+                <div class="musicmv2divdiv">
+                    <div class="musicmv8divdivimg5"></div>
+                    <a href="javascript:;" class="musicmv2divdivimg1a">你把我灌醉</a>
+                    <a href="javascript:;" class="musicmv2divdivimg2a">G.E.M.邓紫棋</a>
+                </div>
+                <div class="musicmv2divdiv">
+                    <div class="musicmv8divdivimg6"></div>
+                    <a href="javascript:;" class="musicmv2divdivimg1a">故乡</a>
+                    <a href="javascript:;" class="musicmv2divdivimg2a">许巍</a>
+                </div>
+                <div class="musicmv2divdiv">
+                    <div class="musicmv8divdivimg7"></div>
+                    <a href="javascript:;" class="musicmv2divdivimg1a">风雨彩虹铿锵玫瑰</a>
+                    <a href="javascript:;" class="musicmv2divdivimg2a">田震</a>
+                </div>
+                <div class="musicmv2divdiv">
+                    <div class="musicmv8divdivimg8"></div>
+                    <a href="javascript:;" class="musicmv2divdivimg1a">一路上</a>
+                    <a href="javascript:;" class="musicmv2divdivimg2a">张学友</a>
                 </div>
             </div>
         </div>
@@ -1103,6 +1161,72 @@ export default {
     width:211px;
     height:135px;
     background-image:url('./musicmv/riyu/10.jpg');
+    background-size:100% 100%;
+}
+/*现场演唱*/
+.musicmv8{
+    width:1200px;
+    height:426px;
+}
+/*韩语十张图片*/
+.musicmv8divdivimg1{
+    width:211px;
+    height:135px;
+    background-image:url('./musicmv/xianchang/1.jpg');
+    background-size:100% 100%;
+}
+.musicmv8divdivimg2{
+    width:211px;
+    height:135px;
+    background-image:url('./musicmv/xianchang/2.jpg');
+    background-size:100% 100%;
+}
+.musicmv8divdivimg3{
+    width:211px;
+    height:135px;
+    background-image:url('./musicmv/xianchang/3.jpg');
+    background-size:100% 100%;
+}
+.musicmv8divdivimg4{
+    width:211px;
+    height:135px;
+    background-image:url('./musicmv/xianchang/4.jpg');
+    background-size:100% 100%;
+}
+.musicmv8divdivimg5{
+    width:211px;
+    height:135px;
+    background-image:url('./musicmv/xianchang/5.jpg');
+    background-size:100% 100%;
+}
+.musicmv8divdivimg6{
+    width:211px;
+    height:135px;
+    background-image:url('./musicmv/xianchang/6.jpg');
+    background-size:100% 100%;
+}
+.musicmv8divdivimg7{
+    width:211px;
+    height:135px;
+    background-image:url('./musicmv/xianchang/7.jpg');
+    background-size:100% 100%;
+}
+.musicmv8divdivimg8{
+    width:211px;
+    height:135px;
+    background-image:url('./musicmv/xianchang/8.jpg');
+    background-size:100% 100%;
+}
+.musicmv8divdivimg9{
+    width:211px;
+    height:135px;
+    background-image:url('./musicmv/xianchang/9.jpg');
+    background-size:100% 100%;
+}
+.musicmv8divdivimg10{
+    width:211px;
+    height:135px;
+    background-image:url('./musicmv/xianchang/10.jpg');
     background-size:100% 100%;
 }
 </style>

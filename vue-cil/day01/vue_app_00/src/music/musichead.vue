@@ -30,10 +30,10 @@
             <nav class="headnav2">
                 <a href="javascript:;" class="headnav2-a">推荐</a>
                 <a href="http://127.0.0.1:8080/#/songlist" class="headnav2-a1">歌单</a>
-                <a href="javascript:;" class="headnav2-a1">歌手</a>
+                <a href="http://127.0.0.1:8080/#/singer" class="headnav2-a1">歌手</a>
                 <a href="javascript:;" class="headnav2-a1">榜单</a>
                 <a href="javascript:;" class="headnav2-a1">分类</a>
-                <a href="javascript:;" class="headnav2-a1">MV</a>
+                <a href="http://127.0.0.1:8080/#/musicmv" class="headnav2-a1">MV</a>
                 <a href="javascript:;" class="headnav2-a1">U榜</a>
             </nav>
         </div>
