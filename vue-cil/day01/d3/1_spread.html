@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+var eid=1001;
+function intrSelf(){
+    console.log(`我的编号是${this.eid}`)
+}
+var friends=["亮亮","然然","东东"]
+var obj={
+    eid,//eid:eid,
+    friends,
+    ename:"埃里克",
+    run(){//function(){}简写，不是省略
+    console.log(`我是${this.ename}`)
+    }
+}
+console.log(obj)
+obj.run()
+    </script>
+</body>
+</html>

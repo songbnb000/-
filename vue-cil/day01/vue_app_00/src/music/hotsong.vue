@@ -86,7 +86,7 @@
 				<!--分类听歌-->
 					<h2 class="div-section2-section1-h2">
 						<i class="div-section2-section1-h2-i">分类听歌</i>
-						<a href="javascript:;" class="div-section2-section1-h2-a">更多</a>
+						<a href="http://127.0.0.1:8080/#/musictop" class="div-section2-section1-h2-a">更多</a>
 					</h2>
 					<!--分类听歌下面的十二个小方块-->
 					<!--宽366，高0-->

@@ -45,6 +45,9 @@ import oumeigril from "./music/oumeigril.vue"
 import oumeiboy from "./music/oumeiboy.vue"
 import oumeiitem from "./music/oumeiitem.vue"
 import suoyin from "./music/suoyin.vue"
+import musicsort from "./music/musicsort.vue"
+import musictop from "./music/musictop.vue"
+import musicredrank from "./music/musicredrank.vue"
 Vue.use(Router)
 export default new Router({
   routes: [
@@ -89,7 +92,13 @@ export default new Router({
     {path:'/oumeiboy',component:oumeiboy},
     {path:'/oumeigril',component:oumeigril},
     {path:'/oumeiitem',component:oumeiitem},
-    {path:'/suoyin',component:suoyin}
+    {path:'/suoyin',component:suoyin},
+    {path:'/musicsort',component:musicsort},
+    {path:'/musictop',component:musictop},
+    {path:'/musicredrank',component:musicredrank}
+    
+    
+    
     
 
     
