@@ -20,7 +20,7 @@
                     <a href="" class="musictopdiv1div3a">影视金曲榜</a>
                     <a href="" class="musictopdiv1div3a">欧美金曲榜</a>
                     <a href="" class="musictopdiv1div3a">原创音乐榜</a>
-                    <a href="" class="musictopdiv1div3a">U榜</a>
+                    <a href="http://127.0.0.1:8080/#/musicredrank" class="musictopdiv1div3a">U榜</a>
                 </div>
             </div>
             <!--包含热歌榜这些榜单-->

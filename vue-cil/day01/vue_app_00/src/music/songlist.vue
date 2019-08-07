@@ -37,10 +37,10 @@
                 <a href="http://127.0.0.1:8080/#/songlist" class="songlist2div1a">歌单</a>
                 <a href="http://127.0.0.1:8080/#/singer" class="songlist2div1a">歌手</a>
                 <a href="http://127.0.0.1:8080/#/musicsort" class="songlist2div1a">分类</a>
-                <a href="javascript:;" class="songlist2div1a">榜单</a>
+                <a href="http://127.0.0.1:8080/#/musictop" class="songlist2div1a">榜单</a>
                 <a href="http://127.0.0.1:8080/#/musicmv" class="songlist2div1a">MV</a>
                 <a href="javascript:;" class="songlist2div1a">演出</a>
-                <a href="javascript:;" class="songlist2div1a">U榜</a>
+                <a href="http://127.0.0.1:8080/#/musicredrank" class="songlist2div1a">U榜</a>
             </div>
             <div class="songlist2div2">
                 <a href="javascript:;" class="songlist2div2a">

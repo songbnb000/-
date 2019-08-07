@@ -13,7 +13,6 @@
                 </div>
                 <i class="el-icon-search"></i>
             </div>
-
             <div class="songlistdiv2">
                 <a href="javascript:;" class="songlistdiv2-a">幸福指南编辑部</a>
                 <a href="javascript:;" class="songlistdiv2-a">炼金术</a>
@@ -40,7 +39,7 @@
                 <a href="http://127.0.0.1:8080/#/musictop" class="songlist2div1a">榜单</a>
                 <a href="http://127.0.0.1:8080/#/musicmv" class="songlist2div1a">MV</a>
                 <a href="javascript:;" class="songlist2div1a">演出</a>
-                <a href="javascript:;" class="songlist2div1a">U榜</a>
+                <a href="http://127.0.0.1:8080/#/musicredrank" class="songlist2div1a">U榜</a>
             </div>
             <div class="songlist2div2">
                 <a href="javascript:;" class="songlist2div2a">

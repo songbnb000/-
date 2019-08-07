@@ -34,7 +34,7 @@
                 <a href="http://127.0.0.1:8080/#/musictop" class="headnav2-a1">榜单</a>
                 <a href="http://127.0.0.1:8080/#/musicsort" class="headnav2-a1">分类</a>
                 <a href="http://127.0.0.1:8080/#/musicmv" class="headnav2-a1">MV</a>
-                <a href="javascript:;" class="headnav2-a1">U榜</a>
+                <a href="http://127.0.0.1:8080/#/musicredrank" class="headnav2-a1">U榜</a>
             </nav>
         </div>
     </div>
