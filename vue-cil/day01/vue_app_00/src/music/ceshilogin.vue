@@ -1,15 +1,87 @@
 <template>
-<div class="login_container">
+<div>
+    <div class="ceshidiv">
+        <a href="javascript:;">我的用户</a>
+    </div>
+<div>
+    <table>
+        <tr>
+            <td><input type="button" value="登录" @click="Show"></td>
+        </tr>
+    </table>
+</div>
+<div id="shade" class="c1 hide"></div>
+<div id="modal" class="c2 hide">
+    <div class="login_container">
     <mt-field   label="用户名"
     :placeholder="unameplaceholder" v-model="uname">
     </mt-field>
     <mt-field label="密码" type="password" :placeholder="upwdplaceholder" v-model="upwd">
     </mt-field>
     <button class="button1" @click="login">登录</button>
+    <input type="button" value="取消" @click="Hide">
    <!-- <div class="random">123</div>-->
 </div>
-
+    <!--<p>
+    <input type="button" value="确定">
+    <input type="button" value="取消" @click="Hide">
+</p>-->
+</div>
+</div>
 </template>
+<style scoped>
+        input{
+            width:60px;
+            height:50px;
+        }
+        .hide{
+            display: none;
+        }
+        .c1{
+            position: fixed;
+            top:0;
+            bottom: 0;
+            left:0;
+            right: 0;
+            background: rgba(0,0,0,.5);
+            z-index: 2;
+        }
+        .c2{
+            background-color: white;
+            position: fixed;
+            width: 400px;
+            height: 147px;
+            top:50%;
+            left: 50%;
+            z-index: 3;
+            margin-top: -150px;
+            margin-left: -200px;
+        }
+		#modal p {
+			margin-left:80px;
+		}
+        .login_container{
+        padding-top:40px;
+        background-color:#ddd;
+        text-align:center;
+        width:400px;
+        height:147px;
+        }
+    .random{
+        width:100px;
+        height:100px;
+    }
+    .button1{
+        width:60px;
+        height:50px;
+    }
+    .ceshidiv{
+        background-color:aqua;
+        width:130px;
+        height:34px;
+        }
+</style>
+
 <script>
 export default {
     data(){
@@ -21,7 +93,17 @@ export default {
         }
     },
     methods:{
-        login(){
+        Show(){
+        document.getElementById('shade').classList.remove('hide');
+        document.getElementById('modal').classList.remove('hide');
+    },
+     Hide(){
+				 //点击的时候获得id为shade的元素，然后classList会返回类名，add是追加类名，也就是点击的时候在id为shade元素中追加class="hide"
+				 //class="hide"为元素隐藏
+        document.getElementById('shade').classList.add('hide');
+        document.getElementById('modal').classList.add('hide');
+    },
+            login(){
             //完成登录
             //1.获取用户名和密码
             var u=this.uname;
@@ -54,26 +136,8 @@ export default {
                 setTimeout(()=>{this.$router.push("/index")},1000)  
             }else{this.$messagebox("提示","用户名或密码错误")}
             });
-
-
         }
     }
 }
+
 </script>
-<style>
-    .login_container{
-        padding-top:40px;
-        background-color:#ddd;
-        text-align:center;
-        width:1200px;
-        height:147px;
-        }
-    .random{
-        width:100px;
-        height:100px;
-    }
-    .button1{
-        width:1200px;
-        height:50px;
-    }
-</style>

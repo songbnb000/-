@@ -61,6 +61,18 @@
 			</tr>
 		</tfoot>
 	</table>
-  <script src="js/3.js"></script>
+  <script>
+	var table=document.getElementById("data")
+	console.log(table)
+	var btns=table.getElementsByTagName("button")
+	console.log(btns)
+	for(var btn of btns){
+			btn.onclick=function(){
+					//this指触发事件的btn
+			var thisbtn=this;
+			this.style.backgroundColor="red";
+			}
+	}
+	</script>
 </body>
 </html>

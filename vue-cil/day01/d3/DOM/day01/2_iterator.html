@@ -8,16 +8,41 @@
 	<body>
 		<span>Hello World !</span>
 		<ul id="nav">
-			<li>电影</li>
+			<li>{{count}}</li>
 			<li>综艺
 				<ul>
-					<li>跑男</li>
+					<li>{{total}}</li>
 					<li>爸爸</li>
-					<li>极限</li>
+					<li>{{total}}</li>
 				</ul>
 			</li>
-			<li>剧集</li>
+			<li>{{total}}</li>
 		</ul>	
-    <script src="js/2.js"></script>
+    <script>
+		var count=10;
+		var total=200;
+		function getChildren(parent){
+				//获得当前父元素下的所有直接子元素
+				//parent=document.body....
+		var children=parent.children;
+				//遍历所有直接子元素
+		for(var child of children){
+				//console.log(child.nodeName)
+				if(child.innerHTML=="{{count}}"){
+						//如果子元素的innerHTML等于{{count}},那么innerHTML的值为count
+				child.innerHTML=count;
+				}else if(
+				child.innerHTML=="{{total}}")
+				{	
+						child.innerHTML=total;
+				}
+				if(child.children.length>0){
+				arguments.callee(child)
+				}
+		}
+		}
+		//把body这个类数组对象的子合集传入
+		getChildren(document.body)
+		</script>
 	</body>
 </html>

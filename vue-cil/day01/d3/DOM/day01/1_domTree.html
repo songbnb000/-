@@ -8,7 +8,37 @@
 	<span id="s1">Hello</span>
 	<h1>标题一</h1>
 	<script>
-    
+	var body1=document.body
+
+	//获得span
+	//first第一个Element元素Child孩子
+	var span6=body1.lastElementChild
+	console.log(span6)
+	//获得h1
+	var h9=span6.nextElementSibling
+	console.log(h9)
+	//获得body元素
+    var body=document.body
+		console.log(body)
+	//获得body下的所有直接子元素
+	var childNodes=body.childNodes
+	console.log(childNodes)
+	//获得span
+	//body下的第一个子元素
+	var span=body.firstChild;
+	console.log(span)
+	//获得body下的最后一个子元素
+	var script=body.lastChild
+	console.log(script)
+	//获得h1元素
+	//body的第二个直接子元素(子节点)
+	//childNodes子节点
+	//空格也被算在里面，所以要获得的话，需要看在类数组对象中下标是多少，建议使用元素树的写法来获得。
+	var a=body.childNodes[3]
+	console.log(a)
+	//children孩子们
+  var h1=body.children[1]
+	console.log(h1)
   </script>
 </body>
 </html>
