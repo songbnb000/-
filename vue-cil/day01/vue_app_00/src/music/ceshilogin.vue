@@ -1,25 +1,28 @@
 <template>
-<div>
-    <div class="ceshidiv">
-        <a href="javascript:;">我的用户</a>
+    <div>
+        <div class="ceshidiv">
+            <a href="javascript:;" class="yincang" id="ayincang">我的用户</a>
+        </div>
+    <div>
+        <table>
+            <tr>
+                <td><input type="button" value="登录" @click="Show"></td>
+            </tr>
+        </table>
     </div>
-<div>
-    <table>
-        <tr>
-            <td><input type="button" value="登录" @click="Show"></td>
-        </tr>
-    </table>
-</div>
-<div id="shade" class="c1 hide"></div>
-<div id="modal" class="c2 hide">
-    <div class="login_container">
-    <mt-field   label="用户名"
-    :placeholder="unameplaceholder" v-model="uname">
-    </mt-field>
-    <mt-field label="密码" type="password" :placeholder="upwdplaceholder" v-model="upwd">
-    </mt-field>
+    <div id="shade" class="c1 hide"></div>
+    <div id="modal" class="c2 hide">
+        <!--登录框样式-->
+        <div class="login_container">
+            <div class="login_containerdiv">
+                <span class="login_containerdiv_p">账号密码登录</span>
+            </div>
+            <mt-field   label="用户名" :placeholder="unameplaceholder" v-model="uname">
+            </mt-field>
+            <mt-field label="密码" type="password" :placeholder="upwdplaceholder" v-model="upwd">
+            </mt-field>
     <button class="button1" @click="login">登录</button>
-    <input type="button" value="取消" @click="Hide">
+    <input type="button" value="取消" @click="Hide" class="inputhide" >
    <!-- <div class="random">123</div>-->
 </div>
     <!--<p>
@@ -62,30 +65,55 @@
 		}
         .login_container{
         padding-top:40px;
-        background-color:#ddd;
+        background-color:#fff;
         text-align:center;
         width:400px;
-        height:147px;
+        height:300px;
         }
     .random{
         width:100px;
         height:100px;
     }
+    /*登录按钮样式*/
     .button1{
         width:60px;
-        height:50px;
+        height:30px;
+    }
+    /*取消按钮样式*/
+    .inputhide{
+        width:60px;
+        height:30px;
     }
     .ceshidiv{
         background-color:aqua;
         width:130px;
         height:34px;
         }
+    .yincang{
+        display:none
+    }
+    .login_container_field1{
+        margin:0 auto;
+    }
+    .login_containerdiv{
+        width:400px;
+        height:50px;
+        text-align:center;
+        line-height:50px;
+        color:red;
+        font-size:17px;
+    }
+    .login_containerdiv_p{
+        margin:0;
+    }
 </style>
 
 <script>
 export default {
     data(){
         return{
+            unameandupwdplaceholder:"请输入账号密码",
+            unameandupwd:"账号密码登录",
             unameplaceholder:"请输入用户名",
             upwdplaceholder:"请输入密码",
             uname:"tom",
@@ -133,7 +161,12 @@ export default {
                 alert("点击确定,1秒后自动跳转回首页")
                 //这边需要使用箭头函数才可以拿到this原来的写法是
                 //setTimeout(function(){this.$router.push("/index")},3000)，这边自己修改为箭头函数
-                setTimeout(()=>{this.$router.push("/index")},1000)  
+                setTimeout(()=>{
+                    //this.$router.push("/index");
+                document.getElementById('ayincang').classList.remove('yincang')
+                }
+                
+                ,1000)  
             }else{this.$messagebox("提示","用户名或密码错误")}
             });
         }

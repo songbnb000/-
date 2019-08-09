@@ -478,6 +478,7 @@ export default {
         background-size:100% 100%;
         top:162px;
         left:125px;
+        background-repeat:no-repeat;
     }
     .headdiv5div3{
         position:absolute;

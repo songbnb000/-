@@ -8,6 +8,7 @@
 <round></round>
 <carousel3></carousel3>
 <hotsonglist></hotsonglist>
+<music3yuan class="music3yuan"></music3yuan>
 </div>
 </template>
 <script>
@@ -19,6 +20,7 @@ import round from "./round.vue"
 import carousel3 from "./carousel3.vue"
 import carousel2 from "./carousel2.vue"
 import musicborder from "./musicborder.vue"
+import music3yuan from "./music3yuan.vue"
 import jQuery from "./jquery/js/jquery-1.11.3.js"
 export default {
     data(){
@@ -32,11 +34,10 @@ export default {
         "carousel2":carousel2,
         "musicborder":musicborder,
         "round":round,
-        "carousel":carousel
-
+        "carousel":carousel,
+        "music3yuan":music3yuan
     }
 }
 </script>
 <style scoped>
-    
 </style>

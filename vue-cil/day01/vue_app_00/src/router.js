@@ -49,6 +49,7 @@ import musicsort from "./music/musicsort.vue"
 import musictop from "./music/musictop.vue"
 import musicredrank from "./music/musicredrank.vue"
 import ceshilogin from "./music/ceshilogin.vue"
+import music3yuan from "./music/music3yuan.vue"
 Vue.use(Router)
 export default new Router({
   routes: [
@@ -97,7 +98,9 @@ export default new Router({
     {path:'/musicsort',component:musicsort},
     {path:'/musictop',component:musictop},
     {path:'/musicredrank',component:musicredrank},
-    {path:'/ceshilogin',component:ceshilogin}
+    {path:'/ceshilogin',component:ceshilogin},
+    {path:'/music3yuan',component:music3yuan}
+    
     
     
     

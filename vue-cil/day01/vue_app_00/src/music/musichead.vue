@@ -20,23 +20,29 @@
                 <i class="el-icon-search"></i>
                 </div>
             </div>
-            <div class="headdiv1-3">
-                <div>
-    <div>
-            <!--<tr>
-            <td><input type="button" value="登录" @click="Show"></td>
-            </tr>-->
+            <div class="loginblock" id="loginxianshi">
+                <a href="javascript:;" class="loginblocka">欢迎回来{{uname}}</a>
+                <a href="javascript:;">,</a>
+                <button class="loginblockspan" @click.prevent="Tuichu">退出登录</button>
+            </div>
+            <div class="headdiv1-3" id="yincang">
+            <div>
+            <div>
             </div>
             <div id="shade" class="c1 hide"></div>
             <div id="modal" class="c2 hide">
             <div class="login_container">
+            <div class="login_container_div">
+                账号密码登录
+            </div>
             <mt-field   label="用户名"
             :placeholder="unameplaceholder" v-model="uname">
             </mt-field>
-            <mt-field label="密码" type="password" :placeholder="upwdplaceholder"               v-model="upwd">
+            <mt-field label="密码" type="password" :placeholder="upwdplaceholder" v-model="upwd">
             </mt-field>
             <button class="button1" @click="login">登录</button>
-            <input type="button" value="取消" @click="Hide">
+            <button class="button1" @click="Hide">取消</button>
+            <!--<input type="button" value="取消" @click="Hide">-->
             <!-- <div class="random">123</div>-->
             </div>
             <!--<p>
@@ -48,7 +54,7 @@
             <p href="javascript:;" class="headdiv3-a" @click="Show">登录</p>
                 |
                 <a href="javascript:;" class="headdiv3-a">注册</a>
-            </div>
+            </div>           
         </div>
         <div class="headdiv2">
             <nav class="headnav2">
@@ -69,11 +75,21 @@ export default {
         return{
             unameplaceholder:"请输入用户名",
             upwdplaceholder:"请输入密码",
-            uname:"tom",
-            upwd:"123"
+            uname:"",
+            upwd:"",
+            //想要一开始填好账号密码，就使用下面的uname和upwd
+            //uname:"tom",
+            //upwd:"123"
         }
     },
     methods:{
+   Tuichu(){
+       //触发这个事件的时候，登录注册模块显示，欢迎回来模块隐藏
+        document.getElementById('loginxianshi').classList.add('loginblock');
+        document.getElementById('yincang').classList.remove('divyincang');   
+        document.getElementById('shade').classList.add('hide');
+        document.getElementById('modal').classList.add('hide'); 
+    },
     Show(){
         document.getElementById('shade').classList.remove('hide');
         document.getElementById('modal').classList.remove('hide');
@@ -115,8 +131,9 @@ export default {
                 //这边需要使用箭头函数才可以拿到this原来的写法是
                 //setTimeout(function(){this.$router.push("/index")},3000)，这边自己修改为箭头函数
                 setTimeout(()=>{this.$router.push("/index");
-                document.getElementById('shade').classList.add('hide');
-                document.getElementById('modal').classList.add('hide');
+                document.getElementById('yincang').classList.add('divyincang');
+                document.getElementById('loginxianshi').classList.remove('loginblock');
+
                 },1000)  
                 
             }else{this.$messagebox("提示","用户名或密码错误")}
@@ -191,6 +208,7 @@ export default {
         line-height:34px;
         margin:32px 0 0 5px;
 
+
     }
     .headdiv3-a{
         text-decoration:none;
@@ -239,7 +257,7 @@ export default {
             height:50px;
         }
         .hide{
-            display: none;
+            display:none;
         }
         .c1{
             position: fixed;
@@ -278,5 +296,39 @@ export default {
     .button1{
         width:60px;
         height:50px;
+    }
+    /*登录完成添加这个模块*/
+    .divyincang{
+        display:none;
+    }
+    .loginblock{
+        width:130px;
+        height:34px;
+        display:none;
+    }
+    .loginblocka{
+        width:130px;
+        height:10px;
+        
+    }
+    /*整个登录框*/
+    .login_container{
+        width:400px;
+        height:220px;
+        padding-top:0px;
+        
+    }
+    /*用户账号密码登录*/
+    .login_container_div{
+        width:400px;
+        height:46px;
+        line-height:46px;
+        color:crimson;
+    }
+    /*登录,取消按钮*/
+    .button1{
+        width:60px;
+        height:30px;
+        margin-top:20px;
     }
 </style>
