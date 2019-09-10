@@ -7,20 +7,21 @@
             </h2>
             <div class="borderradiu-div">
                 <div class="borderradiu-div-1">
+                    <a @click="gqss" id="bfss" class="borderradiu-div-1-h3-a">
                     <div class="borderradiu-div-1-1"></div>
                     <h3 class="borderradiu-div-1-h3">
-                        <a href="javascript:;" class="borderradiu-div-1-h3-a">
-                            薛之谦
-                        </a>
+                        薛之谦-绅士
                     </h3>
+                   
+                        </a>
                 </div>
                 <div class="borderradiu-div-2">
+                    <a @click="gqnndj" id="bfnndj" class="borderradiu-div-1-h3-a">
                     <div class="borderradiu-div-2-1"></div>
                     <h3 class="borderradiu-div-1-h3">
-                        <a href="javascript:;" class="borderradiu-div-1-h3-a">
-                            思无邪
-                        </a>
+                            周华健-难念的经
                     </h3>
+                    </a>
                 </div>
                 <div class="borderradiu-div-3">
                     <div class="borderradiu-div-3-1"></div>
@@ -31,28 +32,28 @@
                     </h3>
                 </div>
                 <div class="borderradiu-div-4">
+                    <a @click="gqts" id="bfts" class="borderradiu-div-1-h3-a">
                     <div class="borderradiu-div-4-1"></div>
                     <h3 class="borderradiu-div-1-h3">
-                        <a href="javascript:;" class="borderradiu-div-1-h3-a">
-                            乘青鸟
-                        </a>
+                            林俊杰-她说
                     </h3>
+                    </a>
                 </div>
                 <div class="borderradiu-div-5">
+                    <a @click="gqqc" id="bfqc" class="borderradiu-div-1-h3-a">
                     <div class="borderradiu-div-5-1"></div>
                     <h3 class="borderradiu-div-1-h3">
-                        <a href="javascript:;" class="borderradiu-div-1-h3-a">
-                            来入梦
-                        </a>
+                            许嵩-浅唱
                     </h3>
+                    </a>
                 </div>
                 <div class="borderradiu-div-6">
+                    <a @click="gqxtr" id="bfxtr" class="borderradiu-div-1-h3-a">
                     <div class="borderradiu-div-6-1"></div>
-                    <h3 class="borderradiu-div-1-h3">
-                        <a href="javascript:;" class="borderradiu-div-1-h3-a">
-                            任贤齐
-                        </a>
+                    <h3 class="borderradiu-div-1-h3">                       
+                            任贤齐-心太软                     
                     </h3>
+                    </a>
                 </div>
             </div>
         </div>
@@ -62,6 +63,43 @@
 export default {
     data(){
         return {}
+    },
+    methods:{
+        gqss(){this.axios.get("song/url?id=1374061038").then(res=>{
+                var x=document.getElementById("bfss")  
+                var musicurl=res.data.data[0].url;
+                var c=x.href=musicurl
+                console.log(c)
+       })
+    },
+    gqnndj(){this.axios.get("song/url?id=5271858").then(res=>{
+                var x=document.getElementById("bfnndj")  
+                var musicurl=res.data.data[0].url;
+                var c=x.href=musicurl
+                console.log(c)
+       })
+    },
+    gqts(){this.axios.get("song/url?id=108242").then(res=>{
+                var x=document.getElementById("bfts")  
+                var musicurl=res.data.data[0].url;
+                var c=x.href=musicurl
+                console.log(c)
+       })
+    },
+    gqqc(){this.axios.get("song/url?id=27646697").then(res=>{
+                var x=document.getElementById("bfqc")  
+                var musicurl=res.data.data[0].url;
+                var c=x.href=musicurl
+                console.log(c)
+       })
+    },
+    gqxtr(){this.axios.get("song/url?id=144619").then(res=>{
+                var x=document.getElementById("bfxtr")  
+                var musicurl=res.data.data[0].url;
+                var c=x.href=musicurl
+                console.log(c)
+       })
+    }
     }
 }
 </script>

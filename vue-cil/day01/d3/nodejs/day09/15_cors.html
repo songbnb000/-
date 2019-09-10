@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title> new document </title>
+  <meta charset="utf-8">
+	<style>
+	</style>
+ </head>
+ <body>
+     <button>click me</button>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script>
+	$("button").click(function(){
+	$.ajax({
+	url:"http://localhost:4000/",
+	type:"get",
+	success:function(result){
+	alert(result);
+	}
+	})
+	})
+	</script>
+ </body>
+</html>

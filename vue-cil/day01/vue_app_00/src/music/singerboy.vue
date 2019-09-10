@@ -117,9 +117,9 @@
                         热门
                     </h3>
                     <div class="singerdiv2div2div">
-                        <a href="javascript:;">
+                        <a @click="gqxc" id="bfxc">
                             <div class="singerdiv2div2div1"></div>
-                            <a href="javascript:;" class="singerdiv2div2a">
+                            <a class="singerdiv2div2a">
                                 薛之谦
                             </a>
                         </a>
@@ -241,6 +241,15 @@ export default {
                 "G-Dragon", "G.E.M.邓紫棋", "Gabriel Fauré", "光头李进", "关淑怡", "古天乐", "刚泽斌", "格格", "格桑嘉措", "格桑杰", "贡尕达哇", "谷村新司", "葛奕君", "葛家君","郭阳-郭亮","高乐荣", "高信", "高培华", "高敏", "高林生","高敏惠", "高荧", "高达", "龚玥菲", "龚琳娜", "高原","龚秋霞","郭美美","郭小静","郭子若","郭少杰","郭华","贡尕达哇","贵族乐团","关颖","光线合唱团","光泽","goldEN","gates","Gummy"
             ],
         }
+    },
+    methods:{
+       gqxc(){this.axios.get("song/url?id=1374061038").then(res=>{
+                var x=document.getElementById("bfxc")  
+                var musicurl=res.data.data[0].url;
+                var c=x.href=musicurl
+                console.log(c)
+       })
+    }
     },
     components:{
     "musicsinger":musicsinger

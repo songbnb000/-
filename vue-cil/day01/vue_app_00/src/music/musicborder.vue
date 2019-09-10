@@ -6,21 +6,24 @@
         <!--第一个框-->
         <div class="musicborder-div-1">
             <h4 class="musicborder-div-h4">
-                <a href="javascript:;" class="musicborder-div-h4-a">新歌榜</a>
+                <a id="bf" @click="songurl" class="musicborder-div-h4-a">新歌榜</a>
                 <i class="iconfont icon-bofanganniu1"></i>
             </h4>
             <div class="musicborder-div-div">
+                    <a id="bfmor" @click="gqmor" class="musicborder-div-div-div-h3-a">
                 <div class="musicborder-div-div-1">
                     <span class="musicborder-div-div-span">01</span>
                     <a href="javascript:;" class="musicborder-div-div-a">
-                    </a>
+                    </a>         
                     <div class="musicborder-div-div-div">
                         <h3 class="musicborder-div-div-div-h3">
-                            <a href="javascript:;" class="musicborder-div-div-div-h3-a">木偶人</a>
+                            木偶人
                         </h3>
                         <h4 class="musicborder-div-div-div-h4">
-                            <a href="javascript:;" class="musicborder-div-div-div-h3-a">薛之谦</a>
+                           <!-- <a href="javascript:;" class="musicborder-div-div-div-h3-a">薛之谦</a>-->
+                           薛之谦
                         </h4>
+                        
                     </div>
                     <!--移入样式使用-->
                     <div class="musicborder-div-div-icon">
@@ -29,16 +32,20 @@
                         <i class="iconfont icon-bofanganniu1"></i>
                     </div>
                 </div>
+                </a>
+                <a class="musicborder-div-div-div-h3-a" id="bfmbp" @click="gqmbp">
                 <div class="musicborder-div-div-1">
                     <span class="musicborder-div-div-span">02</span>
                     <a href="javascript:;" class="musicborder-div-div-a-1">
                     </a>
                     <div class="musicborder-div-div-div">
                         <h3 class="musicborder-div-div-div-h3">
-                            <a href="javascript:;" class="musicborder-div-div-div-h3-a">慢半拍</a>
+                            慢半拍
+                           <!-- <a class="musicborder-div-div-div-h3-a" >慢半拍</a>-->
                         </h3>
                         <h4 class="musicborder-div-div-div-h4">
-                            <a href="javascript:;" class="musicborder-div-div-div-h3-a">薛之谦</a>
+                            薛之谦
+                           <!-- <a class="musicborder-div-div-div-h3-a">薛之谦</a>-->
                         </h4>
                     </div>
                     <!--移入样式使用-->
@@ -48,6 +55,7 @@
                         <i class="iconfont icon-bofanganniu1"></i>
                     </div>
                 </div>
+                </a>
                 <div class="musicborder-div-div-1">
                     <span class="musicborder-div-div-span">03</span>
                     <a href="javascript:;" class="musicborder-div-div-a-2">
@@ -317,7 +325,30 @@ import iconfont from "./musicborder/iconfont.css"
 export default {
     data(){
         return{}
-    }
+    },
+    methods:{
+        songurl(){this.axios.get("song/url?id=405998841").then(res=>{
+                var x=document.getElementById("bf")  
+                var musicurl=res.data.data[0].url;
+                var c=x.href=musicurl
+                console.log(c)
+        })
+        },
+        gqmor(){this.axios.get("song/url?id=1374051000").then(res=>{
+                var x=document.getElementById("bfmor")  
+                var musicurl=res.data.data[0].url;
+                var c=x.href=musicurl
+                console.log(c)
+        })
+        },
+        gqmbp(){this.axios.get("song/url?id=1374061028").then(res=>{
+                var x=document.getElementById("bfmbp")  
+                var musicurl=res.data.data[0].url;
+                var c=x.href=musicurl
+                console.log(c)
+        })
+        },
+}
 }
 </script>
 <style scoped>  

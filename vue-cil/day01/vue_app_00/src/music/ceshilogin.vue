@@ -21,8 +21,8 @@
             </mt-field>
             <mt-field label="密码" type="password" :placeholder="upwdplaceholder" v-model="upwd">
             </mt-field>
-    <button class="button1" @click="login">登录</button>
-    <input type="button" value="取消" @click="Hide" class="inputhide" >
+            <button class="button1" @click="login">登录</button>
+            <input type="button" value="取消" @click="Hide" class="inputhide" >
    <!-- <div class="random">123</div>-->
 </div>
     <!--<p>

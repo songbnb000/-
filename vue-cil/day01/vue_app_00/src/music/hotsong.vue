@@ -15,68 +15,85 @@
 				<div class="section-section-div">
 					<div>
 						<div class="section-section-div-div-div">
-							<img src="./img/songSheet/songsheet01.jpg" alt="" style="width:100%">
-							<h3 class="section-section-div-div-div-h3">
-								<a href="javascript:;" class="section-section-div-div-div-a">归去再听来时歌，一曲相思两处情</a>
-							</h3>
+							<a @click="mvcxc" class="section-section-div-div-div-a" id="bfcxc">
+								<img src="./img/songSheet/songsheet01.jpg" alt="" style="width:100%">
+								<h3 class="section-section-div-div-div-h3">
+								</h3>
+								归去再听来时歌，一曲相思两处情
+							</a>
 						</div>
 					</div>
 					<div>
 						<div class="section-section-div-div-div">
-							<img src="./img/songSheet/songsheet02.jpg" alt="" style="width:100%">
-							<h3 class="section-section-div-div-div-h3">
-								<a href="javascript:;" class="section-section-div-div-div-a">四季如春，心境如是</a>
-							</h3>
+							<a @click="mvjg" class="section-section-div-div-div-a" id="bfjg">
+								<img src="./img/songSheet/songsheet02.jpg" alt="" style="width:100%">
+								<h3 class="section-section-div-div-div-h3">
+								</h3>
+								四季如春，心境如是
+							</a>
 						</div>
 					</div>
 					<div>
 						<div class="section-section-div-div-div">
-							<img src="./img/songSheet/songsheet03.jpg" alt="" style="width:100%">
-							<h3 class="section-section-div-div-div-h3">
-								<a href="javascript:;" class="section-section-div-div-div-a">寝室来去时，孤独依旧</a>
-							</h3>
+							<a @click="mvlyn" class="section-section-div-div-div-a" id="bflyn">
+								<img src="./img/songSheet/songsheet03.jpg" alt="" style="width:100%">
+								<h3 class="section-section-div-div-div-h3">
+								</h3>
+								寝室来去时，孤独依旧
+							</a>
 						</div>
 					</div>
 					<div>
 						<div class="section-section-div-div-div">
+							<a @click="mvonly" class="section-section-div-div-div-a" id="bfonly">
 							<img src="./img/songSheet/songsheet04.jpg" alt="" style="width:100%">
-							<h3 class="section-section-div-div-div-h3">
-								<a href="javascript:;" class="section-section-div-div-div-a">把行李盖上邮戳，不算上回忆</a>
+							<h3 class="section-section-div-div-div-h3">	
 							</h3>
+							把行李盖上邮戳，不算上回忆
+							</a>
 						</div>
 					</div>
 					<div>
 						<div class="section-section-div-div-div">
+							<a @click="mvhx" id="bfhx" class="section-section-div-div-div-a">
 							<h3 class="section-section-div-div-div-h3">
 							<img src="./img/songSheet/songsheet05.jpg" alt="" style="width:100%">
-								<a href="javascript:;" class="section-section-div-div-div-a">清风与我，相见两欢</a>
 							</h3>
+								清风与我，相见两欢
+							</a>
 						</div>
 					</div>
 					<div>
 						<div class="section-section-div-div-div">
+							<a @click="mvorange" id="bforange" class="section-section-div-div-div-a">
 							<h3 class="section-section-div-div-div-h3">
 							<img src="./img/songSheet/songsheet06.jpg" alt="" style="width:100%">
-								<a href="javascript:;" class="section-section-div-div-div-a">见你门前过，鬓上别娇花</a>
 							</h3>
+							见你门前过，鬓上别娇花
+							</a>
 						</div>
 					</div>
 					<div>
 						<div class="section-section-div-div-div">
+						<a @click="mvyaowang" id="bfyaowang" class="section-section-div-div-div-a">
 						<div>
 						<img src="./img/songSheet/songsheet07.jpg" alt="" style="width:100%">
 						</div>
-							<h3 class="section-section-div-div-div-h3">
-								<a href="javascript:;" class="section-section-div-div-div-a">明知再无相见日，无碍日日相思时</a>
+							<h3 class="section-section-div-div-div-h3">								
 							</h3>
+							君子持境，以正衣冠
+							</a>
 						</div>
 					</div>
 					<div>
 						<div class="section-section-div-div-div">
+							<a @click="mvyc" id="bfyc" class="section-section-div-div-div-a">
 							<h3 class="section-section-div-div-div-h3">
 							<img src="./img/songSheet/songsheet08.jpg" alt="" style="width:100%">
-								<a href="javascript:;" class="section-section-div-div-div-a">一二三四五，后来有谁又在打老虎</a>
+								
 							</h3>
+							一二三四五，后来有谁又在打老虎
+							</a>
 						</div>
 					</div>	
 				</div>
@@ -221,7 +238,67 @@ import iconfont from "./iconfont/iconfont.css"
 export default {
     data(){
         return{}
-    }
+	},
+	methods:{
+		 mvcxc(){this.axios.get("/mv/detail?mvid=5436110").then(res=>{
+                var x=document.getElementById("bfcxc")  
+                var musicurl=res.data.data.brs["480"]
+                var c=x.href=musicurl
+                console.log(musicurl)
+        })
+		},
+		mvjg(){this.axios.get("/mv/detail?mvid=5436130").then(res=>{
+                var x=document.getElementById("bfjg")  
+                var musicurl=res.data.data.brs["720"]
+                var c=x.href=musicurl
+                console.log(musicurl)
+        })
+		},
+		mvlyn(){this.axios.get("/mv/detail?mvid=5436132").then(res=>{
+                var x=document.getElementById("mvlyn")  
+                var musicurl=res.data.data.brs["720"]
+                var c=x.href=musicurl
+                console.log(musicurl)
+        })
+		},
+		mvonly(){this.axios.get("/mv/detail?mvid=5436145").then(res=>{
+                var x=document.getElementById("bfonly")  
+                var musicurl=res.data.data.brs["720"]
+                var c=x.href=musicurl
+                console.log(musicurl)
+        })
+		},
+		mvhx(){this.axios.get("/mv/detail?mvid=5436158").then(res=>{
+                var x=document.getElementById("bfhx")  
+                var musicurl=res.data.data.brs["480"]
+                var c=x.href=musicurl
+                console.log(musicurl)
+        })
+		},
+		mvorange(){this.axios.get("/mv/detail?mvid=5436199").then(res=>{
+                var x=document.getElementById("bforange")  
+                var musicurl=res.data.data.brs["720"]
+                var c=x.href=musicurl
+                console.log(musicurl)
+        })
+		},
+		mvyaowang(){this.axios.get("/mv/detail?mvid=5436390").then(res=>{
+                var x=document.getElementById("bfyaowang")  
+                var musicurl=res.data.data.brs["480"]
+                var c=x.href=musicurl
+                console.log(musicurl)
+        })
+		},
+		mvyc(){this.axios.get("/mv/detail?mvid=5436391").then(res=>{
+                var x=document.getElementById("bfyc")  
+                var musicurl=res.data.data.brs["480"]
+                var c=x.href=musicurl
+                console.log(musicurl)
+        })
+		},
+		
+		
+	}
 }
 </script>
 <style scoped>
@@ -263,7 +340,7 @@ export default {
 	/*热门歌单下面八个小方块中的下层div*/
 	.section-section-div-div-div{margin-right:30px;/*background-color:red*/;width:175px;height:223px;}
 	/*热门歌单下面八个小方块的h3标签(包含a标签)*/
-	.section-section-div-div-div-h3{margin:5px 0 0;}
+	.section-section-div-div-div-h3{margin:5px 0 0;font-size:14px;}
 	/*热门歌单下面八个小方块的a标签*/
 	.section-section-div-div-div-a{text-decoration:none;font-weight:400;font:14px PingFangSC-Regular;text-align:center;color:black;}
 	/*包含分类听歌这个模块全部内容*/

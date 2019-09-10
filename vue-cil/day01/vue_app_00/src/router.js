@@ -10,10 +10,13 @@ import Exam02 from
 import Exam03 from "./components/exam/Exam03.vue"
 import Homework04 from "./components/exam/Homework04.vue"
 import Exam05 from "./components/exam/Exam05.vue"
+import axios1 from "./components/exam/axios1.vue"
 import ExamContainer06 from "./components/exam/ExamContainer06.vue"
 import ExamContainer07 from "./components/exam/ExamContainer07.vue"
 import ExamTabbar08 from "./components/exam/ExamTabbar08.vue"
 import S10 from "./components/exam/S10.vue"
+import vuexa from "./components/exam/vuexA.vue"
+import vuexb from "./components/exam/vuexB.vue"
 import Home from "./components/weixin/Home.vue"
 import MessageList from "./components/weixin/common/MessageList.vue"
 import Login from "./components/xz/Login.vue"
@@ -101,7 +104,10 @@ export default new Router({
     {path:'/musicredrank',component:musicredrank},
     {path:'/ceshilogin',component:ceshilogin},
     {path:'/music3yuan',component:music3yuan},
-    {path:'/music2yuan',component:music2yuan}
+    {path:'/music2yuan',component:music2yuan},
+    {path:'/vuexa',component:vuexa},
+    {path:'/vuexb',component:vuexb},
+    {path:'/axios1',component:axios1}
     
     
     

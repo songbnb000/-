@@ -83,7 +83,7 @@
                                 <a href="">演员</a>
                             </span>
                             <span class="musictopdiv2divdiv2span3">
-                                <a href="">薛之谦</a>
+                                <a href="" >薛之谦</a>
                             </span>
                             <span class="musictopdiv2divdiv2span3">
                                 <a href="">
