@@ -16,40 +16,41 @@
           <div class="divcarousel-1">
               <div class="divcarousel5-1"></div>
               <h4 class="h4carousel5-1">
-                  <a href="javascript:;" class="h4carousel5-1-a">醉后不知天在水</a>
+                  <a @click="mvzxnsdeg" id="bfzxnsdeg" class="h4carousel5-1-a">追寻年少的光 </a>
               </h4>
               <h4 class="h4carousel5-2">
-                  <a href="javascript:;" class="h4carousel5-1-a">满船清梦压星河</a>
+                  <a @click="mvzxnsdeg" id="bfzxnsdeg" class="h4carousel5-1-a">林宥嘉/郁可唯</a>
               </h4>
           </div>
+          
         <!--轮播第2张-->
           <div class="divcarousel-1">
             <div class="divcarousel5-2"></div>
               <h4 class="h4carousel5-1">
-              <a href="javascript:;" class="h4carousel5-1-a">谦谦君子</a>
+              <a @click="mvhshxn" id="bfhshxn" class="h4carousel5-1-a">黄新侨</a>
               </h4>
               <h4 class="h4carousel5-2">
-              <a href="javascript:;" class="h4carousel5-1-a">言念如玉</a>
+              <a @click="mvhshxn" id="bfhshxn" class="h4carousel5-1-a">还是很想你</a>
               </h4>
           </div>
           <!--轮播第3张-->
           <div class="divcarousel-1">
             <div class="divcarousel5-3"></div>
             <h4 class="h4carousel5-1">
-              <a href="javascript:;" class="h4carousel5-1-a">在等在念</a>
+              <a @click="mvxdbhy" id="bfxdbhy" class="h4carousel5-1-a">兄弟不怀疑</a>
             </h4>
             <h4 class="h4carousel5-2">
-              <a href="javascript:;" class="h4carousel5-1-a">愿闻奇楠</a>
+              <a @click="mvxdbhy" id="bfxdbhy" class="h4carousel5-1-a">刘德华/古天乐</a>
             </h4>
           </div>
           <!--轮播第4张-->
           <div class="divcarousel-1">
             <div class="divcarousel5-4"></div>
             <h4 class="h4carousel5-1">
-              <a href="javascript:;" class="h4carousel5-1-a">踏遍青山人未老</a>
+              <a @click="mvzmjbj" id="bfzmjbj" class="h4carousel5-1-a">这么久没见</a>
             </h4>
             <h4 class="h4carousel5-2">
-              <a href="javascript:;" class="h4carousel5-1-a">风情这边独好</a>
+              <a @click="mvzmjbj" id="bfzmjbj" class="h4carousel5-1-a">薛之谦</a>
             </h4> 
           </div>  
           </div>
@@ -64,40 +65,40 @@
           <div class="divcarousel-1">
               <div class="divcarousel5-5"></div>
               <h4 class="h4carousel5-1">
-                  <a href="javascript:;" class="h4carousel5-1-a">但愿人长久</a>
+                  <a @click="mvnhhm" id="bfnhhm" class="h4carousel5-1-a">嗨你还好吗</a>
               </h4>
               <h4 class="h4carousel5-2">
-                  <a href="javascript:;" class="h4carousel5-1-a">千里共婵娟</a>
+                  <a @click="mvnhhm" id="bfnhhm" class="h4carousel5-1-a">番剧-我在未来等你</a>
               </h4>
           </div>
         <!--轮播2第2张-->
           <div class="divcarousel-1">
             <div class="divcarousel5-6"></div>
               <h4 class="h4carousel5-1">
-              <a href="javascript:;" class="h4carousel5-1-a">物是人非事事休</a>
+              <a @click="mvkll" id="bfkll" class="h4carousel5-1-a">卡路里</a>
               </h4>
               <h4 class="h4carousel5-2">
-              <a href="javascript:;" class="h4carousel5-1-a">欲语泪先流</a>
+              <a @click="mvkll" id="bfkll" class="h4carousel5-1-a">火箭少女101</a>
               </h4>
           </div>
           <!--轮播2第3张-->
           <div class="divcarousel-1">
             <div class="divcarousel5-7"></div>
             <h4 class="h4carousel5-1">
-              <a href="javascript:;" class="h4carousel5-1-a">琴瑟在御</a>
+              <a @click="mvyssh" id="bfyssh" class="h4carousel5-1-a">一生守候</a>
             </h4>
             <h4 class="h4carousel5-2">
-              <a href="javascript:;" class="h4carousel5-1-a">莫不静好</a>
+              <a @click="mvyssh" id="bfyssh" class="h4carousel5-1-a">周迅</a>
             </h4>
           </div>
           <!--轮播2第4张-->
           <div class="divcarousel-1">
             <div class="divcarousel5-8"></div>
             <h4 class="h4carousel5-1">
-              <a href="javascript:;" class="h4carousel5-1-a">既见君子</a>
+              <a @click="mvcj" id="bfcj" class="h4carousel5-1-a">错觉 Illusion</a>
             </h4>
             <h4 class="h4carousel5-2">
-              <a href="javascript:;" class="h4carousel5-1-a">云胡不喜</a>
+              <a @click="mvcj" id="bfcj" class="h4carousel5-1-a">XICO蔡昀熹 / 阎韦伶</a>
             </h4> 
           </div>  
           </div>
@@ -112,40 +113,40 @@
           <div class="divcarousel-1">
               <div class="divcarousel5-9"></div>
               <h4 class="h4carousel5-1">
-                  <a href="javascript:;" class="h4carousel5-1-a">岂弟君子</a>
+                  <a @click="mvwnzm" id="bfwnzm" class="h4carousel5-1-a">为你着魔</a>
               </h4>
               <h4 class="h4carousel5-2">
-                  <a href="javascript:;" class="h4carousel5-1-a">无信谗言</a>
+                  <a @click="mvwnzm" id="bfwnzm" class="h4carousel5-1-a">信</a>
               </h4>
           </div>
         <!--轮播3第2张-->
           <div class="divcarousel-1">
             <div class="divcarousel5-10"></div>
               <h4 class="h4carousel5-1">
-              <a href="javascript:;" class="h4carousel5-1-a">桥那头</a>
+              <a @click="mvhb" id="bfhb" class="h4carousel5-1-a">何必</a>
               </h4>
               <h4 class="h4carousel5-2">
-              <a href="javascript:;" class="h4carousel5-1-a">谁掌灯，把我照亮</a>
+              <a @click="mvhb" id="bfhb" class="h4carousel5-1-a">郁可唯</a>
               </h4>
           </div>
           <!--轮播3第3张-->
           <div class="divcarousel-1">
             <div class="divcarousel5-11"></div>
             <h4 class="h4carousel5-1">
-              <a href="javascript:;" class="h4carousel5-1-a">自古人间留不住</a>
+              <a @click="mvtt" id="bftt" class="h4carousel5-1-a">天天</a>
             </h4>
             <h4 class="h4carousel5-2">
-              <a href="javascript:;" class="h4carousel5-1-a">朱颜辞境花辞树</a>
+              <a @click="mvtt" id="bftt" class="h4carousel5-1-a">邱比(CHIU PI)</a>
             </h4>
           </div>
           <!--轮播3第4张-->
           <div class="divcarousel-1">
             <div class="divcarousel5-12"></div>
             <h4 class="h4carousel5-1">
-              <a href="javascript:;" class="h4carousel5-1-a">从不肯多说话</a>
+              <a @click="mvwbk" id="bfwbk" class="h4carousel5-1-a">悟不空</a>
             </h4>
             <h4 class="h4carousel5-2">
-              <a href="javascript:;" class="h4carousel5-1-a">蜷缩在小角落，只是静静的与长大后的自己对视</a>
+              <a @click="mvwbk" id="bfwbk" class="h4carousel5-1-a">许飞</a>
             </h4> 
           </div>  
           </div>
@@ -154,6 +155,99 @@
     </el-carousel>
     </div>
 </template>
+<script>
+export default {
+  data(){
+    return{}
+  },
+  methods:{
+    mvzxnsdeg(){this.axios.get("/mv/detail?mvid=10875314").then(res=>{
+                var x=document.getElementById("bfzxnsdeg")  
+                var musicurl=res.data.data.brs["1080"]
+                var c=x.href=musicurl
+                console.log(musicurl)
+        })
+    },
+    mvhshxn(){this.axios.get("/mv/detail?mvid=10857163").then(res=>{
+                var x=document.getElementById("bfhshxn")  
+                var musicurl=res.data.data.brs["1080"]
+                var c=x.href=musicurl
+                console.log(musicurl)
+        })
+    },
+    mvxdbhy(){this.axios.get("/mv/detail?mvid=10874956").then(res=>{
+                var x=document.getElementById("bfxdbhy")  
+                var musicurl=res.data.data.brs["1080"]
+                var c=x.href=musicurl
+                console.log(musicurl)
+        })
+    },
+    mvzmjbj(){this.axios.get("/mv/detail?mvid=10882549").then(res=>{
+                var x=document.getElementById("bfzmjbj")  
+                var musicurl=res.data.data.brs["1080"]
+                var c=x.href=musicurl
+                console.log(musicurl)
+        })
+    },
+    mvnhhm(){this.axios.get("/mv/detail?mvid=10886477").then(res=>{
+                var x=document.getElementById("bfnhhm")  
+                var musicurl=res.data.data.brs["1080"]
+                var c=x.href=musicurl
+                console.log(musicurl)
+        })
+    },
+    mvkll(){this.axios.get("/mv/detail?mvid=5965036").then(res=>{
+                var x=document.getElementById("bfkll")  
+                var musicurl=res.data.data.brs["1080"]
+                var c=x.href=musicurl
+                console.log(musicurl)
+        })
+    },
+    mvyssh(){this.axios.get("/mv/detail?mvid=10882772").then(res=>{
+                var x=document.getElementById("bfyssh")  
+                var musicurl=res.data.data.brs["1080"]
+                var c=x.href=musicurl
+                console.log(musicurl)
+        })
+    },
+    mvcj(){this.axios.get("/mv/detail?mvid=10874745").then(res=>{
+                var x=document.getElementById("bfcj")  
+                var musicurl=res.data.data.brs["1080"]
+                var c=x.href=musicurl
+                console.log(musicurl)
+        })
+    },
+    mvwnzm(){this.axios.get("/mv/detail?mvid=10876999").then(res=>{
+                var x=document.getElementById("bfwnzm")  
+                var musicurl=res.data.data.brs["1080"]
+                var c=x.href=musicurl
+                console.log(musicurl)
+        })
+    },
+    mvhb(){this.axios.get("/mv/detail?mvid=10891094").then(res=>{
+                var x=document.getElementById("bfhb")  
+                var musicurl=res.data.data.brs["1080"]
+                var c=x.href=musicurl
+                console.log(musicurl)
+        })
+    },
+    mvtt(){this.axios.get("/mv/detail?mvid=10884260").then(res=>{
+                var x=document.getElementById("bftt")  
+                var musicurl=res.data.data.brs["1080"]
+                var c=x.href=musicurl
+                console.log(musicurl)
+        })
+    },
+    mvwbk(){this.axios.get("/mv/detail?mvid=10878540").then(res=>{
+                var x=document.getElementById("bfwbk")  
+                var musicurl=res.data.data.brs["1080"]
+                var c=x.href=musicurl
+                console.log(musicurl)
+        })
+    },
+  }
+}
+</script>
 <style scoped>
 *{margin:0;padding:0;}
 .divcarousel5{

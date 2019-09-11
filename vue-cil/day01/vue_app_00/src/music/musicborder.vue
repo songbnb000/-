@@ -56,16 +56,17 @@
                     </div>
                 </div>
                 </a>
+                <a @click="gqxdbhy" id="bfxdbhy" class="musicborder-div-div-div-h3-a">
                 <div class="musicborder-div-div-1">
                     <span class="musicborder-div-div-span">03</span>
                     <a href="javascript:;" class="musicborder-div-div-a-2">
                     </a>
                     <div class="musicborder-div-div-div">
                         <h3 class="musicborder-div-div-div-h3">
-                            <a href="javascript:;" class="musicborder-div-div-div-h3-a">兄弟不怀疑</a>
+                            兄弟不怀疑
                         </h3>
                         <h4 class="musicborder-div-div-div-h4">
-                            <a href="javascript:;" class="musicborder-div-div-div-h3-a">刘德华/古天乐</a>
+                            刘德华/古天乐
                         </h4>
                     </div>
                     <!--移入样式使用-->
@@ -75,16 +76,18 @@
                         <i class="iconfont icon-bofanganniu1"></i>
                     </div>
                 </div>
+                </a>
+                 <a @click="gqbjw" id="bfbjw" class="musicborder-div-div-div-h3-a">
                 <div class="musicborder-div-div-1">
                     <span class="musicborder-div-div-span-1">04</span>
                     <a href="javascript:;" class="musicborder-div-div-a-3">
                     </a>
                     <div class="musicborder-div-div-div">
                         <h3 class="musicborder-div-div-div-h3">
-                            <a href="javascript:;" class="musicborder-div-div-div-h3-a">陌上花开</a>
+                           抱紧我
                         </h3>
                         <h4 class="musicborder-div-div-div-h4">
-                            <a href="javascript:;" class="musicborder-div-div-div-h3-a">可缓缓归矣</a>
+                            冯建宇
                         </h4>
                     </div>
                     <!--移入样式使用-->
@@ -94,16 +97,18 @@
                         <i class="iconfont icon-bofanganniu1"></i>
                     </div>
                 </div>
+                </a>
+                <a @click="gqywa" id="bfywa" class="musicborder-div-div-div-h3-a">
                 <div class="musicborder-div-div-1">
                     <span class="musicborder-div-div-span-1">05</span>
                     <a href="javascript:;" class="musicborder-div-div-a-4">
                     </a>
                     <div class="musicborder-div-div-div">
                         <h3 class="musicborder-div-div-div-h3">
-                            <a href="javascript:;" class="musicborder-div-div-div-h3-a">人心有反复</a>
+                            因为爱
                         </h3>
                         <h4 class="musicborder-div-div-div-h4">
-                            <a href="javascript:;" class="musicborder-div-div-div-h3-a">好在山水有相逢</a>
+                            赵传
                         </h4>
                     </div>
                     <!--移入样式使用-->
@@ -113,16 +118,18 @@
                         <i class="iconfont icon-bofanganniu1"></i>
                     </div>
                 </div>
+                </a>
+                <a @click="gqbwcx" id="bfbwcx" class="musicborder-div-div-div-h3-a">
                 <div class="musicborder-div-div-1">
                     <span class="musicborder-div-div-span-1">06</span>
                     <a href="javascript:;" class="musicborder-div-div-a-5">
                     </a>
                     <div class="musicborder-div-div-div">
                         <h3 class="musicborder-div-div-div-h3">
-                            <a href="javascript:;" class="musicborder-div-div-div-h3-a">世态波澜</a>
+                            不忘初心
                         </h3>
                         <h4 class="musicborder-div-div-div-h4">
-                            <a href="javascript:;" class="musicborder-div-div-div-h3-a">思无邪</a>
+                            谭维维/韩磊
                         </h4>
                     </div>
                     <!--移入样式使用-->
@@ -132,6 +139,7 @@
                         <i class="iconfont icon-bofanganniu1"></i>
                     </div>
                 </div>
+                </a>
             </div>
             <h4 class="musicborder-div-h4-2">
                 <a href="javascript:;" class="musicborder-div-div-div-h3-a">查看完整榜单></a>
@@ -143,46 +151,53 @@
                 <a href="javascript:;" class="musicborder-div-h4-a-1">热歌榜</a>
                 <i class="iconfont icon-bofanganniu1"></i>
             </h4>
+            
             <div class="musicborder-div-div">
+                <a @click="gqwhys" id="bfwhys" class="musicborder-div-div-div-h3-a">
                 <div class="musicborder-div-div-1">
                     <span class="musicborder-div-div-span-2">01</span>
                     <a href="javascript:;" class="musicborder-div-div-a">
                     </a>
                     <div class="musicborder-div-div-div">
                         <h3 class="musicborder-div-div-div-h3">
-                            <a href="javascript:;" class="musicborder-div-div-div-h3-a">卡路里</a>
+                            往后余生
                         </h3>
                         <h4 class="musicborder-div-div-div-h4">
-                            <a href="javascript:;" class="musicborder-div-div-div-h3-a">火箭少女biu</a>
+                            马良/孙茜茹
                         </h4>
                     </div>
                 </div>
+               </a> 
+               <a @click="gqyy" id="bfyy" class="musicborder-div-div-div-h3-a">
                 <div class="musicborder-div-div-1">
                     <span class="musicborder-div-div-span-2">02</span>
                     <a href="javascript:;" class="musicborder-div-div-a-1">
                     </a>
                     <div class="musicborder-div-div-div">
                         <h3 class="musicborder-div-div-div-h3">
-                            <a href="javascript:;" class="musicborder-div-div-div-h3-a">往后余生</a>
+                            演员
                         </h3>
                         <h4 class="musicborder-div-div-div-h4">
-                            <a href="javascript:;" class="musicborder-div-div-div-h3-a">马良/孙茜茹</a>
+                            徐薇(Cover 薛之谦)
                         </h4>
                     </div>
                 </div>
-                <div class="musicborder-div-div-1">
+                </a>
+                <a @click="gqnlch" id="bfnlch" class="musicborder-div-div-div-h3-a">
+                 <div class="musicborder-div-div-1">
                     <span class="musicborder-div-div-span-2">03</span>
                     <a href="javascript:;" class="musicborder-div-div-a-2">
                     </a>
                     <div class="musicborder-div-div-div">
                         <h3 class="musicborder-div-div-div-h3">
-                            <a href="javascript:;" class="musicborder-div-div-div-h3-a">言念君子</a>
+                            逆流成河
                         </h3>
                         <h4 class="musicborder-div-div-div-h4">
-                            <a href="javascript:;" class="musicborder-div-div-div-h3-a">温其如玉</a>
+                            金南玲
                         </h4>
                     </div>
                 </div>
+                 </a>
                 <div class="musicborder-div-div-1">
                     <span class="musicborder-div-div-span-1">04</span>
                     <a href="javascript:;" class="musicborder-div-div-a-3">
@@ -348,6 +363,56 @@ export default {
                 console.log(c)
         })
         },
+        gqxdbhy(){this.axios.get("song/url?id=1374483148").then(res=>{
+                var x=document.getElementById("bfxdbhy")  
+                var musicurl=res.data.data[0].url;
+                var c=x.href=musicurl
+                console.log(c)
+        })
+        },
+        gqbjw(){this.axios.get("song/url?id=1387182731").then(res=>{
+                var x=document.getElementById("bfbjw")  
+                var musicurl=res.data.data[0].url;
+                var c=x.href=musicurl
+                console.log(c)
+        })
+        },
+        gqywa(){this.axios.get("song/url?id=1387182731").then(res=>{
+                var x=document.getElementById("bfywa")  
+                var musicurl=res.data.data[0].url;
+                var c=x.href=musicurl
+                console.log(c)
+        })
+        },
+        gqbwcx(){this.axios.get("song/url?id=456185079").then(res=>{
+                var x=document.getElementById("bfbwcx")  
+                var musicurl=res.data.data[0].url;
+                var c=x.href=musicurl
+                console.log(c)
+        })
+        },
+        gqwhys(){this.axios.get("song/url?id=557584888").then(res=>{
+                var x=document.getElementById("bfwhys")  
+                var musicurl=res.data.data[0].url;
+                var c=x.href=musicurl
+                console.log(c)
+        })
+        },
+        gqyy(){this.axios.get("song/url?id=431554149").then(res=>{
+                var x=document.getElementById("bfyy")  
+                var musicurl=res.data.data[0].url;
+                var c=x.href=musicurl
+                console.log(c)
+        })
+        },
+        gqnlch(){this.axios.get("song/url?id=28978321").then(res=>{
+                var x=document.getElementById("bfnlch")  
+                var musicurl=res.data.data[0].url;
+                var c=x.href=musicurl
+                console.log(c)
+        })
+        },
+        
 }
 }
 </script>

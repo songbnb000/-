@@ -14,50 +14,50 @@
           <div class="divcarousel-1">
               <div class="divcarousel5-1"></div>
               <h4 class="h4carousel5-1">
-                  <a href="javascript:;" class="h4carousel5-1-a">醉后不知天在水</a>
+                  <a @click="mvzgsjmgjl" id="bfzgsjmgjl" class="h4carousel5-1-a">走过世界每个角落</a>
               </h4>
               <h4 class="h4carousel5-2">
-                  <a href="javascript:;" class="h4carousel5-1-a">满船清梦压星河</a>
+                  <a @click="mvzgsjmgjl" id="bfzgsjmgjl" class="h4carousel5-1-a">周笔畅</a>
               </h4>
           </div>
         <!--轮播第2张-->
           <div class="divcarousel-1">
             <div class="divcarousel5-2"></div>
               <h4 class="h4carousel5-1">
-              <a href="javascript:;" class="h4carousel5-1-a">谦谦君子</a>
+              <a @click="gqywyn" id="bfywyn" class="h4carousel5-1-a">因为有你</a>
               </h4>
               <h4 class="h4carousel5-2">
-              <a href="javascript:;" class="h4carousel5-1-a">言念如玉</a>
+              <a @click="gqywyn" id="bfywyn" class="h4carousel5-1-a">毛阿敏</a>
               </h4>
           </div>
           <!--轮播第3张-->
           <div class="divcarousel-1">
             <div class="divcarousel5-3"></div>
             <h4 class="h4carousel5-1">
-              <a href="javascript:;" class="h4carousel5-1-a">在等在念</a>
+              <a @click="gqxcyy" id="bfxcyy" class="h4carousel5-1-a">西窗烟雨</a>
             </h4>
             <h4 class="h4carousel5-2">
-              <a href="javascript:;" class="h4carousel5-1-a">愿闻奇楠</a>
+              <a @click="gqxcyy" id="bfxcyy" class="h4carousel5-1-a">熙宝</a>
             </h4>
           </div>
           <!--轮播第4张-->
           <div class="divcarousel-1">
             <div class="divcarousel5-4"></div>
             <h4 class="h4carousel5-1">
-              <a href="javascript:;" class="h4carousel5-1-a">踏遍青山人未老</a>
+              <a @click="mvbnhgn" id="bfbnhgn" class="h4carousel5-1-a">把你还给你</a>
             </h4>
             <h4 class="h4carousel5-2">
-              <a href="javascript:;" class="h4carousel5-1-a">风情这边独好</a>
+              <a @click="mvbnhgn" id="bfbnhgn" class="h4carousel5-1-a">方泂镔</a>
             </h4> 
           </div>  
           <!--轮播第5张-->
           <div class="divcarousel-1">
             <div class="divcarousel5-5"></div>
             <h4 class="h4carousel5-1">
-              <a href="javascript:;" class="h4carousel5-1-a">欲买桂花同载酒</a>
+              <a @click="gqnxdbsw" id="bfnxdbsw" class="h4carousel5-1-a">那些都不是我</a>
             </h4>
             <h4 class="h4carousel5-2">
-              <a href="javascript:;" class="h4carousel5-1-a">终不似，少年游</a>
+              <a @click="gqnxdbsw" id="bfnxdbsw" class="h4carousel5-1-a">大张伟</a>
             </h4>
           </div>  
         </div>
@@ -174,6 +174,50 @@
   </el-carousel>
   </div>
 </template>
+<script>
+export default {
+  data(){
+    return{}
+  },
+  methods:{
+  mvzgsjmgjl(){this.axios.get("/mv/detail?mvid=10888602").then(res=>{
+                var x=document.getElementById("bfzgsjmgjl")  
+                var musicurl=res.data.data.brs["1080"]
+                var c=x.href=musicurl
+                console.log(musicurl)
+        })
+    },
+    gqywyn(){this.axios.get("/song/url?id=1389005974").then(res=>{
+                var x=document.getElementById("bfywyn")  
+                var musicurl=res.data.data[0].url
+                var c=x.href=musicurl
+                console.log(musicurl)
+        })
+    },
+    gqxcyy(){this.axios.get("/song/url?id=1388833150").then(res=>{
+                var x=document.getElementById("bfxcyy")  
+                var musicurl=res.data.data[0].url
+                var c=x.href=musicurl
+                console.log(musicurl)
+        })
+    },
+    mvbnhgn(){this.axios.get("/mv/detail?mvid=10890676").then(res=>{
+                var x=document.getElementById("bfbnhgn")  
+                var musicurl=res.data.data[0].url
+                var c=x.href=musicurl
+                console.log(musicurl)
+        })
+    },
+    gqnxdbsw(){this.axios.get("/song/url?id=1388664695").then(res=>{
+                var x=document.getElementById("bfnxdbsw")  
+                var musicurl=res.data.data[0].url
+                var c=x.href=musicurl
+                console.log(musicurl)
+        })
+    },
+  }
+}
+</script>
 
 <style scoped>
 /**{margin:0;padding:0;}*/
