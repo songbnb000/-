@@ -33,7 +33,7 @@
         <div class="songlist2div">
             <div class="songlist2div1">
                 <a href="http://127.0.0.1:8080/#/index" class="songlist2div1a">首页</a>
-                <a href="http://127.0.0.1:8080/#/songlist" class="songlist2div1a">歌单</a>
+                <a href="http://127.0.0.1:8080/#/songlist1" class="songlist2div1a">歌单</a>
                 <a href="http://127.0.0.1:8080/#/singer" class="songlist2div1a">歌手</a>
                 <a href="http://127.0.0.1:8080/#/musicsort" class="songlist2div1a">分类</a>
                 <a href="http://127.0.0.1:8080/#/musictop" class="songlist2div1a">榜单</a>

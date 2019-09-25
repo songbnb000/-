@@ -5,12 +5,22 @@
     </mt-field>
     <mt-field label="密码" type="password" :placeholder="upwdplaceholder" v-model="upwd">
     </mt-field>-->
-    <a class="button1" @click="mvone" id="bf">登陆</a>
-   <!-- <div class="random">123</div>-->
-   
+    <!--<a class="button1" @click="con" id="bf">登陆</a>
+   <button class="button1" @click="mvplaylist" id="bfmy"></button>-->
+   <div class="musicdiv">
+   <div class="div1">
+        <div class="div2" id="divele">
+            <img :src="item.coverImgUrl" alt="" v-for="(item,i) of musicname" :key="i" class="div2img" id="imgchild">
+        </div>  
+       <div class="div3">
+            <a href="javascript:;" a v-for="(item1,index) of musicname" :key="index" class="musicnamea">{{item1.name}}</a>
+        </div>
+   </div>
+   </div>
 </div>
 
 </template>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
 <script>
 export default {
     data(){
@@ -19,10 +29,11 @@ export default {
             //upwdplaceholder:"请输入密码",
             //uname:"tom",
             //upwd:"123"
+            musicname:{},
         }
     },
     methods:{
-        tosong(i){
+       /* tosong(i){
             var id=this.recs[i].id;
             console.log(recs)
             //转换路径，添加路由
@@ -32,8 +43,8 @@ export default {
                     id
                 }
             })
-        },
-        bofang(){
+        },*/
+    /*    bofang(){
             //完成登录
             //1.获取用户名和密码
            // var u=this.uname;
@@ -90,33 +101,101 @@ export default {
                 var c=x.href=musicurl
                 console.log(musicurl)
         })
+        },*/ 
+        con(){
+            console.log("你好吗")
         },
-        created(){
-            this.bofanger()
-            this.bofang()
-            this.songurl()
-        },
-        mounted(){
-            var x=document.getElementById("bf")    
-            console.log(x)
+        mvplaylist(){this.axios.get("/top/playlist").then(res=>{
+            var musicurl=res.data.playlists
+            var x=document.getElementById("bfmy") 
+            for(var i=0;i<musicurl.length;i++){
+                    this.musicname[i]=musicurl[i]
+                    console.log(this.musicname)
+            }
+            return this.musicname
+        })
+        }, 
+    },
+    mounted(){    
+            this.con();
+            this.mvplaylist()
         }
-    }
 }
 </script>
-<style>
+<style scoped>
     .login_container{
         padding-top:40px;
-        background-color:#ddd;
         text-align:center;
-        width:1200px;
-        height:147px;
+        width:1500px;
+        height:3000px;
+        margin:0 auto;
         }
-    .random{
-        width:100px;
-        height:100px;
+    .musicnamea{
+    white-space:nowrap; 
+    overflow:hidden;   
+    text-decoration:none;
+    text-align:center;
+    color:black;
+    font-size:14px;
+    display:inline-block;
+    width:180px;
+    margin-right:20px;
+    margin-bottom:225px;
+    
     }
-    .button1{
-        width:1200px;
-        height:50px;
+    .musicnamea:hover{
+        text-overflow:inherit;
+        overflow:visible;
     }
+    .musicnamea1{
+    width:1200px;
+    height:100px;
+    color:#2d64e3;
+    font-size:14px; 
+    display:block;
+    line-height:3.5px;
+    }
+    .musicdiv{
+        width:600px;
+        height:700px;
+    }
+    .div1{
+        width:1500px;
+        height:270px;
+        position:relative;
+        margin:0 auto;
+        
+    }
+    .div2{ 
+        width:1300px;
+        height:2200px;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-between;
+        margin:0 auto;
+
+    }
+    .div2img{
+        margin-bottom:30px;
+        width:200px;
+        height:200px;
+        background-size:100% 100%;
+        float:right;
+
+    }
+    .div3{
+        width:1300px;
+        height:230px;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-between;
+        position:absolute;
+        top:212px;
+        left:100px;
+        
+    }
+/*    .musicnamep{
+        width:10px;
+        height:20px;
+    }*/
 </style>

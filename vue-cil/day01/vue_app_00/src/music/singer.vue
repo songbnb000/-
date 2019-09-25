@@ -14,7 +14,7 @@
                             <a href="javascript:;" class="singerdiv1div21a">华语</a>
                         </li>
                         <li>
-                            <a href="http://127.0.0.1:8080/#/singerboy" class="singerdiv1div2a">华语男歌手</a>
+                            <a href="http://127.0.0.1:8080/#/singerboy1" class="singerdiv1div2a">华语男歌手</a>
                         </li>
                         <li>
                             <a href="http://127.0.0.1:8080/#/singergril" class="singerdiv1div2a">华语女歌手</a>
@@ -89,26 +89,25 @@
                         <a href="#E">E</a>
                         <a href="#F">F</a>
                         <a href="#G">G</a>
-                        <a href="">H</a>
-                        <a href="">I</a>
-                        <a href="">Z</a>
-                        <a href="">K</a>
-                        <a href="">L</a>
-                        <a href="">M</a>
-                        <a href="">N</a>
-                        <a href="">O</a>
-                        <a href="">P</a>
-                        <a href="">Q</a>
-                        <a href="">R</a>
-                        <a href="">S</a>
-                        <a href="">T</a>
-                        <a href="">U</a>
-                        <a href="">V</a>
-                        <a href="">W</a>
-                        <a href="">X</a>
-                        <a href="">Y</a>
-                        <a href="">Z</a>
-                        <a href="">其他</a>
+                        <a href="#H">H</a>
+                        <a href="#I">I</a>
+                        <a href="#Z">Z</a>
+                        <a href="#K">K</a>
+                        <a href="#L">L</a>
+                        <a href="#M">M</a>
+                        <a href="#N">N</a>
+                        <a href="#O">O</a>
+                        <a href="#P">P</a>
+                        <a href="#Q">Q</a>
+                        <a href="#Q">R</a>
+                        <a href="#S">S</a>
+                        <a href="#T">T</a>
+                        <a href="#U">U</a>
+                        <a href="#V">V</a>
+                        <a href="#W">W</a>
+                        <a href="#X">X</a>
+                        <a href="#Y">Y</a>
+                        <a href="#Z">Z</a>
                     </div>
                 </div>
             <!--热门-->
@@ -118,12 +117,16 @@
                     </h3>
                     <div class="singerdiv2div2div">
                         <a href="javascript:;">
-                            <div class="singerdiv2div2div1"></div>
-                            <a href="javascript:;" class="singerdiv2div2a">
-                                薛之谦
+                            <img v-for="(item,i) in Chinaboy1" :key="i" :src="item.picUrl" class="Chinaboyimg" v-if="i<8">
+                        <div class="singerdiv2div3">
+                            <a :href="'https://music.163.com/artist?id='+items.id" v-for="(items,index) in Chinaboy1" :key="index" class="Chinaboya">
+                                <a v-if="index<8" >
+                                {{items.name}}
+                                </a>
                             </a>
+                        </div>
                         </a>
-                       <a href="javascript:;">
+                       <!--<a href="javascript:;">
                             <div class="singerdiv2div2div2"></div>
                             <a href="javascript:;" class="singerdiv2div2a">
                                 周华健
@@ -176,60 +179,143 @@
                             <a href="javascript:;" class="singerdiv2div2a">
                                 李宗盛
                             </a>
-                        </a>
+                        </a>-->
                     </div>
-                </div>
-            <!--金南玲~~李圣杰-->
-                <div class="singerdiv2div3">
-                    <a href="javascript:;" v-for="(item,i) of list" :key="i" class="singerdiv2div3a">{{item}}</a>
-                </div>
-            <!--蔡琴~~任素汐-->
-                <div class="singerdiv2div4">
-                    <a href="javascript:;" v-for="(item,i) of list1" :key="i" class="singerdiv2div4a">{{item}}</a>
-                </div>
-            <!--贝多芬~~赵泳鑫-->  
-                <div class="singerdiv2div5">
-                    <a href="javascript:;" v-for="(item,i) of list2" :key="i" class="singerdiv2div5a">{{item}}</a>
-                </div>
-            <!--Various Artists~~乌兰托娅-->  
-                <div class="singerdiv2div6">
-                    <a href="javascript:;" v-for="(item,i) of list3" :key="i" class="singerdiv2div6a">{{item}}</a>
                 </div>
             <!--所有字母索引共用一个样式-->
             <!--a字母索引-->
                 <div class="singerdiv2div7">
                     <h3 class="singerdiv2div7h3"><a href="javascript:;" id="A">A</a></h3>
-                    <a href="javascript:;" v-for="(item,i) of list4" :key="i" class="singerdiv2div7a">{{item}}</a>
+                    <!--<div class="imgdiv">
+                    <img :src="item.picUrl" v-for="(item,i) of singera" :key="i" class="imga">
+                    </div>-->
+                    <a :href="'https://music.163.com/artist?id='+item.id" v-for="(item,i) of singera" :key="i" class="singerdiv2div7a">
+                    {{item.name}}</a>
                 </div>
             <!--b字母索引-->
                 <div class="singerdiv2div7">
                     <h3 class="singerdiv2div7h3"><a href="javascript:;" id="B">B</a></h3>
-                    <a href="javascript:;" v-for="(item,i) of list5" :key="i" class="singerdiv2div7a">{{item}}</a>
+                    <a :href="'https://music.163.com/artist?id='+itemb.id" v-for="(itemb,ib) of singerb" :key="ib" class="singerdiv2div7a">{{itemb.name}}</a>
                 </div>
             <!--c字母索引-->
                 <div class="singerdiv2div7">
                     <h3 class="singerdiv2div7h3"><a href="javascript:;" id="C">C</a></h3>
-                    <a href="javascript:;" v-for="(item,i) of list6" :key="i" class="singerdiv2div7a">{{item}}</a>
+                    <a :href="'https://music.163.com/artist?id='+itemc.id" v-for="(itemc,ic) of singerc" :key="ic" class="singerdiv2div7a">{{itemc.name}}</a>
                 </div>
             <!--d字母索引-->
                 <div class="singerdiv2div7">
                     <h3 class="singerdiv2div7h3"><a href="javascript:;" id="D">D</a></h3>
-                    <a href="javascript:;" v-for="(item,i) of list7" :key="i" class="singerdiv2div7a">{{item}}</a>
+                    <a :href="'https://music.163.com/artist?id='+itemd.id" v-for="(itemd,id) of singerd" :key="id" class="singerdiv2div7a">{{itemd.name}}</a>
                 </div>
             <!--e字母索引-->
                 <div class="singerdiv2div7">
                     <h3 class="singerdiv2div7h3"><a href="javascript:;" id="E">E</a></h3>
-                    <a href="javascript:;" v-for="(item,i) of list8" :key="i" class="singerdiv2div7a">{{item}}</a>
+                    <a :href="'https://music.163.com/artist?id='+iteme.id" v-for="(iteme,ie) of singere" :key="ie" class="singerdiv2div7a">{{iteme.name}}</a>
                 </div>
             <!--f字母索引-->
                 <div class="singerdiv2div7">
                     <h3 class="singerdiv2div7h3"><a href="javascript:;" id="F">F</a></h3>
-                    <a href="javascript:;" v-for="(item,i) of list9" :key="i" class="singerdiv2div7a">{{item}}</a>
+                    <a :href="'https://music.163.com/artist?id='+itemf.id" v-for="(itemf,if1) of singerf" :key="if1" class="singerdiv2div7a">{{itemf.name}}</a>
                 </div>
-            <!--f字母索引-->
+            <!--g字母索引-->
                 <div class="singerdiv2div7">
                     <h3 class="singerdiv2div7h3"><a href="javascript:;" id="G">G</a></h3>
-                    <a href="javascript:;" v-for="(item,i) of list10" :key="i" class="singerdiv2div7a">{{item}}</a>
+                    <a :href="'https://music.163.com/artist?id='+itemg.id" v-for="(itemg,ig) of singerg" :key="ig" class="singerdiv2div7a">{{itemg.name}}</a>
+                </div>
+            <!--h字母索引-->
+                <div class="singerdiv2div7">
+                    <h3 class="singerdiv2div7h3"><a href="javascript:;" id="H">H</a></h3>
+                    <a :href="'https://music.163.com/artist?id='+itemh.id" v-for="(itemh,ih) of singerh" :key="ih" class="singerdiv2div7a">{{itemh.name}}</a>
+                </div>
+            <!--i字母索引-->
+                <div class="singerdiv2div7">
+                    <h3 class="singerdiv2div7h3"><a href="javascript:;" id="I">I</a></h3>
+                    <a :href="'https://music.163.com/artist?id='+itemi.id" v-for="(itemi,ii) of singeri" :key="ii" class="singerdiv2div7a">{{itemi.name}}</a>
+                </div>
+            <!--z字母索引-->
+                <div class="singerdiv2div7">
+                    <h3 class="singerdiv2div7h3"><a href="javascript:;" id="Z">Z</a></h3>
+                    <a :href="'https://music.163.com/artist?id='+itemz.id" v-for="(itemz,iz) of singerz" :key="iz" class="singerdiv2div7a">{{itemz.name}}</a>
+                </div>
+            <!--k字母索引-->
+                <div class="singerdiv2div7">
+                    <h3 class="singerdiv2div7h3"><a href="javascript:;" id="K">K</a></h3>
+                    <a :href="'https://music.163.com/artist?id='+itemk.id" v-for="(itemk,ik) of singerk" :key="ik" class="singerdiv2div7a">{{itemk.name}}</a>
+                </div>
+            <!--L字母索引-->
+                <div class="singerdiv2div7">
+                    <h3 class="singerdiv2div7h3"><a href="javascript:;" id="L">L</a></h3>
+                    <a :href="'https://music.163.com/artist?id='+iteml.id" v-for="(iteml,il) of singerl" :key="il" class="singerdiv2div7a">{{iteml.name}}</a>
+                </div>
+            <!--M字母索引-->
+                <div class="singerdiv2div7">
+                    <h3 class="singerdiv2div7h3"><a href="javascript:;" id="M">M</a></h3>
+                    <a :href="'https://music.163.com/artist?id='+itemm.id" v-for="(itemm,im) of singerm" :key="im" class="singerdiv2div7a">{{itemm.name}}</a>
+                </div>
+            <!--n字母索引-->
+                <div class="singerdiv2div7">
+                    <h3 class="singerdiv2div7h3"><a href="javascript:;" id="N">N</a></h3>
+                    <a :href="'https://music.163.com/artist?id='+itemn.id" v-for="(itemn,in1) of singern" :key="in1" class="singerdiv2div7a">{{itemn.name}}</a>
+                </div>
+            <!--o字母索引-->
+                <div class="singerdiv2div7">
+                    <h3 class="singerdiv2div7h3"><a href="javascript:;" id="O">O</a></h3>
+                    <a :href="'https://music.163.com/artist?id='+itemo.id" v-for="(itemo,io) of singero" :key="io" class="singerdiv2div7a">{{itemo.name}}</a>
+                </div>
+            <!--p字母索引-->
+                <div class="singerdiv2div7">
+                    <h3 class="singerdiv2div7h3"><a href="javascript:;" id="P">P</a></h3>
+                    <a :href="'https://music.163.com/artist?id='+itemp.id" v-for="(itemp,ip) of singerp" :key="ip" class="singerdiv2div7a">{{itemp.name}}</a>
+                </div>
+            <!--q字母索引-->
+                <div class="singerdiv2div7">
+                    <h3 class="singerdiv2div7h3"><a href="javascript:;" id="Q">Q</a></h3>
+                    <a :href="'https://music.163.com/artist?id='+itemq.id" v-for="(itemq,iq) of singerq" :key="iq" class="singerdiv2div7a">{{itemq.name}}</a>
+                </div>
+            <!--r字母索引-->
+                <div class="singerdiv2div7">
+                    <h3 class="singerdiv2div7h3"><a href="javascript:;" id="R">R</a></h3>
+                    <a :href="'https://music.163.com/artist?id='+itemr.id" v-for="(itemr,ir) of singerr" :key="ir" class="singerdiv2div7a">{{itemr.name}}</a>
+                </div>
+            <!--s字母索引-->
+                <div class="singerdiv2div7">
+                    <h3 class="singerdiv2div7h3"><a href="javascript:;" id="S">S</a></h3>
+                    <a :href="'https://music.163.com/artist?id='+items.id" v-for="(items,is) of singers" :key="is" class="singerdiv2div7a">{{items.name}}</a>
+                </div>
+            <!--t字母索引-->
+                <div class="singerdiv2div7">
+                    <h3 class="singerdiv2div7h3"><a href="javascript:;" id="T">T</a></h3>
+                    <a :href="'https://music.163.com/artist?id='+itemt.id" v-for="(itemt,it) of singert" :key="it" class="singerdiv2div7a">{{itemt.name}}</a>
+                </div>
+            <!--u字母索引-->
+                <div class="singerdiv2div7">
+                    <h3 class="singerdiv2div7h3"><a href="javascript:;" id="U">U</a></h3>
+                    <a :href="'https://music.163.com/artist?id='+itemu.id" v-for="(itemu,iu) of singeru" :key="iu" class="singerdiv2div7a">{{itemu.name}}</a>
+                </div>
+            <!--v字母索引-->
+                <div class="singerdiv2div7">
+                    <h3 class="singerdiv2div7h3"><a href="javascript:;" id="V">V</a></h3>
+                    <a :href="'https://music.163.com/artist?id='+itemv.id" v-for="(itemv,iv) of singerv" :key="iv" class="singerdiv2div7a">{{itemv.name}}</a>
+                </div>
+            <!--w字母索引-->
+                <div class="singerdiv2div7">
+                    <h3 class="singerdiv2div7h3"><a href="javascript:;" id="W">W</a></h3>
+                    <a :href="'https://music.163.com/artist?id='+itemw.id" v-for="(itemw,iw) of singerw" :key="iw" class="singerdiv2div7a">{{itemw.name}}</a>
+                </div>
+            <!--x字母索引-->
+                <div class="singerdiv2div7">
+                    <h3 class="singerdiv2div7h3"><a href="javascript:;" id="X">X</a></h3>
+                    <a :href="'https://music.163.com/artist?id='+itemx.id" v-for="(itemx,ix) of singerx" :key="ix" class="singerdiv2div7a">{{itemx.name}}</a>
+                </div>
+            <!--y字母索引-->
+                <div class="singerdiv2div7">
+                    <h3 class="singerdiv2div7h3"><a href="javascript:;" id="Y">Y</a></h3>
+                    <a :href="'https://music.163.com/artist?id='+itemy.id" v-for="(itemy,iy) of singery" :key="iy" class="singerdiv2div7a">{{itemy.name}}</a>
+                </div>
+            <!--z字母索引-->
+                <div class="singerdiv2div7">
+                    <h3 class="singerdiv2div7h3"><a href="javascript:;" id="Z">Z</a></h3>
+                    <a :href="'https://music.163.com/artist?id='+itemz.id" v-for="(itemz,iz) of singerz" :key="iz" class="singerdiv2div7a">{{itemz.name}}</a>
                 </div>
             </div>
         </div>
@@ -240,6 +326,33 @@ import musicsinger from "./musicsinger.vue"
 export default {
     data(){
         return{
+            Chinaboy1:{},
+            singera:{},
+            singerb:{},
+            singerc:{},
+            singerd:{},
+            singere:{},
+            singerf:{},
+            singerg:{},
+            singerh:{},
+            singeri:{},
+            singerz:{},
+            singerk:{},
+            singerl:{},
+            singerm:{},
+            singern:{},
+            singero:{},
+            singerp:{},
+            singerq:{},
+            singerr:{},
+            singers:{},
+            singert:{},
+            singeru:{},
+            singerv:{},
+            singerw:{},
+            singerx:{},
+            singerz:{},
+            singery:{},
             list:["金南玲","张国荣","冷漠","许巍 ","火箭少女101","陈淑桦","赵雷","齐豫","莫文蔚","五月天","阿杜","张震岳","王菲","赵传","崔子格","周深","展展与罗罗","Beyond","老狼","乌兰图雅","李玉刚","马良","张杰","黄品源","韩红","潘悦晨","蔡健雅","品冠","辛晓琪","凤凰传奇","龙飞","Christine Welch","金莎","曹格","伍佰","王绎龙","张艾嘉","By2","羽泉","万芳","樊桐舟","郑钧","李健","光良","李春花","张冬玲","刘德华","陈柯宇","群星","李圣杰"],
             list1:["蔡琴", "鞠婧祎", "阿宝", "李宇春", "刘惜君", "杜德伟", "成龙", "贵族乐团", "陈洁仪", "李丽芬", "徐怀钰", "潘越云", "卓文萱", "徐佳莹", "李雨儿", "郁可唯", "刘欢", "陈绮贞", "苏慧伦", "DJ小可", "朴树", "高安", "腾格尔", "娃娃", "艾索", "云飞", "杨乃文", "屠洪刚", "马旭成", "降央卓玛", "田震", "水木年华", "陈粒", "颜妹", "伍佰","门丽","黄英","后弦","8先生","好妹妹","张也","无印良品","沙漠五子D","卢冠廷","赵咏华","纳兰珠儿","路勇","筷子兄弟","Per-Olov Kindg..","任素汐"],
             list2:[
@@ -248,28 +361,177 @@ export default {
             list3:[
                 "Various Artists", "顺子", "陈零九", "刘瑞琦", "莫艳琳", "窦唯", "阎维文", "方大同", "The Royal Con..", "棉花糖", "黑豹乐队", "庄心妍", "EnjiA魏恩佳", "SNH48_HO2","林宇中","李春波", "陶晶莹", "叶贺璞",  "张洪量", "杨宗纬","海来阿木", "林琳", "阿牛", "林志炫", "毛阿敏", "黑龙","温岚","花粥","玖月奇迹","锦绣二重唱","张信哲","赵天鸽","谭维维","刘强强","许景淳","大壮","孙楠","小臭","刘珂矣","乌兰托娅"
             ],
-            list4:[
-                "A-Lin", "A.N.D Taipei", "ABCstudio", "ACE", "ACEMAX-RED", "AK", "ALL ACOUSTIC", "ALL-RANGE", "ANM", "ANU", "ART-SCHOOL", "ASTRO12", "AXIS", "Abby Rose","Acid Candy","Acker Bilk", "Ackryte", "Acoustic Guitar..",  "Acoustic Hits", "Adele","Ado", "Afar陈侣帆", "Affonsinho", "Afterlife", "Aki阿杰", "Al Cohn","Al Haig","Alan Walker","Alana Davis","Alana Marie","Albert Bennett","Alejandra Cánepa","Alessia Cara","Alessio De Fran..","Alex Mason","Alexandre Desp..","Alfaluna","Alice Hart","Alienkey","Alina Eremia"
-            ],
-            list5:[
-                "B.J. Thomas", "B.T. Express", "B.weave", "B1A4", "BBF", "BC221", "BEJ48", "BIN何舞阳", "BK532", "BLACK BOTTO..", "Baboo", "Baby", "Backstreet Boys", "Backtrack Blues","Bad Manners","Baden Powell", "Baggio", "Baghira",  "Baha Men", "Banda Do Sul","Bandari", "Bandit", "Barbara Mendes", "Barbara Tucker", "Barbie", "Barei","Bark Psychosis","Begin Transmis","Bel Air","Ben","Ben Arrows","Ben Hobbs","Ben Tavera King","Ben Tavera Kin","Benny Turner","Bentham","Bernard Herrm","Bernard Salles","Bernon","Bert Kaempfert"
-            ],
-            list6:[
-                "崔天琪", "崔子格", "崔恕", "崔羽明", "崔苔菁", "崔苗", "崔阿扎", "川宝宝", "常思思", "常成", "常石磊", "常艾非", "成泉", "成龙","春雷","晨熙", "曹卉娟", "曹宇擎",  "曹庆跃", "曹方","曹智", "曹杨", "曹格", "纯音乐", "蔡依林", "赤龙","陈彼得","陈明韶","陈昕怡","Celine Dion","Carl Marshall","CRAY-G","Cailee Rae","Carlos Lyra","草蜢","蔡献华","陈威男","陈天红","Coffee Shop Jazz","岑宁儿"
-            ],
-            list7:[
-                "D-Sisive", "D. Batistatos", "D.V. Alias Khryst", "党明毅", "多情流星", "多米", "大星", "戴荃", "杜德伟", "翟承寒", "淡小晴", "段丽阳", "董赫男", "董子健","邓海","邓丽欣", "蛋堡", "董文华",  "翟承寒", "董冬","淡小晴", "杜青", "栋梁", "董力", "杜婧荧", "打扰一下乐团","戴玉强","杜歌","董贞","逗儿旭","邓子辰","邓海","邓鼓","迪克牛仔","蝶长","董昱昆","董冬","杜元竣","戴荃","打扰一下乐团"
-            ],
-            list8:[
-                "E-Tsing于晴", "E.T. Webster", "EAU", "EOS交响文献乐团", "EVO+", "EXID", "EXO", "Eagles", "Earl Hines", "Ed Sheeran", "Echo", "Echobelly", "Echos", "Ederson","Edie Carey","Edison Herbert", "Edith Piaf", "Eduardo Elia", "Egil Olsen", "Eileen Carr","Elisa Mutto", "Ellen Allien", "Elmara", "Elza Maria", "Emily Saliers", "Emma Re","Emma","Energy Club","Enrico Macias","EnjiA魏恩佳","Enrique Iglesias","Ennio Morricone","Erdal Kemahli","Enrico Donner","二手玫瑰","二珂","尔玛娜依","儿童歌曲","Eyedi","额尔古纳乐队"
-            ],
-            list9:[
-                "4Futures", "F.I.R.", "FEM Prog Band", "Fly Project", "Flávio Nascimento", "Fools Garden", "Foozlebots", "傅淇月", "傅玺诺", "冯光", "傅薇", "冯文甜", "凤凰传奇", "冯可涵","冯建宇","冯立", "反光镜乐队", "方冉", "方季惟", "枫舞","符致逸", "范子明", "范宏伟", "范炜", "范逸臣", "范广慧","菲儿","范玉阳","陆廷荃","非凡组合","风风","风云","符禹迅","方琼","二手玫瑰","Fujiyama Ichiro","French Montana","Fresh8","From P60","Freewheel"
-            ],
-            list10:[
-                "G-Dragon", "G.E.M.邓紫棋", "Gabriel Fauré", "光头李进", "关淑怡", "古天乐", "刚泽斌", "格格", "格桑嘉措", "格桑杰", "贡尕达哇", "谷村新司", "葛奕君", "葛家君","郭阳-郭亮","高乐荣", "高信", "高培华", "高敏", "高林生","高敏惠", "高荧", "高达", "龚玥菲", "龚琳娜", "高原","龚秋霞","郭美美","郭小静","郭子若","郭少杰","郭华","贡尕达哇","贵族乐团","关颖","光线合唱团","光泽","goldEN","gates","Gummy"
-            ],
         }
+    },
+    methods:{
+    asuoyin(){this.axios.get("/artist/list?cat=1001&initial=a").then(res=>{  var Chinaboy=res.data.artists
+            this.singera=Chinaboy
+            console.log(this.singera)
+            return this.singera
+       })
+    },
+    bsuoyin(){this.axios.get("/artist/list?cat=1001&initial=b").then(res=>{  var Chinaboy=res.data.artists
+            this.singerb=Chinaboy
+            return this.singerb
+       })
+    },
+    csuoyin(){this.axios.get("/artist/list?cat=1001&initial=c").then(res=>{  var Chinaboy=res.data.artists
+            this.singerc=Chinaboy
+            return this.singerc
+       })
+    },
+    dsuoyin(){this.axios.get("/artist/list?cat=1001&initial=d").then(res=>{  var Chinaboy=res.data.artists
+            this.singerd=Chinaboy
+            return this.singerd
+       })
+    },
+    esuoyin(){this.axios.get("/artist/list?cat=1001&initial=e").then(res=>{  var Chinaboy=res.data.artists
+            this.singere=Chinaboy
+            return this.singere
+       })
+    },
+    fsuoyin(){this.axios.get("/artist/list?cat=1001&initial=f").then(res=>{  var Chinaboy=res.data.artists
+            this.singerf=Chinaboy
+            return this.singerf
+       })
+    },
+    gsuoyin(){this.axios.get("/artist/list?cat=1001&initial=g").then(res=>{  var Chinaboy=res.data.artists
+            this.singerg=Chinaboy
+            return this.singerg
+       })
+    },
+    hsuoyin(){this.axios.get("/artist/list?cat=1001&initial=h").then(res=>{  var Chinaboy=res.data.artists
+            this.singerh=Chinaboy
+            return this.singerh
+       })
+    },
+    isuoyin(){this.axios.get("/artist/list?cat=1001&initial=i").then(res=>{  var Chinaboy=res.data.artists
+            this.singeri=Chinaboy
+            return this.singeri
+       })
+    },
+    zsuoyin(){this.axios.get("/artist/list?cat=1001&initial=z").then(res=>{  var Chinaboy=res.data.artists
+            this.singerz=Chinaboy
+            return this.singerz
+       })
+    },
+    ksuoyin(){this.axios.get("/artist/list?cat=1001&initial=k").then(res=>{  var Chinaboy=res.data.artists
+            this.singerk=Chinaboy
+            return this.singerk
+       })
+    },
+    lsuoyin(){this.axios.get("/artist/list?cat=1001&initial=l").then(res=>{  var Chinaboy=res.data.artists
+            this.singerl=Chinaboy
+            return this.singerl
+       })
+    },
+    msuoyin(){this.axios.get("/artist/list?cat=1001&initial=m").then(res=>{  var Chinaboy=res.data.artists
+            this.singerm=Chinaboy
+            return this.singerm
+       })
+    },
+    nsuoyin(){this.axios.get("/artist/list?cat=1001&initial=n").then(res=>{  var Chinaboy=res.data.artists
+            this.singern=Chinaboy
+            return this.singern
+       })
+    },
+    osuoyin(){this.axios.get("/artist/list?cat=1001&initial=o").then(res=>{  var Chinaboy=res.data.artists
+            this.singero=Chinaboy
+            return this.singero
+       })
+    },
+    psuoyin(){this.axios.get("/artist/list?cat=1001&initial=p").then(res=>{  var Chinaboy=res.data.artists
+            this.singerp=Chinaboy
+            return this.singerp
+       })
+    },
+    qsuoyin(){this.axios.get("/artist/list?cat=1001&initial=q").then(res=>{  var Chinaboy=res.data.artists
+            this.singerq=Chinaboy
+            return this.singerq
+       })
+    },
+    rsuoyin(){this.axios.get("/artist/list?cat=1001&initial=r").then(res=>{  var Chinaboy=res.data.artists
+            this.singerr=Chinaboy
+            return this.singerr
+       })
+    },
+    ssuoyin(){this.axios.get("/artist/list?cat=1001&initial=s").then(res=>{  var Chinaboy=res.data.artists
+            this.singers=Chinaboy
+            return this.singers
+       })
+    },
+    tsuoyin(){this.axios.get("/artist/list?cat=1001&initial=t").then(res=>{  var Chinaboy=res.data.artists
+            this.singert=Chinaboy
+            return this.singert
+       })
+    },
+    usuoyin(){this.axios.get("/artist/list?cat=1001&initial=u").then(res=>{  var Chinaboy=res.data.artists
+            this.singeru=Chinaboy
+            return this.singeru
+       })
+    },
+    vsuoyin(){this.axios.get("/artist/list?cat=1001&initial=v").then(res=>{  var Chinaboy=res.data.artists
+            this.singerv=Chinaboy
+            return this.singerv
+       })
+    },
+    wsuoyin(){this.axios.get("/artist/list?cat=1001&initial=w").then(res=>{  var Chinaboy=res.data.artists
+            this.singerw=Chinaboy
+            return this.singerw
+       })
+    },
+    xsuoyin(){this.axios.get("/artist/list?cat=1001&initial=x").then(res=>{  var Chinaboy=res.data.artists
+            this.singerx=Chinaboy
+            return this.singerx
+       })
+    },
+    ysuoyin(){this.axios.get("/artist/list?cat=1001&initial=y").then(res=>{  var Chinaboy=res.data.artists
+            this.singery=Chinaboy
+            return this.singery
+       })
+    },
+    zsuoyin(){this.axios.get("/artist/list?cat=1001&initial=z").then(res=>{  var Chinaboy=res.data.artists
+            this.singerz=Chinaboy
+            return this.singerz
+       })
+    },
+    gqxc(){this.axios.get("/artist/list?cat=1001").then(res=>{
+                var Chinaboy=res.data.artists
+                this.Chinaboy1=Chinaboy
+                console.log(this.Chinaboy1)
+                return this.Chinaboy1
+       })
+    }
+    },
+    mounted(){
+        this.gqxc()
+        this.asuoyin()
+        this.bsuoyin()
+        this.csuoyin()
+        this.dsuoyin()
+        this.esuoyin()
+        this.fsuoyin()
+        this.gsuoyin()
+        this.hsuoyin()
+        this.isuoyin()
+        this.zsuoyin()
+        this.ksuoyin()
+        this.lsuoyin()
+        this.msuoyin()
+        this.nsuoyin()
+        this.osuoyin()
+        this.psuoyin()
+        this.qsuoyin()
+        this.rsuoyin()
+        this.ssuoyin()
+        this.tsuoyin()
+        this.usuoyin()
+        this.vsuoyin()
+        this.wsuoyin()
+        this.xsuoyin()
+        this.ysuoyin()
+        this.zsuoyin()
+
     },
     components:{
     "musicsinger":musicsinger
@@ -300,7 +562,7 @@ a{
     .singerdiv{
         margin:0 auto;
         width:1200px;
-        height:13000px;
+        height:100%;
         flex-direction:row;
 	    display:flex;
 	    /*justify-content:space-between;*/
@@ -308,11 +570,11 @@ a{
     }
     .singerdiv1{
         width:208px;
-        height:13000px;
+        height:13700px;
     }
     .singerdiv2{
         width:992px;
-        height:13000px;
+        height:13700px;
 
     }
     /*全部歌手*/
@@ -568,5 +830,42 @@ a{
     .singerdiv2div7h3{
         width:998px;
         height:10px;
+    }
+    .imga{
+        width:50px;
+        height:50px;
+        background-size:100% 100%;
+    }
+  /*  .imgdiv{
+        width:992px;
+        height:420px;
+        display:flex;
+        flex-direction:row;
+	    justify-content:space-between;
+	    flex-wrap:wrap;
+        margin-top:80px;
+    }*/
+    .Chinaboyimg{
+        background-size:100% 100%;
+        width:220px;
+        height:220px;
+        margin:0 25px 30px 0;
+        
+    }
+    .singerdiv2div3{
+        width:992px;
+        height:257px;
+        display:flex;
+       /* justify-content:space-between;*/
+        flex-wrap:wrap;  
+        margin:-280px 0 0 0px;
+    }
+    .Chinaboya{
+        width:200px;
+        height:220px;
+        margin:0 45px 30px 0;
+        display:block;
+        text-align:center;
+        float:left;
     }
 </style>

@@ -9,8 +9,8 @@
                 <div class="singerdivdiv1div1">
                     <h4>热门</h4>
                     <div class="singerdivdiv1div1div">
-                        <span class="singerdivdiv1div1divspan"><a href="">新歌</a></span>
-                        <span class="singerdivdiv1div1divspan"><a href="">热歌</a></span>
+                        <span class="singerdivdiv1div1divspan" href="" v-for="(item,i) in musicsort" :key="i">{{item.name}}</span>
+                       <!-- <span class="singerdivdiv1div1divspan"><a href="">热歌</a></span>
                         <span class="singerdivdiv1div1divspan"><a href="">中国好声音</a></span>
                         <span class="singerdivdiv1div1divspan"><a href="">经典老歌</a></span>
                         <span class="singerdivdiv1div1divspan"><a href="">电视剧</a></span>
@@ -32,6 +32,7 @@
                         <span class="singerdivdiv1div1divspan"><a href="">佛教音乐</a></span>
                         <span class="singerdivdiv1div1divspan"><a href="">成名曲</a></span>
                         <span class="singerdivdiv1div1divspan"><a href="">草原歌曲</a></span>
+                        -->
                     </div>
                 <div class="singerdivdiv1div2">
                     <h4>心情</h4>
@@ -232,9 +233,22 @@ import musicsinger from "./musicsinger.vue"
 export default {
     data(){
         return{
-           
+           musicsort:{}
         }
     },
+    methods:{
+        musicmvsort(){this.axios.get("/playlist/catlist").then(res=>{
+                var musicmv=res.data.sub
+                this.musicsort=musicmv
+                console.log(this.musicsort)
+                return this.musicsort
+       })
+    }
+    },
+    mounted(){
+        this.musicmvsort()
+    },
+
     components:{
     "musicsinger":musicsinger
     }

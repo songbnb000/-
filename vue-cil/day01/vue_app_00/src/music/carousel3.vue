@@ -16,10 +16,10 @@
           <div class="divcarousel-1">
               <div class="divcarousel5-1"></div>
               <h4 class="h4carousel5-1">
-                  <a @click="mvzxnsdeg" id="bfzxnsdeg" class="h4carousel5-1-a">追寻年少的光 </a>
+                  <a id="bfzxnsdeg" class="h4carousel5-1-a">追寻年少的光 </a>
               </h4>
               <h4 class="h4carousel5-2">
-                  <a @click="mvzxnsdeg" id="bfzxnsdeg" class="h4carousel5-1-a">林宥嘉/郁可唯</a>
+                  <a id="bfzxnsdeg" class="h4carousel5-1-a">林宥嘉/郁可唯</a>
               </h4>
           </div>
           
@@ -27,30 +27,30 @@
           <div class="divcarousel-1">
             <div class="divcarousel5-2"></div>
               <h4 class="h4carousel5-1">
-              <a @click="mvhshxn" id="bfhshxn" class="h4carousel5-1-a">黄新侨</a>
+              <a id="bfhshxn" class="h4carousel5-1-a">黄新侨</a>
               </h4>
               <h4 class="h4carousel5-2">
-              <a @click="mvhshxn" id="bfhshxn" class="h4carousel5-1-a">还是很想你</a>
+              <a id="bfhshxn" class="h4carousel5-1-a">还是很想你</a>
               </h4>
           </div>
           <!--轮播第3张-->
           <div class="divcarousel-1">
             <div class="divcarousel5-3"></div>
             <h4 class="h4carousel5-1">
-              <a @click="mvxdbhy" id="bfxdbhy" class="h4carousel5-1-a">兄弟不怀疑</a>
+              <a id="bfxdbhy" class="h4carousel5-1-a">兄弟不怀疑</a>
             </h4>
             <h4 class="h4carousel5-2">
-              <a @click="mvxdbhy" id="bfxdbhy" class="h4carousel5-1-a">刘德华/古天乐</a>
+              <a id="bfxdbhy" class="h4carousel5-1-a">刘德华/古天乐</a>
             </h4>
           </div>
           <!--轮播第4张-->
           <div class="divcarousel-1">
             <div class="divcarousel5-4"></div>
             <h4 class="h4carousel5-1">
-              <a @click="mvzmjbj" id="bfzmjbj" class="h4carousel5-1-a">这么久没见</a>
+              <a id="bfzmjbj" class="h4carousel5-1-a">这么久没见</a>
             </h4>
             <h4 class="h4carousel5-2">
-              <a @click="mvzmjbj" id="bfzmjbj" class="h4carousel5-1-a">薛之谦</a>
+              <a id="bfzmjbj" class="h4carousel5-1-a">薛之谦</a>
             </h4> 
           </div>  
           </div>
@@ -65,40 +65,40 @@
           <div class="divcarousel-1">
               <div class="divcarousel5-5"></div>
               <h4 class="h4carousel5-1">
-                  <a @click="mvnhhm" id="bfnhhm" class="h4carousel5-1-a">嗨你还好吗</a>
+                  <a id="bfnhhm" class="h4carousel5-1-a">嗨你还好吗</a>
               </h4>
               <h4 class="h4carousel5-2">
-                  <a @click="mvnhhm" id="bfnhhm" class="h4carousel5-1-a">番剧-我在未来等你</a>
+                  <a id="bfnhhm" class="h4carousel5-1-a">番剧-我在未来等你</a>
               </h4>
           </div>
         <!--轮播2第2张-->
           <div class="divcarousel-1">
             <div class="divcarousel5-6"></div>
               <h4 class="h4carousel5-1">
-              <a @click="mvkll" id="bfkll" class="h4carousel5-1-a">卡路里</a>
+              <a id="bfkll" class="h4carousel5-1-a">卡路里</a>
               </h4>
               <h4 class="h4carousel5-2">
-              <a @click="mvkll" id="bfkll" class="h4carousel5-1-a">火箭少女101</a>
+              <a id="bfkll" class="h4carousel5-1-a">火箭少女101</a>
               </h4>
           </div>
           <!--轮播2第3张-->
           <div class="divcarousel-1">
             <div class="divcarousel5-7"></div>
             <h4 class="h4carousel5-1">
-              <a @click="mvyssh" id="bfyssh" class="h4carousel5-1-a">一生守候</a>
+              <a id="bfyssh" class="h4carousel5-1-a">一生守候</a>
             </h4>
             <h4 class="h4carousel5-2">
-              <a @click="mvyssh" id="bfyssh" class="h4carousel5-1-a">周迅</a>
+              <a id="bfyssh" class="h4carousel5-1-a">周迅</a>
             </h4>
           </div>
           <!--轮播2第4张-->
           <div class="divcarousel-1">
             <div class="divcarousel5-8"></div>
             <h4 class="h4carousel5-1">
-              <a @click="mvcj" id="bfcj" class="h4carousel5-1-a">错觉 Illusion</a>
+              <a id="bfcj" class="h4carousel5-1-a">错觉 Illusion</a>
             </h4>
             <h4 class="h4carousel5-2">
-              <a @click="mvcj" id="bfcj" class="h4carousel5-1-a">XICO蔡昀熹 / 阎韦伶</a>
+              <a id="bfcj" class="h4carousel5-1-a">XICO蔡昀熹 / 阎韦伶</a>
             </h4> 
           </div>  
           </div>
@@ -113,40 +113,40 @@
           <div class="divcarousel-1">
               <div class="divcarousel5-9"></div>
               <h4 class="h4carousel5-1">
-                  <a @click="mvwnzm" id="bfwnzm" class="h4carousel5-1-a">为你着魔</a>
+                  <a id="bfwnzm" class="h4carousel5-1-a">为你着魔</a>
               </h4>
               <h4 class="h4carousel5-2">
-                  <a @click="mvwnzm" id="bfwnzm" class="h4carousel5-1-a">信</a>
+                  <a id="bfwnzm" class="h4carousel5-1-a">信</a>
               </h4>
           </div>
         <!--轮播3第2张-->
           <div class="divcarousel-1">
             <div class="divcarousel5-10"></div>
               <h4 class="h4carousel5-1">
-              <a @click="mvhb" id="bfhb" class="h4carousel5-1-a">何必</a>
+              <a id="bfhb" class="h4carousel5-1-a">何必</a>
               </h4>
               <h4 class="h4carousel5-2">
-              <a @click="mvhb" id="bfhb" class="h4carousel5-1-a">郁可唯</a>
+              <a id="bfhb" class="h4carousel5-1-a">郁可唯</a>
               </h4>
           </div>
           <!--轮播3第3张-->
           <div class="divcarousel-1">
             <div class="divcarousel5-11"></div>
             <h4 class="h4carousel5-1">
-              <a @click="mvtt" id="bftt" class="h4carousel5-1-a">天天</a>
+              <a id="bftt" class="h4carousel5-1-a">天天</a>
             </h4>
             <h4 class="h4carousel5-2">
-              <a @click="mvtt" id="bftt" class="h4carousel5-1-a">邱比(CHIU PI)</a>
+              <a id="bftt" class="h4carousel5-1-a">邱比(CHIU PI)</a>
             </h4>
           </div>
           <!--轮播3第4张-->
           <div class="divcarousel-1">
             <div class="divcarousel5-12"></div>
             <h4 class="h4carousel5-1">
-              <a @click="mvwbk" id="bfwbk" class="h4carousel5-1-a">悟不空</a>
+              <a id="bfwbk" class="h4carousel5-1-a">悟不空</a>
             </h4>
             <h4 class="h4carousel5-2">
-              <a @click="mvwbk" id="bfwbk" class="h4carousel5-1-a">许飞</a>
+              <a id="bfwbk" class="h4carousel5-1-a">许飞</a>
             </h4> 
           </div>  
           </div>
@@ -176,7 +176,7 @@ export default {
         })
     },
     mvxdbhy(){this.axios.get("/mv/detail?mvid=10874956").then(res=>{
-                var x=document.getElementById("bfxdbhy")  
+                var x=document.getElementById("bfxdbhy")
                 var musicurl=res.data.data.brs["1080"]
                 var c=x.href=musicurl
                 console.log(musicurl)
@@ -245,7 +245,22 @@ export default {
                 console.log(musicurl)
         })
     },
-  }
+  },
+    mounted() {
+      this.mvzxnsdeg()
+      this.mvhshxn()
+      this.mvxdbhy()
+      this.mvzmjbj()
+      this.mvnhhm()
+      this.mvkll()
+      this.mvyssh()
+      this.mvcj()
+      this.mvwnzm()
+      this.mvhb()
+      this.mvtt()
+      this.mvwbk()
+  },
+
 }
 </script>
 <style scoped>

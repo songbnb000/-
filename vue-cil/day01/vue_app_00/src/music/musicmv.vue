@@ -62,60 +62,16 @@
                 <span class="musicmv1divspan">推荐MV</span>
             </div>
             <div class="musicmv2div">
-                <div class="musicmv2divdiv">
-                    <div class="musicmv2divdivimg1"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">如果电视剧</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">炫子</a>
-                </div>
-                <div class="musicmv2divdiv">
-                    <div class="musicmv2divdivimg2"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">风</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">火箭少女101</a>
-                </div>
-                <div class="musicmv2divdiv">
-                    <div class="musicmv2divdivimg3"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">珍珠奶茶</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">品冠</a>
-                </div>
-                <div class="musicmv2divdiv">
-                    <div class="musicmv2divdivimg4"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">我们很好</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">林俊杰</a>
-                </div>
-                <div class="musicmv2divdiv">
-                    <div class="musicmv2divdivimg5"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">大象之歌</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">...</a>
-                </div>
-                <div class="musicmv2divdiv">
-                    <div class="musicmv2divdivimg6"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">winner</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">潘玮柏</a>
-                </div>
-                <div class="musicmv2divdiv">
-                    <div class="musicmv2divdivimg7"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">永远同在</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">木村弓</a>
-                </div>
-                <div class="musicmv2divdiv">
-                    <div class="musicmv2divdivimg8"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">随便谁</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">李大奔</a>
-                </div>
-                <div class="musicmv2divdiv">
-                    <div class="musicmv2divdivimg9"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">千星之恋</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">简迷离</a>
-                </div>
-                <div class="musicmv2divdiv">
-                    <div class="musicmv2divdivimg10"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">慢动作</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">曹格</a>
+               <div class="musicmv2divdiv">
+                   <img :src="item.cover" v-for="(item,i) in musicmv1" :key="i" alt="" class="musicmv2divdivimg1" >
+                   <div class="musicmv2divdiv1">
+                   <a :href="'https://music.163.com/#/mv?id='+items.id" v-for="(items,index1) in musicmv1" :key="index1" class="musicmv2divdivimg1a">{{items.name}}</a>
+                   </div>
                 </div>
             </div>
         </div>
         <!--热门主播-->
-        <div class="musicmv2">
+        <!--<div class="musicmv2">
             <div class="musicmv2div1">
                 <span class="musicmv2div1span">热门主播</span>
             </div>
@@ -126,352 +82,104 @@
                 <div class="musicmv2div2div4"></div>
                 <div class="musicmv2div2div5"></div>
             </div>
-        </div>
+        </div>-->
         <!--内地-->
-        <div class="musicmv3">
+   <div class="musicmv1">
             <div class="musicmv1div">
-                <span class="musicmv1divspan">内地</span>
+                <span class="musicmv1divspan">内地MV</span>
             </div>
             <div class="musicmv2div">
-                <div class="musicmv2divdiv">
-                    <div class="musicmv3divdivimg1"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">亚洲雄风</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">韦唯</a>
-                </div>
-                <div class="musicmv2divdiv">
-                    <div class="musicmv3divdivimg2"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">天竺少女</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">李玲玉</a>
-                </div>
-                <div class="musicmv2divdiv">
-                    <div class="musicmv3divdivimg3"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">很任性</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">千百顺</a>
-                </div>
-                <div class="musicmv2divdiv">
-                    <div class="musicmv3divdivimg4"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">你</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">屠洪刚</a>
-                </div>
-                <div class="musicmv2divdiv">
-                    <div class="musicmv3divdivimg5"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">晚秋</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">毛宁</a>
-                </div>
-                <div class="musicmv2divdiv">
-                    <div class="musicmv3divdivimg6"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">缘分一道桥</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">王力宏</a>
-                </div>
-                <div class="musicmv2divdiv">
-                    <div class="musicmv3divdivimg7"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">家乡</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">赵雷</a>
-                </div>
-                <div class="musicmv2divdiv">
-                    <div class="musicmv3divdivimg8"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">逆流成河</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">金南玲</a>
-                </div>
-                <div class="musicmv2divdiv">
-                    <div class="musicmv3divdivimg9"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">缘分一道桥</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">王力宏</a>
-                </div>
-                <div class="musicmv2divdiv">
-                    <div class="musicmv3divdivimg10"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">心雨</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">毛宁</a>
+               <div class="musicmv2divdiv">
+                   <img :src="item3.cover" v-for="(item3,i1) in musicmv2" :key="i1" alt="" class="musicmv2divdivimg2" >
+                   <div class="musicmv2divdiv2">
+                   <a :href="'https://music.163.com/#/mv?id='+items1.id" v-for="(items1,index2) in musicmv2" :key="index2" class="musicmv2divdivimg1a1">{{items1.name}}</a>
+                   </div>
                 </div>
             </div>
         </div>
         <!--港台-->
-        <div class="musicmv4">
+        <div class="musicmv1">
             <div class="musicmv1div">
-                <span class="musicmv1divspan">港台</span>
+                <span class="musicmv1divspan">港台MV</span>
             </div>
             <div class="musicmv2div">
-                <div class="musicmv2divdiv">
-                    <div class="musicmv4divdivimg1"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">霍元甲</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">周杰伦</a>
-                </div>
-                <div class="musicmv2divdiv">
-                    <div class="musicmv4divdivimg2"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">坚持到底</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">阿杜</a>
-                </div>
-                <div class="musicmv2divdiv">
-                    <div class="musicmv4divdivimg3"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">青花瓷</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">周杰伦</a>
-                </div>
-                <div class="musicmv2divdiv">
-                    <div class="musicmv4divdivimg4"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">青花瓷</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">周杰伦</a>
-                </div>
-                <div class="musicmv2divdiv">
-                    <div class="musicmv4divdivimg5"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">现代爱情故事</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">张智霖</a>
-                </div>
-                <div class="musicmv2divdiv">
-                    <div class="musicmv4divdivimg6"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">天黑</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">阿杜</a>
-                </div>
-                <div class="musicmv2divdiv">
-                    <div class="musicmv4divdivimg7"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">海阔天空</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">Beyond</a>
-                </div>
-                <div class="musicmv2divdiv">
-                    <div class="musicmv4divdivimg8"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">伤心太平洋</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">任贤齐</a>
-                </div>
-                <div class="musicmv2divdiv">
-                    <div class="musicmv4divdivimg9"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">长城</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">Beyond</a>
-                </div>
-                <div class="musicmv2divdiv">
-                    <div class="musicmv4divdivimg10"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">晴天</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">周杰伦</a>
+               <div class="musicmv2divdiv">
+                   <img :src="item4.cover" v-for="(item4,i2) in musicmv3" :key="i2" alt="" class="musicmv2divdivimg2" v-if="i2<10"> 
+                   <div class="musicmv2divdiv2">
+                   <a :href="'https://music.163.com/#/mv?id='+items2.id" v-for="(items2,index3) in musicmv3" :key="index3" class="musicmv2divdivimg1a1" v-if="index3<10">
+                   {{items2.name}}
+                  <!-- <a :href="'https://music.163.com/#/mv?id='+items2.id" v-if="index3<10" class="musicmv2divdivimg1a2">
+                   {{items2.name}}
+                   </a>-->
+                   </a>
+                   </div>
                 </div>
             </div>
         </div>
         <!--欧美-->
-        <div class="musicmv5">
+         <div class="musicmv1">
             <div class="musicmv1div">
-                <span class="musicmv1divspan">欧美</span>
+                <span class="musicmv1divspan">欧美MV</span>
             </div>
             <div class="musicmv2div">
-                <div class="musicmv2divdiv">
-                    <div class="musicmv5divdivimg9"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">...</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">....</a>
-                </div>
-                <div class="musicmv2divdiv">
-                    <div class="musicmv5divdivimg10"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">...</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">....</a>
-                </div>
-                <div class="musicmv2divdiv">
-                    <div class="musicmv5divdivimg1"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">Baby</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">Justin Bieber</a>
-                </div>
-                <div class="musicmv2divdiv">
-                    <div class="musicmv5divdivimg2"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">Come and Get Your Love</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">Redbone</a>
-                </div>
-                <div class="musicmv2divdiv">
-                    <div class="musicmv5divdivimg3"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">Never say never</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">Karaoke/Jus..</a>
-                </div>
-                <div class="musicmv2divdiv">
-                    <div class="musicmv5divdivimg4"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">Poker Face</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">Lady Gaga</a>
-                </div>
-                <div class="musicmv2divdiv">
-                    <div class="musicmv5divdivimg5"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">I Love The Lord</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">Whitney Ho..</a>
-                </div>
-                <div class="musicmv2divdiv">
-                    <div class="musicmv5divdivimg6"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">Touch The Sky</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">Cedric Gervais</a>
-                </div>
-                <div class="musicmv2divdiv">
-                    <div class="musicmv5divdivimg7"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">Pray</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">Justin Bieber</a>
-                </div>
-                <div class="musicmv2divdiv">
-                    <div class="musicmv5divdivimg8"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">I Want It That Way</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">Backstreet ..</a>
+               <div class="musicmv2divdiv">
+                   <img :src="item5.cover" v-for="(item5,i3) in musicmv4" :key="i3" alt="" class="musicmv2divdivimg2" v-if="i3<10"> 
+                   <div class="musicmv2divdiv2">
+                   <a :href="'https://music.163.com/#/mv?id='+items3.id" v-for="(items3,index4) in musicmv4" :key="index4" class="musicmv2divdivimg1a1" v-if="index4<10">
+                   {{items3.name}}
+                   </a>
+                   </div>
                 </div>
             </div>
         </div>
         <!--韩语-->
-        <div class="musicmv6">
+                 <div class="musicmv1">
             <div class="musicmv1div">
-                <span class="musicmv1divspan">韩语</span>
+                <span class="musicmv1divspan">韩国MV</span>
             </div>
             <div class="musicmv2div">
-                <div class="musicmv2divdiv">
-                    <div class="musicmv6divdivimg9"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">...</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">....</a>
-                </div>
-                <div class="musicmv2divdiv">
-                    <div class="musicmv6divdivimg10"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">...</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">....</a>
-                </div>
-                <div class="musicmv2divdiv">
-                    <div class="musicmv6divdivimg1"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">...</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">....</a>
-                </div>
-                <div class="musicmv2divdiv">
-                    <div class="musicmv6divdivimg2"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">2017韩流性感女团最新合集</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">少女时代</a>
-                </div>
-                <div class="musicmv2divdiv">
-                    <div class="musicmv6divdivimg3"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">...</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">...</a>
-                </div>
-                <div class="musicmv2divdiv">
-                    <div class="musicmv6divdivimg4"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">...</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">...</a>
-                </div>
-                <div class="musicmv2divdiv">
-                    <div class="musicmv6divdivimg5"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">...</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">...</a>
-                </div>
-                <div class="musicmv2divdiv">
-                    <div class="musicmv6divdivimg6"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">...</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">...</a>
-                </div>
-                <div class="musicmv2divdiv">
-                    <div class="musicmv6divdivimg7"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">...</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">...</a>
-                </div>
-                <div class="musicmv2divdiv">
-                    <div class="musicmv6divdivimg8"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">...</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">...</a>
+               <div class="musicmv2divdiv">
+                   <img :src="item6.cover" v-for="(item6,i4) in musicmv5" :key="i4" alt="" class="musicmv2divdivimg2" v-if="i4<10"> 
+                   <div class="musicmv2divdiv2">
+                   <a :href="'https://music.163.com/#/mv?id='+items4.id" v-for="(items4,index5) in musicmv5" :key="index5" class="musicmv2divdivimg1a1" v-if="index5<10">
+                   {{items4.name}}
+                   </a>
+                   </div>
                 </div>
             </div>
         </div>
-        <!--日语-->
-        <div class="musicmv7">
+        <!--日本-->
+        <div class="musicmv1">
             <div class="musicmv1div">
-                <span class="musicmv1divspan">日语</span>
+                <span class="musicmv1divspan">日本MV</span>
             </div>
             <div class="musicmv2div">
-                <div class="musicmv2divdiv">
-                    <div class="musicmv7divdivimg9"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">...</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">....</a>
-                </div>
-                <div class="musicmv2divdiv">
-                    <div class="musicmv7divdivimg10"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">...</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">....</a>
-                </div>
-                <div class="musicmv2divdiv">
-                    <div class="musicmv7divdivimg1"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">...</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">....</a>
-                </div>
-                <div class="musicmv2divdiv">
-                    <div class="musicmv7divdivimg2"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">2017韩流性感女团最新合集</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">少女时代</a>
-                </div>
-                <div class="musicmv2divdiv">
-                    <div class="musicmv7divdivimg3"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">...</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">...</a>
-                </div>
-                <div class="musicmv2divdiv">
-                    <div class="musicmv7divdivimg4"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">...</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">...</a>
-                </div>
-                <div class="musicmv2divdiv">
-                    <div class="musicmv7divdivimg5"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">...</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">...</a>
-                </div>
-                <div class="musicmv2divdiv">
-                    <div class="musicmv7divdivimg6"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">...</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">...</a>
-                </div>
-                <div class="musicmv2divdiv">
-                    <div class="musicmv7divdivimg7"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">...</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">...</a>
-                </div>
-                <div class="musicmv2divdiv">
-                    <div class="musicmv7divdivimg8"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">...</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">...</a>
+               <div class="musicmv2divdiv">
+                   <img :src="item6.cover" v-for="(item6,i5) in musicmv6" :key="i5" alt="" class="musicmv2divdivimg2" v-if="i5<10"> 
+                   <div class="musicmv2divdiv2">
+                   <a :href="'https://music.163.com/#/mv?id='+items5.id" v-for="(items5,index6) in musicmv6" :key="index6" class="musicmv2divdivimg1a1" v-if="index6<10">
+                   {{items5.name}}
+                   </a>
+                   </div>
                 </div>
             </div>
         </div>
         <!--现场-->
-        <div class="musicmv8">
+         <div class="musicmv1">
             <div class="musicmv1div">
-                <span class="musicmv1divspan">现场演唱</span>
+                <span class="musicmv1divspan">现场MV</span>
             </div>
-            <div class="musicmv2div">
-                <div class="musicmv2divdiv">
-                    <div class="musicmv8divdivimg9"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">清明上河图</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">李玉刚</a>
-                </div>
-                <div class="musicmv2divdiv">
-                    <div class="musicmv8divdivimg10"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">美丽的草原我的家</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">降央卓玛</a>
-                </div>
-                <div class="musicmv2divdiv">
-                    <div class="musicmv8divdivimg1"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">情人</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">刀郎</a>
-                </div>
-                <div class="musicmv2divdiv">
-                    <div class="musicmv8divdivimg2"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">心雨</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">毛宁/杨钰莹</a>
-                </div>
-                <div class="musicmv2divdiv">
-                    <div class="musicmv8divdivimg3"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">童年</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">罗大佑</a>
-                </div>
-                <div class="musicmv2divdiv">
-                    <div class="musicmv8divdivimg4"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">轻轻地告诉你</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">杨钰莹</a>
-                </div>
-                <div class="musicmv2divdiv">
-                    <div class="musicmv8divdivimg5"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">你把我灌醉</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">G.E.M.邓紫棋</a>
-                </div>
-                <div class="musicmv2divdiv">
-                    <div class="musicmv8divdivimg6"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">故乡</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">许巍</a>
-                </div>
-                <div class="musicmv2divdiv">
-                    <div class="musicmv8divdivimg7"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">风雨彩虹铿锵玫瑰</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">田震</a>
-                </div>
-                <div class="musicmv2divdiv">
-                    <div class="musicmv8divdivimg8"></div>
-                    <a href="javascript:;" class="musicmv2divdivimg1a">一路上</a>
-                    <a href="javascript:;" class="musicmv2divdivimg2a">张学友</a>
+            <div class="musicmv2divtj">
+               <div class="musicmv2divdivtj">
+                   <img :src="item7.cover" v-for="(item7,i6) in musicmv7" :key="i6" alt="" class="musicmv2divdivimg2tj"> 
+                   <div class="musicmv2divdiv2tj">
+                   <a :href="'https://music.163.com/#/mv?id='+items6.id" v-for="(items6,index7) in musicmv7" :key="index7" class="musicmv2divdivimg1a1tj">
+                   {{items6.name}}
+                  <!-- <a :href="'https://music.163.com/#/mv?id='+items2.id" v-if="index3<10" class="musicmv2divdivimg1a2">
+                   {{items2.name}}
+                   </a>-->
+                   </a>
+                   </div>
                 </div>
             </div>
         </div>
@@ -488,7 +196,70 @@ import carousel2 from "./carousel2.vue"
 import musicborder from "./musicborder.vue"
 export default {
     data(){
-        return{}
+        return{
+            musicmv1:{},
+            musicmv2:{},
+            musicmv3:{},
+            musicmv4:{},
+            musicmv5:{},
+            musicmv6:{},
+            musicmv7:{},
+        }
+    },
+    methods:{
+        musicmv(){this.axios.get("/mv/exclusive/rcmd").then(res=>{
+                var musicmv=res.data.data
+                this.musicmv1=musicmv
+                return this.musicmv1
+       })
+    },
+        musicmvnd(){this.axios.get("/mv/first?limit=10").then(res=>{
+                var musicmv=res.data.data
+                this.musicmv2=musicmv
+                return this.musicmv2
+       })
+    },
+    
+        musicmvgt(){this.axios.get("/mv/all?area=港台").then(res=>{
+                var musicmv=res.data.data
+                this.musicmv3=musicmv
+                return this.musicmv3
+       })
+    },
+        musicmvom(){this.axios.get("/mv/all?area=欧美").then(res=>{
+                var musicmv=res.data.data
+                this.musicmv4=musicmv
+                return this.musicmv4
+       })
+    },
+        musicmvhg(){this.axios.get("/mv/all?area=韩国").then(res=>{
+                var musicmv=res.data.data
+                this.musicmv5=musicmv
+                return this.musicmv5
+       })
+    },
+        musicmvrb(){this.axios.get("/mv/all?area=日本").then(res=>{
+                var musicmv=res.data.data
+                this.musicmv6=musicmv
+                return this.musicmv6
+       })
+    },
+        musicmvxc(){this.axios.get("/mv/all?type=现场版").then(res=>{
+                var musicmv=res.data.data
+                this.musicmv7=musicmv
+                console.log(this.musicmv7)
+                return this.musicmv7
+       })
+    }
+    },
+    mounted(){
+        this.musicmv()
+        this.musicmvnd()
+        this.musicmvgt()
+        this.musicmvom()
+        this.musicmvhg()
+        this.musicmvrb()
+        this.musicmvxc()
     },
     components:{
         "musichead":musichead,
@@ -510,7 +281,8 @@ export default {
 }
 .songlistdiv{
     width:1200px;
-    height:3940px;
+    /*全部的高*/
+    height:4750px;
     margin:30px auto;
 }
 .songlist1div{
@@ -676,14 +448,17 @@ export default {
 }
 /*推荐mv文字样式*/
 .musicmv1divspan{
-    color:#000000;
+    color:#fff;
     font-family:微软雅黑;
-    font-size:29px;
+    font-size:25px;
     font-weight:400;
+    background-color:cyan;
 }
 .musicmv1div{
     width:1200px;
     height:71px;
+    margin-top:20px;
+    margin-left:20px;
 }
 .musicmv2div{
     width:1200px;
@@ -693,81 +468,92 @@ export default {
 	justify-content:space-between;
 	flex-wrap:wrap;
 }
-
-/*每个模块的样式*/
-.musicmv2divdiv{
-    width:211px;
-    height:170px;
+.musicmv2divtj{
+    width:1200px;
+    height:352px;
+    flex-direction:row;
+	display:flex;
+	justify-content:space-between;
+	flex-wrap:wrap;
+}   
+.musicmv2divdiv2tj{
+    width:1200px;
+    height:1300px;
+    flex-direction:row;
+	display:flex;
+	/*justify-content:space-between;*/
+	flex-wrap:wrap;
+    margin-top:-1145px;
 }
-/*添加十张图片*/
-.musicmv2divdivimg1{
+.musicmv2divdivtj{
+    width:1200px;
+    height:350px;
+    flex-direction:row;
+	display:flex;
+	/*justify-content:space-between;*/
+	flex-wrap:wrap;
+}
+/*现场版mv图片大小样式*/
+.musicmv2divdivimg2tj{
     width:211px;
-    height:135px;
-    background-image:url('./musicmv/tuijian/1.jpg');
+    height:145px;
     background-size:100% 100%;
+    margin-left:25px;
+    margin-bottom:70px;
 }
-.musicmv2divdivimg2{
+/*现场版文字样式*/
+.musicmv2divdivimg1a1tj{
     width:211px;
-    height:135px;
-    background-image:url('./musicmv/tuijian/2.jpg');
-    background-size:100% 100%;
-}
-.musicmv2divdivimg3{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/tuijian/3.jpg');
-    background-size:100% 100%;
-}
-.musicmv2divdivimg4{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/tuijian/4.jpg');
-    background-size:100% 100%;
-}
-.musicmv2divdivimg5{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/tuijian/5.jpg');
-    background-size:100% 100%;
-}
-.musicmv2divdivimg6{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/tuijian/6.jpg');
-    background-size:100% 100%;
-}
-.musicmv2divdivimg7{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/tuijian/7.jpg');
-    background-size:100% 100%;
-}
-.musicmv2divdivimg8{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/tuijian/8.jpg');
-    background-size:100% 100%;
-}
-.musicmv2divdivimg9{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/tuijian/9.jpg');
-    background-size:100% 100%;
-}
-.musicmv2divdivimg10{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/tuijian/10.jpg');
-    background-size:100% 100%;
-}
-/*推荐mv下面的文字*/
-.musicmv2divdivimg1a{
+    height:20px;
     text-decoration:none;
     font-size:16px;
     color:#000000;
     display:block;
     text-align:center;
+    margin-left:25px;
+}
+/*每个模块的样式*/
+.musicmv2divdiv{
+    width:1200px;
+    height:350px;
+    flex-direction:row;
+	display:flex;
+	/*justify-content:space-between;*/
+	flex-wrap:wrap;
 
+}
+.musicmv2divdiv1{
+    width:1200px;
+    height:360px;
+    flex-direction:row;
+	display:flex;
+	/*justify-content:space-between;*/
+	flex-wrap:wrap;
+    margin-top:-215px;
+
+}
+/*添加十张图片*/
+.musicmv2divdivimg1{
+    width:211px;
+    height:145px;
+    background-size:100% 100%;
+    margin-left:25px;
+    margin-bottom:40px;
+}
+/*推荐mv下面的文字*/
+.musicmv2divdivimg1a{
+    width:211px;
+    height:20px;
+    text-decoration:none;
+    font-size:16px;
+    color:#000000;
+    display:block;
+    text-align:center;
+    overflow:hidden;
+    margin-left:25px;
+}
+.musicmv2divdivimg1a:hover{
+    overflow:visible;
 }
 .musicmv2divdivimg2a{
     text-decoration:none;
@@ -775,6 +561,44 @@ export default {
     color:#999999;
     display:block;
     text-align:center;
+}
+/*内地mv*/
+.musicmv2divdivimg1a1{
+    width:211px;
+    height:20px;
+    text-decoration:none;
+    font-size:16px;
+    color:#000000;
+    display:block;
+    text-align:center;
+    overflow:hidden;
+    margin-left:25px;
+}
+.musicmv2divdiv2{
+    width:1200px;
+    height:360px;
+    flex-direction:row;
+	display:flex;
+	/*justify-content:space-between;*/
+	flex-wrap:wrap;
+    margin-top:-215px;
+}
+.musicmv2divdivimg1a1:hover{
+    overflow:visible;
+}
+.musicmv2divdivimga1{
+    text-decoration:none;
+    font-size:14px;
+    color:#999999;
+    display:block;
+    text-align:center;
+}
+.musicmv2divdivimg2{
+    width:211px;
+    height:145px;
+    background-size:100% 100%;
+    margin-left:25px;
+    margin-bottom:40px;
 }
 /*热门主播*/
 .musicmv2{
@@ -831,402 +655,6 @@ export default {
     width:220px;
     height:270px;
     background-image:url('./musicmv/zhubo/5.jpg');
-    background-size:100% 100%;
-}
-/*内地*/
-.musicmv3{
-    width:1200px;
-    height:426px;
-}
-/*内地图片十张*/
-.musicmv3divdivimg1{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/neidi/1.jpg');
-    background-size:100% 100%;
-}
-.musicmv3divdivimg2{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/neidi/2.jpg');
-    background-size:100% 100%;
-}
-.musicmv3divdivimg3{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/neidi/3.jpg');
-    background-size:100% 100%;
-}
-.musicmv3divdivimg4{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/neidi/4.jpg');
-    background-size:100% 100%;
-}
-.musicmv3divdivimg5{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/neidi/5.jpg');
-    background-size:100% 100%;
-}
-.musicmv3divdivimg6{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/neidi/6.jpg');
-    background-size:100% 100%;
-}
-.musicmv3divdivimg7{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/neidi/7.jpg');
-    background-size:100% 100%;
-}
-.musicmv3divdivimg8{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/neidi/8.jpg');
-    background-size:100% 100%;
-}
-.musicmv3divdivimg9{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/neidi/9.jpg');
-    background-size:100% 100%;
-}
-.musicmv3divdivimg10{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/neidi/10.jpg');
-    background-size:100% 100%;
-}
-/*港台*/
-.musicmv4{
-    width:1200px;
-    height:426px;
-}
-/*港台十张图片*/
-.musicmv4divdivimg1{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/gangtai/1.jpg');
-    background-size:100% 100%;
-}
-.musicmv4divdivimg2{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/gangtai/2.jpg');
-    background-size:100% 100%;
-}
-.musicmv4divdivimg3{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/gangtai/3.jpg');
-    background-size:100% 100%;
-}
-.musicmv4divdivimg4{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/gangtai/4.jpg');
-    background-size:100% 100%;
-}
-.musicmv4divdivimg5{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/gangtai/5.jpg');
-    background-size:100% 100%;
-}
-.musicmv4divdivimg6{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/gangtai/6.jpg');
-    background-size:100% 100%;
-}
-.musicmv4divdivimg7{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/gangtai/7.jpg');
-    background-size:100% 100%;
-}
-.musicmv4divdivimg8{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/gangtai/8.jpg');
-    background-size:100% 100%;
-}
-.musicmv4divdivimg9{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/gangtai/9.jpg');
-    background-size:100% 100%;
-}
-.musicmv4divdivimg10{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/gangtai/10.jpg');
-    background-size:100% 100%;
-}
-/*欧美*/
-.musicmv5{
-    width:1200px;
-    height:426px;
-}
-/*欧美十张图片*/
-.musicmv5divdivimg1{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/oumei/1.jpg');
-    background-size:100% 100%;
-}
-.musicmv5divdivimg2{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/oumei/2.jpg');
-    background-size:100% 100%;
-}
-.musicmv5divdivimg3{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/oumei/3.jpg');
-    background-size:100% 100%;
-}
-.musicmv5divdivimg4{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/oumei/4.jpg');
-    background-size:100% 100%;
-}
-.musicmv5divdivimg5{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/oumei/5.jpg');
-    background-size:100% 100%;
-}
-.musicmv5divdivimg6{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/oumei/6.jpg');
-    background-size:100% 100%;
-}
-.musicmv5divdivimg7{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/oumei/7.jpg');
-    background-size:100% 100%;
-}
-.musicmv5divdivimg8{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/oumei/8.jpg');
-    background-size:100% 100%;
-}
-.musicmv5divdivimg9{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/oumei/9.jpg');
-    background-size:100% 100%;
-}
-.musicmv5divdivimg10{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/oumei/10.jpg');
-    background-size:100% 100%;
-}
-/*韩语*/
-.musicmv6{
-    width:1200px;
-    height:426px;
-}
-/*韩语十张图片*/
-.musicmv6divdivimg1{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/hanyu/1.jpg');
-    background-size:100% 100%;
-}
-.musicmv6divdivimg2{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/hanyu/2.jpg');
-    background-size:100% 100%;
-}
-.musicmv6divdivimg3{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/hanyu/3.jpg');
-    background-size:100% 100%;
-}
-.musicmv6divdivimg4{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/hanyu/4.jpg');
-    background-size:100% 100%;
-}
-.musicmv6divdivimg5{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/hanyu/5.jpg');
-    background-size:100% 100%;
-}
-.musicmv6divdivimg6{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/hanyu/6.jpg');
-    background-size:100% 100%;
-}
-.musicmv6divdivimg7{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/hanyu/7.jpg');
-    background-size:100% 100%;
-}
-.musicmv6divdivimg8{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/hanyu/8.jpg');
-    background-size:100% 100%;
-}
-.musicmv6divdivimg9{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/hanyu/9.jpg');
-    background-size:100% 100%;
-}
-.musicmv6divdivimg10{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/hanyu/10.jpg');
-    background-size:100% 100%;
-}
-/*韩语*/
-.musicmv7{
-    width:1200px;
-    height:426px;
-}
-/*韩语十张图片*/
-.musicmv7divdivimg1{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/riyu/1.jpg');
-    background-size:100% 100%;
-}
-.musicmv7divdivimg2{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/riyu/2.jpg');
-    background-size:100% 100%;
-}
-.musicmv7divdivimg3{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/riyu/3.jpg');
-    background-size:100% 100%;
-}
-.musicmv7divdivimg4{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/riyu/4.jpg');
-    background-size:100% 100%;
-}
-.musicmv7divdivimg5{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/riyu/5.jpg');
-    background-size:100% 100%;
-}
-.musicmv7divdivimg6{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/riyu/6.jpg');
-    background-size:100% 100%;
-}
-.musicmv7divdivimg7{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/riyu/7.jpg');
-    background-size:100% 100%;
-}
-.musicmv7divdivimg8{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/riyu/8.jpg');
-    background-size:100% 100%;
-}
-.musicmv7divdivimg9{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/riyu/9.jpg');
-    background-size:100% 100%;
-}
-.musicmv7divdivimg10{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/riyu/10.jpg');
-    background-size:100% 100%;
-}
-/*现场演唱*/
-.musicmv8{
-    width:1200px;
-    height:426px;
-}
-/*韩语十张图片*/
-.musicmv8divdivimg1{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/xianchang/1.jpg');
-    background-size:100% 100%;
-}
-.musicmv8divdivimg2{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/xianchang/2.jpg');
-    background-size:100% 100%;
-}
-.musicmv8divdivimg3{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/xianchang/3.jpg');
-    background-size:100% 100%;
-}
-.musicmv8divdivimg4{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/xianchang/4.jpg');
-    background-size:100% 100%;
-}
-.musicmv8divdivimg5{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/xianchang/5.jpg');
-    background-size:100% 100%;
-}
-.musicmv8divdivimg6{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/xianchang/6.jpg');
-    background-size:100% 100%;
-}
-.musicmv8divdivimg7{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/xianchang/7.jpg');
-    background-size:100% 100%;
-}
-.musicmv8divdivimg8{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/xianchang/8.jpg');
-    background-size:100% 100%;
-}
-.musicmv8divdivimg9{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/xianchang/9.jpg');
-    background-size:100% 100%;
-}
-.musicmv8divdivimg10{
-    width:211px;
-    height:135px;
-    background-image:url('./musicmv/xianchang/10.jpg');
     background-size:100% 100%;
 }
 </style>

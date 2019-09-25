@@ -1,19 +1,19 @@
 <template>
 
   <el-carousel :interval="1000" type="card" height="300px">
-    <a id="mv1" @click="mvone">
+    <a id="mv1">
       <el-carousel-item class="carousel1">
       </el-carousel-item>
     </a>
-    <a id="mv2" @click="mvtwo">
+    <a id="mv2">
       <el-carousel-item class="carousel2">
       </el-carousel-item>
     </a>
-    <a id="mv3" @click="mvthree">
+    <a id="mv3">
       <el-carousel-item class="carousel3">
       </el-carousel-item>
     </a>
-    <a id="mv4" @click="mvfour">
+    <a id="mv4">
        <el-carousel-item class="carousel4">
        </el-carousel-item>
     </a>
@@ -53,6 +53,12 @@ export default {
                 console.log(musicurl)
         })
         },
+    },
+    mounted(){
+      this.mvone()
+      this.mvtwo()
+      this.mvthree()
+      this.mvfour()
     },
     
 }

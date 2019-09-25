@@ -21,6 +21,15 @@ import Home from "./components/weixin/Home.vue"
 import MessageList from "./components/weixin/common/MessageList.vue"
 import Login from "./components/xz/Login.vue"
 import Home1 from "./components/xz/Home1.vue"
+import home2 from "./components/xz/home2.vue"
+import ychome3 from "./components/xz/ychome3.vue"
+import lghome4 from "./components/xz/lghome4.vue"
+import djyyhome5 from "./components/xz/djyyhome5.vue"
+import iTuneshome6 from "./components/xz/iTuneshome6.vue"
+import ukhome7 from "./components/xz/ukhome7.vue"
+import sshome8 from "./components/xz/sshome8.vue"
+import songlist1 from "./components/xz/songlist1.vue"
+import songlist2 from "./components/xz/songlist2.vue"
 import Product from "./components/xz/Product.vue"
 import Cart from "./components/xz/Cart.vue"
 /*import Carousel from "./components/xz/carousel.vue"*/
@@ -41,6 +50,7 @@ import musicmv from "./music/musicmv.vue"
 import musicsinger from "./music/musicsinger.vue"
 import singer from "./music/singer.vue"
 import singerboy from "./music/singerboy.vue"
+import singerboy1 from "./music/singerboy1.vue"
 import singergril from "./music/singergril.vue"
 import Chinaband from "./music/Chinaband.vue"
 import musicoriginal from "./music/musicoriginal.vue"
@@ -54,6 +64,15 @@ import musicredrank from "./music/musicredrank.vue"
 import ceshilogin from "./music/ceshilogin.vue"
 import music3yuan from "./music/music3yuan.vue"
 import music2yuan from "./music/music2yuan.vue"
+import hanguoboy from "./music/hanguoboy.vue"
+import hanguogril from "./music/hanguogril.vue"
+import hanguoitem from "./music/hanguoitem.vue"
+import japanboy from "./music/japanboy.vue"
+import japangril from "./music/japangril.vue"
+import japanitem from "./music/japanitem.vue"
+import other from "./music/othersinger.vue"
+import singertop from "./music/singertop.vue"
+import topall from "./components/xz/topall.vue"
 Vue.use(Router)
 export default new Router({
   routes: [
@@ -107,7 +126,31 @@ export default new Router({
     {path:'/music2yuan',component:music2yuan},
     {path:'/vuexa',component:vuexa},
     {path:'/vuexb',component:vuexb},
-    {path:'/axios1',component:axios1}
+    {path:'/axios1',component:axios1},
+    {path:'/topall',component:topall},
+    {path:'/home2',component:home2},
+    {path:'/ychome3',component:ychome3},
+    {path:'/lghome4',component:lghome4},
+    {path:'/djyyhome5',component:djyyhome5},
+    {path:'/ituneshome6',component:iTuneshome6},
+    {path:'/ukhome7',component:ukhome7},
+    {path:'/sshome8',component:sshome8},
+    {path:'/songlist1',component:songlist1},
+    {path:'/songlist2',component:songlist2},
+    {path:'/hanguoboy',component:hanguoboy},
+    {path:'/hanguogril',component:hanguogril},
+    {path:'/hanguoitem',component:hanguoitem},
+    {path:'/japanboy',component:japanboy},
+    {path:'/japangril',component:japangril},
+    {path:'/japanitem',component:japanitem},
+    {path:'/other',component:other},
+    {path:'/singerboy1',component:singerboy1},
+    {path:'/singertop',component:singertop}
+    
+    
+    
+
+
     
     
     

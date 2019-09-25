@@ -6,7 +6,7 @@
 			<section class="div-section1">
 				<h2 class="d2-section-section-h2">
 					<i class="d2-section-section-h2-i">热门歌单</i>
-					<a href="javascript:;" class="d2-section-section-h2-a">更多</a>
+					<a href="http://127.0.0.1:8080/#/songlist1" class="d2-section-section-h2-a">更多</a>
 					<div class="d2-section-section-h2-div">
 						<i class="iconfont icon-changyongicon-1"></i>
 						<i class="iconfont icon-changyongicon-"></i>
@@ -15,7 +15,7 @@
 				<div class="section-section-div">
 					<div>
 						<div class="section-section-div-div-div">
-							<a @click="mvcxc" class="section-section-div-div-div-a" id="bfcxc">
+							<a class="section-section-div-div-div-a" id="bfcxc">
 								<img src="./img/songSheet/songsheet01.jpg" alt="" style="width:100%">
 								<h3 class="section-section-div-div-div-h3">
 								</h3>
@@ -25,7 +25,7 @@
 					</div>
 					<div>
 						<div class="section-section-div-div-div">
-							<a @click="mvjg" class="section-section-div-div-div-a" id="bfjg">
+							<a class="section-section-div-div-div-a" id="bfjg">
 								<img src="./img/songSheet/songsheet02.jpg" alt="" style="width:100%">
 								<h3 class="section-section-div-div-div-h3">
 								</h3>
@@ -35,7 +35,7 @@
 					</div>
 					<div>
 						<div class="section-section-div-div-div">
-							<a @click="mvlyn" class="section-section-div-div-div-a" id="bflyn">
+							<a class="section-section-div-div-div-a" id="mvlyn">
 								<img src="./img/songSheet/songsheet03.jpg" alt="" style="width:100%">
 								<h3 class="section-section-div-div-div-h3">
 								</h3>
@@ -45,7 +45,7 @@
 					</div>
 					<div>
 						<div class="section-section-div-div-div">
-							<a @click="mvonly" class="section-section-div-div-div-a" id="bfonly">
+							<a class="section-section-div-div-div-a" id="bfonly">
 							<img src="./img/songSheet/songsheet04.jpg" alt="" style="width:100%">
 							<h3 class="section-section-div-div-div-h3">	
 							</h3>
@@ -55,7 +55,7 @@
 					</div>
 					<div>
 						<div class="section-section-div-div-div">
-							<a @click="mvhx" id="bfhx" class="section-section-div-div-div-a">
+							<a id="bfhx" class="section-section-div-div-div-a">
 							<h3 class="section-section-div-div-div-h3">
 							<img src="./img/songSheet/songsheet05.jpg" alt="" style="width:100%">
 							</h3>
@@ -65,7 +65,7 @@
 					</div>
 					<div>
 						<div class="section-section-div-div-div">
-							<a @click="mvorange" id="bforange" class="section-section-div-div-div-a">
+							<a id="bforange" class="section-section-div-div-div-a">
 							<h3 class="section-section-div-div-div-h3">
 							<img src="./img/songSheet/songsheet06.jpg" alt="" style="width:100%">
 							</h3>
@@ -75,7 +75,7 @@
 					</div>
 					<div>
 						<div class="section-section-div-div-div">
-						<a @click="mvyaowang" id="bfyaowang" class="section-section-div-div-div-a">
+						<a id="bfyaowang" class="section-section-div-div-div-a">
 						<div>
 						<img src="./img/songSheet/songsheet07.jpg" alt="" style="width:100%">
 						</div>
@@ -87,7 +87,7 @@
 					</div>
 					<div>
 						<div class="section-section-div-div-div">
-							<a @click="mvyc" id="bfyc" class="section-section-div-div-div-a">
+							<a id="bfyc" class="section-section-div-div-div-a">
 							<h3 class="section-section-div-div-div-h3">
 							<img src="./img/songSheet/songsheet08.jpg" alt="" style="width:100%">
 								
@@ -295,10 +295,18 @@ export default {
                 var c=x.href=musicurl
                 console.log(musicurl)
         })
-		},
-		
-		
-	}
+		},	
+	},
+	mounted(){
+		this.mvcxc()
+		this.mvjg()
+		this.mvlyn()
+		this.mvonly()
+		this.mvhx()
+		this.mvorange()
+		this.mvyaowang()
+		this.mvyc()
+	},
 }
 </script>
 <style scoped>
