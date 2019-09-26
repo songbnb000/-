@@ -58,7 +58,7 @@
         </div>
         <div class="headdiv2">
             <nav class="headnav2">
-                <a href="http://127.0.0.1:8080/#/songlist2" class="headnav2-a">推荐</a>
+                <a href="http://127.0.0.1:8080/#/songlist3" class="headnav2-a">推荐</a>
                 <a href="http://127.0.0.1:8080/#/songlist1" class="headnav2-a1">歌单</a>
                 <a href="http://127.0.0.1:8080/#/singer" class="headnav2-a1">歌手</a>
                 <a href="http://127.0.0.1:8080/#/musictop" class="headnav2-a1">榜单</a>

@@ -29,7 +29,12 @@ import iTuneshome6 from "./components/xz/iTuneshome6.vue"
 import ukhome7 from "./components/xz/ukhome7.vue"
 import sshome8 from "./components/xz/sshome8.vue"
 import songlist1 from "./components/xz/songlist1.vue"
-import songlist2 from "./components/xz/songlist2.vue"
+import songlist3 from "./components/xz/songlist3.vue"
+import songlisthy from "./components/xz/songlisthy.vue"
+import songlistyy from "./components/xz/songlistyy.vue"
+import songlisthg from "./components/xz/songlisthg.vue"
+import songlistry from "./components/xz/songlistry.vue"
+import songlistom from "./components/xz/songlistom.vue"
 import Product from "./components/xz/Product.vue"
 import Cart from "./components/xz/Cart.vue"
 /*import Carousel from "./components/xz/carousel.vue"*/
@@ -136,7 +141,7 @@ export default new Router({
     {path:'/ukhome7',component:ukhome7},
     {path:'/sshome8',component:sshome8},
     {path:'/songlist1',component:songlist1},
-    {path:'/songlist2',component:songlist2},
+    {path:'/songlist3',component:songlist3},
     {path:'/hanguoboy',component:hanguoboy},
     {path:'/hanguogril',component:hanguogril},
     {path:'/hanguoitem',component:hanguoitem},
@@ -145,8 +150,13 @@ export default new Router({
     {path:'/japanitem',component:japanitem},
     {path:'/other',component:other},
     {path:'/singerboy1',component:singerboy1},
-    {path:'/singertop',component:singertop}
-    
+    {path:'/singertop',component:singertop},
+    /*为了做一个伪动态，所以这边路径和名称不一样*/
+    {path:'/songlist2',component:songlisthy},
+    {path:'/songlist23',component:songlistyy},
+    {path:'/songlist9',component:songlistom},
+    {path:'/songlist14',component:songlistry},
+    {path:'/songlist18',component:songlisthg}
     
     
 

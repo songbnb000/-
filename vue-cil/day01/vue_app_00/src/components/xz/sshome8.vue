@@ -7,19 +7,19 @@
         <!-- <div @click="nihao">你好吗</div>-->
         
             <div class="lengthdiv">
-                <h3 v-for="(item2,i2) in toplistsong8" :key="i2" class="hlength">{{i2}}</h3>
+                <h3 v-for="(item2,i2) in toplistsong8" :key="i2+'1'" class="hlength">{{i2}}</h3>
             </div>
             <div class="imgdiv">
-                <img v-for="(item1,i) in toplistsong8" :key="i" :src="item1.al.picUrl"   class="imgsize">     
+                <img v-for="(item1,i) in toplistsong8" :key="i+'2'" :src="item1.al.picUrl"   class="imgsize">     
             </div>
             <div class="namediv">
-                <a href="javascript:;" v-for="(item,index) in toplistsong8" :key="index" class="songname">{{item.name}}</a>
+                <a href="javascript:;" v-for="(item,index) in toplistsong8" :key="index+'3'" class="songname">{{item.name}}</a>
             </div>
             <div class="ardiv">
-                <a href="javascript:;" v-for="(item3,index3) in toplistsong8" :key="index3" class="arname">{{item3.ar[0].name}}</a>
+                <a href="javascript:;" v-for="(item3,index3) in toplistsong8" :key="index3+'4'" class="arname">{{item3.ar[0].name}}</a>
             </div>
             <div class="iddiv" id="iddiv1">
-                <a id="aid" v-for="(item4,index4) in toplistsong8" :key="index4"  :href="'https://music.163.com/song?id='+item4.id" class="ida" title="点击播放">
+                <a id="aid" v-for="(item4,index4) in toplistsong8" :key="index4+'5'"  :href="'https://music.163.com/song?id='+item4.id" class="ida" title="点击播放">
                     <i class="iconfont icon-bofang1"></i>
                 </a>
             </div>

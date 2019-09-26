@@ -3,13 +3,15 @@
 <div class="songlist2div">   
     <musichead class="musicheadtag"></musichead>
     <div class="songlist2div2">
-        <h3 class="songlist2h3">推荐歌单</h3>
+        <h3 class="songlist2h3">你喜欢的粤语音乐是这些吗</h3>
     </div>
         <div class="songlist2div3">
-                <img v-for="(item1,i) in songlist1" :key="i" :src="item1.picUrl"   class="imgsize">
-                <a :href="'https://music.163.com/#/playlist?id='+item2.id" v-for="(item2,index2) in songlist1" :key="index2" class="songlista">
-                {{item2.name}}
+                <img v-for="(item,i) in songlistyy" :key="i+'1'" :src="item.coverImgUrl"   class="imgsize">
+            <div class="huayutaga">
+                <a :href="'https://music.163.com/#/playlist?id='+items.id" v-for="(items,index2) in songlistyy" :key="index2+'2'" class="songlista">
+                {{items.name}}
                 </a>
+            </div>
         </div>
 </div>
 </template>
@@ -19,23 +21,22 @@ import musichead from "../../music/musichead.vue"
 export default {
     data(){
         return {
-            songlist1:{},          
+            songlistyy:{},          
         }
     },
     components:{
         musichead:musichead
     },
     methods:{
-        bfsonglist1(){this.axios.get("/personalized").then(res=>{
-            var songlistdata1=res.data.result
-            this.songlist1=songlistdata1
-            console.log(this.songlist1)
-            return this.songlist1
+        bfsonglisthy(){this.axios.get("/top/playlist/?cat=粤语&limit=50").then(res=>{
+            var songlistdata=res.data.playlists
+            this.songlistyy=songlistdata
+            return this.songlistyy
         })
         }
     },
     mounted(){
-        this.bfsonglist1()
+        this.bfsonglisthy()
     },
 }
 </script>
@@ -43,11 +44,12 @@ export default {
 *{padding:0;margin:0}
     .songlist2div1{
         margin:0 auto;
+        height:100%;
     }
     .songlist2div3{
         /*页面的高*/
         width:1200px;
-        height:1650px;
+        height:100%;
         flex-wrap:wrap;
         display:flex;
         justify-content:space-between;
@@ -64,8 +66,8 @@ export default {
         height:20px;
         display:block;
         overflow: hidden;
-        bottom:1630px;
-        padding-top:247px;
+        bottom:841px;
+        padding-top:248px;
         flex-wrap:wrap;
         display:flex;
         justify-content:space-between;
@@ -87,5 +89,14 @@ export default {
         width:1200px;
         height:20px;
         margin:20px auto;
+    }
+    .huayutaga{
+        width:1200px;
+        height:100%;
+        flex-wrap:wrap;
+        display:flex;
+        justify-content:space-between;
+        margin-top:-1868px;
+        margin-bottom:0px;
     }
 </style>   
