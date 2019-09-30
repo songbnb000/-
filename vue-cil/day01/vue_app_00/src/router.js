@@ -50,6 +50,8 @@ import index from "./music/index.vue"
 import hotsong from "./music/hotsong.vue"
 import songlist from "./music/songlist.vue"
 import loadmore from "./music/loadmore.vue"
+import search from "./music/search.vue"
+import djradio from "./music/djradio.vue"
 import ceshisonglist from "./music/ceshisonglist.vue"
 import musicmv from "./music/musicmv.vue"
 import musicsinger from "./music/musicsinger.vue"
@@ -156,7 +158,10 @@ export default new Router({
     {path:'/songlist23',component:songlistyy},
     {path:'/songlist9',component:songlistom},
     {path:'/songlist14',component:songlistry},
-    {path:'/songlist18',component:songlisthg}
+    {path:'/songlist18',component:songlisthg},
+    {path:'/search',component:search},
+    {path:'/djradio',component:djradio}
+
     
     
 

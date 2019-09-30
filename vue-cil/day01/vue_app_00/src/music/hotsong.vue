@@ -109,40 +109,40 @@
 					<!--宽366，高0-->
 					<div class="div-section2-section1-div">
 						<h3 class="div-section2-section1-div-h3">
-							<a href="javascript:;" class="div-section2-section1-div-h3-a">情歌</a>
+							<a href="http://127.0.0.1:8080/#/songlist2" class="div-section2-section1-div-h3-a">华语</a>
 						</h3>
 						<h3>
-							<a href="javascript:;" class="div-section2-section1-div-h3-a">红歌</a>
+							<a href="http://127.0.0.1:8080/#/songlist9" class="div-section2-section1-div-h3-a">欧美</a>
 						</h3>
 						<h3>
-							<a href="javascript:;" class="div-section2-section1-div-h3-a">劲爆</a>
+							<a href="http://127.0.0.1:8080/#/songlist14" class="div-section2-section1-div-h3-a">日语</a>
 						</h3>
 						<h3>
-							<a href="javascript:;" class="div-section2-section1-div-h3-a">天籁</a>
+							<a href="http://127.0.0.1:8080/#/songlist18" class="div-section2-section1-div-h3-a">韩语</a>
 						</h3>
 						<h3>
-							<a href="javascript:;" class="div-section2-section1-div-h3-a">经典老歌</a>
+							<a href="http://127.0.0.1:8080/#/songlist23" class="div-section2-section1-div-h3-a">粤语</a>
 						</h3>
 						<h3>
-							<a href="javascript:;" class="div-section2-section1-div-h3-a">欧美</a>
+							<a href="http://127.0.0.1:8080/#/home2" class="div-section2-section1-div-h3-a">热歌</a>
 						</h3>
 						<h3>
-							<a href="javascript:;" class="div-section2-section1-div-h3-a">网络歌曲</a>
+							<a href="http://127.0.0.1:8080/#/home1" class="div-section2-section1-div-h3-a">新歌</a>
 						</h3>
 						<h3>
-							<a href="javascript:;" class="div-section2-section1-div-h3-a">民歌</a>
+							<a href="http://127.0.0.1:8080/#/ychome3" class="div-section2-section1-div-h3-a">网络歌曲</a>
 						</h3>
 						<h3>
-							<a href="javascript:;" class="div-section2-section1-div-h3-a">80后</a>
+							<a href="http://127.0.0.1:8080/#/lghome4" class="div-section2-section1-div-h3-a">经典老歌</a>
 						</h3>
 						<h3>
-							<a href="javascript:;" class="div-section2-section1-div-h3-a">儿歌</a>
+							<a href="http://127.0.0.1:8080/#/djyyhome5" class="div-section2-section1-div-h3-a">说唱</a>
 						</h3>
 						<h3>
-							<a href="javascript:;" class="div-section2-section1-div-h3-a">伤感</a>
+							<a href="http://127.0.0.1:8080/#/ituneshome6" class="div-section2-section1-div-h3-a">iTunes音乐榜</a>
 						</h3>
 						<h3>
-							<a href="javascript:;" class="div-section2-section1-div-h3-a">安静</a>
+							<a href="http://127.0.0.1:8080/#/sshome8" class="div-section2-section1-div-h3-a">最新</a>
 						</h3>
 					</div>
 				</section>

@@ -3,7 +3,7 @@
 <div class="songlistdiv">   
     <musichead class="musicheadtag"></musichead>
         <div class="songlistfooter1div">
-            <mt-button v-for="(item,index) of list" :key="index" :data-idx="index" @click="setActive" class="buttontag">
+            <mt-button v-for="(item,index) of list" :key="index" :data-idx="index" @click="setActive" class="buttontag" id="ppp">
             {{item}} 
             </mt-button>
         </div>
@@ -180,6 +180,7 @@ export default {
             songlistsc:{},
             list:["最新","最热","流行","轻音乐","伤感","古风","怀旧","校园","ACG","摇滚","运动","翻唱","网络歌曲","学习","经典","说唱"],
             active:"tab1",
+            chars:['0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F']
                 
         }
     },
@@ -187,6 +188,14 @@ export default {
         musichead:musichead
     },
     methods:{
+        generateMixed(n){
+        var res="";
+        for(var i=0;i<n;i++){
+        var id=Math.ceil(Math.random()*16);
+        res+=this.chars[id];
+        }
+        return res;
+        },
         setActive(e){
                     //e指所有事件
                     //target指触发事件
@@ -194,7 +203,11 @@ export default {
                     //上面自己写的idx自定义属性名
                   var idx=parseInt(e.target.dataset.idx)  
                   //自定义属性拿过来是一个字符串，所以需要转换一下
-                  this.active="tab"+(idx+1)
+                  this.active="tab"+(idx+1);
+                  var num=this.generateMixed(6);
+                  var p=document.getElementById('ppp')
+                  //console.log(e.target)触发的标签
+                  e.target.style.color ="#"+num;
         },
         bfsonglist(){this.axios.get("/top/playlist").then(res=>{
             var songlistdata=res.data.playlists
@@ -317,7 +330,8 @@ export default {
         this.bfsonglistwlgq(),
         this.bfsonglistxx(),
         this.bfsonglistjd(),
-        this.bfsonglistsc()
+        this.bfsonglistsc(),
+        this.setActive()
     },
 }
 </script>
@@ -387,11 +401,11 @@ export default {
     .musicheadtag{
         margin-bottom:30px;
     }
-    .buttontag:hover{
-    color:#fff;
-    background: -webkit-linear-gradient(red, blue); /* Safari 5.1 - 6.0 */
-    background: -o-linear-gradient(red, blue); /* Opera 11.1 - 12.0 */
-    background: -moz-linear-gradient(red, blue); /* Firefox 3.6 - 15 */
-    background: linear-gradient(red, blue); /* 标准的语法（必须放在最后） */
-    }
+   /*.buttontag:hover{
+    color:#fff;*/
+    /*background: -webkit-linear-gradient(red, blue);  Safari 5.1 - 6.0 
+    background: -o-linear-gradient(red, blue);  Opera 11.1 - 12.0 
+    background: -moz-linear-gradient(red, blue);  Firefox 3.6 - 15 
+    background: linear-gradient(red, blue);  标准的语法（必须放在最后）
+    }*/
 </style>   
