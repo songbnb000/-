@@ -21,7 +21,7 @@ export default {
         pageIndex:1
     }
   },
-  method:{
+  methods:{
      getData() {
         let me = this;
         //获取数据，在获取数据成功后，则关闭loading效果

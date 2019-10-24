@@ -9,6 +9,7 @@
 <carousel3></carousel3>
 <hotsonglist></hotsonglist>
 <music2yuan></music2yuan>
+<canvas id="canvas"></canvas>
 </div>
 </template>
 <script>

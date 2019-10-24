@@ -6,7 +6,7 @@
 			<section class="div-section1">
 				<h2 class="d2-section-section-h2">
 					<i class="d2-section-section-h2-i">热门歌单</i>
-					<a href="http://127.0.0.1:8080/#/songlist1" class="d2-section-section-h2-a">更多</a>
+					<a href="http://127.0.0.1:8080/#/pinglun" class="d2-section-section-h2-a">更多</a>
 					<div class="d2-section-section-h2-div">
 						<i class="iconfont icon-changyongicon-1"></i>
 						<i class="iconfont icon-changyongicon-"></i>

@@ -79,6 +79,8 @@ import japangril from "./music/japangril.vue"
 import japanitem from "./music/japanitem.vue"
 import other from "./music/othersinger.vue"
 import singertop from "./music/singertop.vue"
+import pinglun from "./music/pinglun.vue"
+import fontcolor from "./music/fontcolor.vue"
 import topall from "./components/xz/topall.vue"
 Vue.use(Router)
 export default new Router({
@@ -160,7 +162,10 @@ export default new Router({
     {path:'/songlist14',component:songlistry},
     {path:'/songlist18',component:songlisthg},
     {path:'/search',component:search},
-    {path:'/djradio',component:djradio}
+    {path:'/djradio',component:djradio},
+    {path:'/pinglun',component:pinglun},
+    {path:'/fontcolor',component:fontcolor}
+    
 
     
     
